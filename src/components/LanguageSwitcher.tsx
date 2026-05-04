@@ -38,10 +38,10 @@ export default function LanguageSwitcher() {
         <button
           key={loc}
           onClick={() => handleLanguageSwitch(loc)}
-          className={`px-2 py-1 text-sm rounded transition-colors ${
+          className={`py-1 px-1 text-sm transition-colors border-b-2 ${
             locale === loc
-              ? 'bg-primary text-white'
-              : 'text-foreground-light hover:text-primary hover:bg-background/70'
+              ? 'border-primary-dark text-foreground'
+              : 'border-transparent text-foreground hover:text-primary'
           }`}
         >
           {loc.toUpperCase()}

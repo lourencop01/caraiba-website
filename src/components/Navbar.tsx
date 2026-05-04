@@ -7,9 +7,10 @@ import { useTranslations } from 'next-intl';
 import { useParams, usePathname } from 'next/navigation';
 import { trackGenerateLead } from '@/lib/analytics';
 import { PiPhone, PiCaretDown, PiArrowRight } from 'react-icons/pi';
-import { IoLogoWhatsapp } from 'react-icons/io';
+// import { IoLogoWhatsapp } from 'react-icons/io';
 import CartIcon from './shop/CartIcon';
 import type { NavShopData } from './NavbarWrapper';
+import { cormorantGaramond } from '@/lib/fonts';
 
 interface NavbarProps {
   shopData: NavShopData;
@@ -64,18 +65,10 @@ export default function Navbar({ shopData }: NavbarProps) {
 
           {/* Logo */}
           <Link href={`/${locale}`} className="flex items-center gap-2 flex-shrink-0" onClick={closeMobileMenu}>
-            <div className="w-8 h-8 rounded-full overflow-hidden">
-              <Image
-                src="/valentina-hair-concept.jpg"
-                alt={t('navigation.logoAlt')}
-                width={32}
-                height={32}
-                className="w-full h-full object-cover"
-              />
+            <div className="w-6 h-6 rounded-full overflow-hidden bg-secondary">
             </div>
             <span
-              className="block lg:hidden xl:block text-lg lg:text-xl text-foreground font-medium"
-              style={{ fontFamily: "'Bodoni Moda', serif" }}
+              className={`block lg:hidden xl:block text-lg lg:text-xl text-foreground font-bold uppercase ${cormorantGaramond.className}`}
             >
               {t('site.name')}
             </span>
@@ -88,7 +81,7 @@ export default function Navbar({ shopData }: NavbarProps) {
             <Link
               href={`/${locale}`}
               className={`font-medium transition-colors text-sm ${
-                isActive(`/${locale}`) ? 'text-primary' : 'text-foreground-light hover:text-primary'
+                isActive(`/${locale}`) ? 'text-primary-dark' : 'text-foreground-light hover:text-primary'
               }`}
             >
               {t('navigation.home')}
@@ -104,7 +97,7 @@ export default function Navbar({ shopData }: NavbarProps) {
                 onClick={() => setIsShopDropdownOpen((v) => !v)}
                 aria-expanded={isShopDropdownOpen}
                 className={`flex items-center gap-1 font-medium transition-colors text-sm focus:outline-none ${
-                  isShopActive ? 'text-primary' : 'text-foreground-light hover:text-primary'
+                  isShopActive ? 'text-primary-dark' : 'text-foreground-light hover:text-primary'
                 }`}
               >
                 {t('navigation.shop')}
@@ -186,7 +179,7 @@ export default function Navbar({ shopData }: NavbarProps) {
                 key={link.href}
                 href={link.href}
                 className={`font-medium transition-colors text-sm ${
-                  isActive(link.href) ? 'text-primary' : 'text-foreground-light hover:text-primary'
+                  isActive(link.href) ? 'text-primary-dark' : 'text-foreground-light hover:text-primary'
                 }`}
               >
                 {link.label}
@@ -196,10 +189,10 @@ export default function Navbar({ shopData }: NavbarProps) {
 
           {/* Actions */}
           <div className="flex items-center gap-2">
-            <CartIcon />
             <LanguageSwitcher />
+            <CartIcon />
 
-            <a
+            {/* <a
               href="tel:+351915662413"
               title={t('accessibility.callSalon')}
               aria-label={t('accessibility.callSalon')}
@@ -207,9 +200,9 @@ export default function Navbar({ shopData }: NavbarProps) {
               onClick={() => trackGenerateLead('navbar_desktop')}
             >
               <PiPhone className="w-4 h-4" />
-            </a>
+            </a> */}
 
-            <a
+            {/* <a
               href="https://wa.me/915662413"
               target="_blank"
               rel="noopener noreferrer"
@@ -219,7 +212,7 @@ export default function Navbar({ shopData }: NavbarProps) {
               onClick={() => trackGenerateLead('navbar_desktop_whatsapp')}
             >
               <IoLogoWhatsapp className="w-4 h-4" />
-            </a>
+            </a> */}
 
             {/* Mobile hamburger */}
             <button
@@ -330,7 +323,7 @@ export default function Navbar({ shopData }: NavbarProps) {
 
             {/* Mobile action row */}
             <div className="flex gap-3 px-4 pt-3">
-              <a
+              {/* <a
                 href="tel:+351915662413"
                 title={t('accessibility.callSalon')}
                 aria-label={t('accessibility.callSalon')}
@@ -350,7 +343,7 @@ export default function Navbar({ shopData }: NavbarProps) {
                 onClick={() => { trackGenerateLead('navbar_mobile_whatsapp'); closeMobileMenu(); }}
               >
                 <Image src="/whatsapp.webp" alt="WhatsApp" width={22} height={22} className="w-[22px] h-[22px]" />
-              </a>
+              </a> */}
             </div>
           </div>
         </div>

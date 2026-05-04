@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 import { useParams } from 'next/navigation';
 import { PiArrowRight, PiShieldCheck, PiTruck, PiStar } from 'react-icons/pi';
+import { cormorantGaramond } from '@/lib/fonts';
 
 export default function Hero() {
   const t = useTranslations('hero');
@@ -26,18 +27,17 @@ export default function Hero() {
 
           {/* ── Left: Content ── */}
           <div className="flex flex-col items-center lg:items-start text-center lg:text-left">
-            <span className="inline-block text-primary text-sm font-semibold uppercase tracking-widest mb-4 px-3 py-1 bg-primary/10 rounded-full">
+            <span className="inline-block text-primary-dark text-sm font-semibold uppercase tracking-widest mb-4 px-3 py-1 bg-primary/10 rounded-full">
               {t('eyebrow')}
             </span>
 
             <h1
-              className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-5"
-              style={{ fontFamily: "'Bodoni Moda', serif" }}
+              className={`text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-3 ${cormorantGaramond.className}`}
             >
               {t('title')}
             </h1>
 
-            <p className="text-lg sm:text-xl text-foreground-light max-w-lg leading-relaxed mb-8">
+            <p className="text-lg sm:text-lg text-foreground-light max-w-lg mb-8">
               {t('subtitle')}
             </p>
 
@@ -52,7 +52,7 @@ export default function Hero() {
               </Link>
               <Link
                 href={`/${locale}/collections`}
-                className="flex items-center justify-center gap-2 border-2 border-border text-foreground px-8 py-4 rounded-full font-semibold text-base hover:border-primary hover:text-primary transition-all duration-300"
+                className="flex items-center justify-center gap-2 border-2 border-border text-foreground px-8 py-4 rounded-full font-semibold text-base hover:border-primary hover:text-primary-dark transition-all duration-300"
               >
                 {t('exploreCollections')}
               </Link>
@@ -78,7 +78,7 @@ export default function Hero() {
             {/* Main image container */}
             <div className="relative w-[300px] h-[400px] sm:w-[380px] sm:h-[500px] rounded-[2.5rem] overflow-hidden shadow-theme-lg border border-border/30">
               <Image
-                src="/female-hairdresser-lisbon-balayage.png"
+                src="/pexels-2.jpg"
                 alt="Professional hair care products"
                 fill
                 className="object-cover object-[40%_30%] scale-x-[-1]"

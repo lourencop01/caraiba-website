@@ -3,12 +3,12 @@
 /* Base Color Palette System */
 :root {
   /* Default Color Scheme - Professional Hairdresser */
-  --primary: #685d51;          /* Warm brown */
-  --primary-dark: #463e36;     /* Darker brown */
-  --primary-light: #a08e7b;    /* Lighter brown */
-  --secondary: #685d51;        /* Gold accent */
-  --secondary-dark: #463e36;   /* Darker gold */
-  --secondary-light: #a08e7b;  /* Lighter gold */
+  --primary: #ad9a88;          /* Warm brown */
+  --primary-dark: #8e8073;     /* Darker brown */
+  --primary-light: #d5bea8;    /* Lighter brown */
+  --secondary: #7ab0cc;        /* Gold accent */
+  --secondary-dark: #608ba1;   /* Darker gold */
+  --secondary-light: #94d6f7;  /* Lighter gold */
   
   /* Neutral colors */
   --background: #FEFEFE;       /* Almost white */
