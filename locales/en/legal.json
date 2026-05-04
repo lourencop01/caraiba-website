@@ -1,0 +1,747 @@
+{
+  "cookies": {
+    "banner": {
+      "title": "Cookie Preferences",
+      "description": "We use cookies to enhance your browsing experience, serve personalized content, and analyze our traffic. By clicking 'Accept All', you consent to our use of cookies.",
+      "acceptAll": "Accept All",
+      "rejectAll": "Reject All",
+      "managePreferences": "Manage Preferences",
+      "savePreferences": "Save Preferences"
+    },
+    "modal": {
+      "title": "Manage Cookie Preferences",
+      "description": "We respect your privacy and are committed to protecting your personal data. You can customize your cookie preferences below.",
+      "closeModal": "Close",
+      "saveAndClose": "Save & Close"
+    },
+    "categories": {
+      "essential": {
+        "title": "Essential Cookies",
+        "description": "These cookies are necessary for the website to function and cannot be switched off. They are usually only set in response to actions made by you which amount to a request for services.",
+        "examples": "Authentication, security, language preferences"
+      },
+      "analytics": {
+        "title": "Analytics Cookies",
+        "description": "These cookies allow us to analyze website traffic and understand how visitors interact with our website. This helps us improve our services and user experience.",
+        "examples": "Google Analytics, page views, session duration"
+      },
+      "marketing": {
+        "title": "Marketing Cookies",
+        "description": "These cookies track your online activity to help advertisers deliver more relevant advertising or to limit how many times you see an ad. They may also be used to create a profile of your interests.",
+        "examples": "Facebook Pixel, Google Ads, retargeting"
+      }
+    },
+    "footer": {
+      "manageCookies": "Manage Cookies",
+      "privacyPolicy": "Privacy Policy",
+      "cookiePolicy": "Cookie Policy",
+      "termsConditions": "Terms & Conditions",
+      "impressum": "Legal Notice"
+    },
+    "policy": {
+      "title": "Cookie Policy",
+      "lastUpdated": "Last updated: 13 July 2025",
+      "effective": "Effective Date: 13 July 2025",
+      "introduction": {
+        "title": "What are Cookies?",
+        "description": "Cookies are small text files that are placed on your computer or mobile device when you visit a website. They are widely used to make websites work more efficiently and to provide information to website owners.",
+        "usage": "At Salon Concept, we use cookies to enhance your browsing experience, analyze website usage, and deliver personalized content. This Cookie Policy explains what cookies are, how we use them, and how you can manage your cookie preferences.",
+        "consent": "By continuing to use our website, you consent to our use of cookies as described in this policy and our Privacy Policy."
+      },
+      "types": {
+        "title": "Types of Cookies We Use",
+        "description": "We use different types of cookies for various purposes. Here's an overview of the categories:",
+        "essential": "Essential Cookies - Required for basic website functionality",
+        "analytics": "Analytics Cookies - Help us understand how visitors use our site",
+        "marketing": "Marketing Cookies - Used for advertising and social media tracking"
+      },
+      "essential": {
+        "title": "Essential Cookies",
+        "description": "These cookies are necessary for the website to function and cannot be switched off. They are usually only set in response to actions made by you which amount to a request for services.",
+        "examples": {
+          "title": "Examples of Essential Cookies",
+          "session": "Session cookies: Keep you logged in during your visit",
+          "security": "Security cookies: Protect against fraud and unauthorized access",
+          "preferences": "Preference cookies: Remember your theme and language settings",
+          "consent": "Cookie consent: Remember your cookie preferences"
+        },
+        "note": "Note: Essential cookies cannot be disabled as they are necessary for the website to function properly."
+      },
+      "analytics": {
+        "title": "Analytics Cookies",
+        "description": "These cookies allow us to analyze website traffic and understand how visitors interact with our website. This helps us improve our services and user experience.",
+        "googleAnalytics": {
+          "title": "Google Analytics",
+          "description": "We use Google Analytics to understand how visitors interact with our website. This service provides us with information about page views, bounce rates, and user behavior patterns.",
+          "cookies": "Cookies used: _ga, _ga_*, _gid",
+          "retention": "Retention: Up to 26 months",
+          "purpose": "Purpose: Website traffic analysis and user experience optimization"
+        }
+      },
+      "marketing": {
+        "title": "Marketing Cookies",
+        "description": "These cookies track your online activity to help advertisers deliver more relevant advertising or to limit how many times you see an ad. They may also be used to create a profile of your interests.",
+        "facebook": {
+          "title": "Meta Pixel (Facebook)",
+          "description": "We use Meta Pixel to track conversions, optimize ads, and create custom audiences for advertising campaigns.",
+          "cookies": "Cookies used: _fbp, _fbc",
+          "purpose": "Purpose: Ad conversion tracking and retargeting"
+        }
+      },
+      "thirdParty": {
+        "title": "Third-Party Cookies",
+        "description": "Some cookies are set by third-party services that appear on our pages. We do not control the setting of these cookies, so we suggest you check the third-party websites for more information about their cookies and how to manage them.",
+        "services": {
+          "title": "Third-Party Services",
+          "google": "Google Analytics - For website analytics",
+          "facebook": "Meta/Facebook - For conversion tracking and advertising",
+          "youtube": "YouTube - For embedded videos",
+          "maps": "Google Maps - For embedded maps"
+        }
+      },
+      "management": {
+        "title": "Managing Your Cookie Preferences",
+        "description": "You have several options for managing cookies:",
+        "consentTool": {
+          "title": "Cookie Consent Tool",
+          "description": "You can use our cookie consent tool to enable or disable specific categories of cookies. Access your preferences through the cookie banner or by clicking 'Manage Cookies' in the footer."
+        },
+        "browserControls": {
+          "title": "Browser Controls",
+          "description": "Most browsers allow you to control cookies through their settings. You can usually find these options in the 'Options' or 'Preferences' menu of your browser."
+        }
+      },
+      "browserControls": {
+        "title": "Browser Cookie Controls",
+        "description": "Most browsers allow you to control cookies through their settings. Here are links to instructions for popular browsers:",
+        "browsers": {
+          "chrome": "Google Chrome: Settings > Privacy and security > Cookies and other site data",
+          "firefox": "Mozilla Firefox: Preferences > Privacy & Security > Cookies and Site Data",
+          "safari": "Safari: Preferences > Privacy > Manage Website Data",
+          "edge": "Microsoft Edge: Settings > Cookies and site permissions > Cookies and site data"
+        },
+        "note": "Note: Disabling cookies may affect website functionality."
+      },
+      "updates": {
+        "title": "Updates to This Policy",
+        "description": "We may update this Cookie Policy from time to time to reflect changes in our practices or for other operational, legal, or regulatory reasons. We recommend that you review this page occasionally to stay informed about how we use cookies."
+      },
+      "contact": {
+        "title": "Contact Us",
+        "description": "If you have questions about our use of cookies, please contact us:",
+        "email": "Email: salonconcept@gmail.com",
+        "phone": "Phone: +351 915662413",
+        "address": "Address: Rua Exemplo 12, 1500-332 Lisboa, Portugal",
+        "response": "We will respond to your inquiries within 48 hours."
+      }
+    }
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated: 13 July 2025",
+    "effective": "Effective Date: 13 July 2025",
+    "introduction": {
+      "title": "Introduction",
+      "content": "At Salon Concept (\"we,\" \"our,\" or \"us\"), we are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, store, and protect your personal data when you visit our website, use our services, or interact with us.",
+      "contact": "If you have any questions about this Privacy Policy, please contact us at salonconcept@gmail.com."
+    },
+    "dataController": {
+      "title": "Data Controller",
+      "content": "The data controller for your personal information is:",
+      "name": "Salon Concept",
+      "address": "Rua Exemplo 12, 1500-332 Lisboa, Portugal",
+      "email": "Email: salonconcept@gmail.com",
+      "phone": "Phone: +351 915662413"
+    },
+    "dataCollection": {
+      "title": "What Personal Data We Collect",
+      "description": "We collect and process the following types of personal data:",
+      "contactForms": {
+        "title": "Contact Forms and Bookings",
+        "items": [
+          "Full name",
+          "Email address",
+          "Phone number",
+          "Preferred appointment dates and times",
+          "Service preferences",
+          "Special requests or allergies",
+          "Any other information you voluntarily provide"
+        ]
+      },
+      "websiteUsage": {
+        "title": "Website Usage Data",
+        "items": [
+          "IP address",
+          "Browser type and version",
+          "Operating system",
+          "Pages visited and time spent",
+          "Referring website",
+          "Date and time of visits",
+          "Device information (mobile, tablet, desktop)"
+        ]
+      },
+      "cookies": {
+        "title": "Cookies and Tracking Technologies",
+        "items": [
+          "Essential cookies for website functionality",
+          "Analytics cookies (Google Analytics)",
+          "Marketing cookies (Meta Pixel)",
+          "Preference cookies (theme, language settings)"
+        ]
+      },
+      "socialMedia": {
+        "title": "Social Media Interactions",
+        "items": [
+          "Comments and messages on our social media pages",
+          "Photos shared with consent for our gallery",
+          "Reviews and testimonials"
+        ]
+      }
+    },
+    "legalBasis": {
+      "title": "Legal Basis for Processing",
+      "description": "We process your personal data based on the following legal grounds:",
+      "consent": {
+        "title": "Consent",
+        "content": "When you provide explicit consent for marketing communications, cookies, or sharing photos."
+      },
+      "contract": {
+        "title": "Contract Performance",
+        "content": "To provide hair salon services, process bookings, and fulfill our contractual obligations."
+      },
+      "legitimateInterest": {
+        "title": "Legitimate Interest",
+        "content": "For website analytics, improving our services, and business communications."
+      },
+      "legal": {
+        "title": "Legal Obligation",
+        "content": "To comply with accounting, tax, and other legal requirements."
+      }
+    },
+    "dataUse": {
+      "title": "How We Use Your Personal Data",
+      "description": "We use your personal data for the following purposes:",
+      "serviceProvision": {
+        "title": "Service Provision",
+        "items": [
+          "Processing and managing appointments",
+          "Providing hair salon services",
+          "Communicating about your appointments",
+          "Handling customer service inquiries"
+        ]
+      },
+      "businessOperations": {
+        "title": "Business Operations",
+        "items": [
+          "Managing customer relationships",
+          "Processing payments",
+          "Maintaining business records",
+          "Complying with legal obligations"
+        ]
+      },
+      "marketing": {
+        "title": "Marketing and Communications",
+        "items": [
+          "Sending promotional emails (with consent)",
+          "Social media marketing",
+          "Customer surveys and feedback",
+          "Newsletter subscriptions"
+        ]
+      },
+      "websiteImprovement": {
+        "title": "Website and Service Improvement",
+        "items": [
+          "Analyzing website usage patterns",
+          "Improving user experience",
+          "Technical maintenance and security",
+          "Developing new services"
+        ]
+      }
+    },
+    "dataSharing": {
+      "title": "Data Sharing and Third Parties",
+      "description": "We may share your personal data with the following third parties:",
+      "serviceProviders": {
+        "title": "Service Providers",
+        "content": "We work with trusted third-party service providers who help us operate our business:",
+        "items": [
+          "Website hosting and maintenance providers",
+          "Email marketing platforms",
+          "Payment processors",
+          "Appointment booking systems",
+          "Analytics services (Google Analytics)",
+          "Social media platforms (Meta/Facebook)"
+        ]
+      },
+      "legal": {
+        "title": "Legal Requirements",
+        "content": "We may disclose your information when required by law, such as:",
+        "items": [
+          "Compliance with court orders or legal processes",
+          "Protection of our rights and property",
+          "Public safety or law enforcement requests",
+          "Tax and accounting obligations"
+        ]
+      },
+      "businessTransfer": {
+        "title": "Business Transfers",
+        "content": "In the event of a merger, acquisition, or sale of our business, your personal data may be transferred to the new owner, subject to the same privacy protections."
+      },
+      "noSelling": "We do not sell, rent, or trade your personal data to third parties for their marketing purposes."
+    },
+    "dataRetention": {
+      "title": "Data Retention",
+      "description": "We retain your personal data for as long as necessary to fulfill the purposes outlined in this policy:",
+      "customerData": {
+        "title": "Customer and Booking Data",
+        "content": "Retained for up to 7 years for accounting and legal compliance purposes."
+      },
+      "marketingData": {
+        "title": "Marketing Communications",
+        "content": "Retained until you unsubscribe or withdraw consent."
+      },
+      "websiteData": {
+        "title": "Website Analytics Data",
+        "content": "Typically retained for 26 months (Google Analytics default)."
+      },
+      "legal": {
+        "title": "Legal Obligations",
+        "content": "Some data may be retained longer if required by law (e.g., tax records)."
+      }
+    },
+    "internationalTransfers": {
+      "title": "International Data Transfers",
+      "description": "Some of our service providers are located outside the European Economic Area (EEA). When we transfer your data internationally, we ensure adequate protection through:",
+      "items": [
+        "European Commission adequacy decisions",
+        "Standard Contractual Clauses (SCCs)",
+        "Certification schemes and codes of conduct",
+        "Other appropriate safeguards approved by data protection authorities"
+      ]
+    },
+    "yourRights": {
+      "title": "Your Rights Under GDPR",
+      "description": "As a data subject, you have the following rights:",
+      "access": {
+        "title": "Right of Access",
+        "content": "You can request a copy of the personal data we hold about you."
+      },
+      "rectification": {
+        "title": "Right to Rectification",
+        "content": "You can request correction of inaccurate or incomplete personal data."
+      },
+      "erasure": {
+        "title": "Right to Erasure ('Right to be Forgotten')",
+        "content": "You can request deletion of your personal data in certain circumstances."
+      },
+      "restrict": {
+        "title": "Right to Restrict Processing",
+        "content": "You can request limitation of how we process your personal data."
+      },
+      "portability": {
+        "title": "Right to Data Portability",
+        "content": "You can request transfer of your data to another service provider."
+      },
+      "object": {
+        "title": "Right to Object",
+        "content": "You can object to processing based on legitimate interests or for marketing purposes."
+      },
+      "withdraw": {
+        "title": "Right to Withdraw Consent",
+        "content": "You can withdraw consent at any time where processing is based on consent."
+      },
+      "complaint": {
+        "title": "Right to Lodge a Complaint",
+        "content": "You can file a complaint with your local data protection authority."
+      },
+      "exercising": "To exercise any of these rights, please contact us using the information provided below. We will respond to your request within one month."
+    },
+    "cookiesSection": {
+      "title": "Cookies and Tracking Technologies",
+      "description": "Our website uses cookies and similar tracking technologies. For detailed information about our cookie usage, including how to manage your preferences, please see our Cookie Policy.",
+      "types": {
+        "title": "Types of Cookies We Use",
+        "essential": "Essential cookies: Necessary for website functionality",
+        "analytics": "Analytics cookies: Help us understand website usage (Google Analytics)",
+        "marketing": "Marketing cookies: Used for advertising and social media (Meta Pixel)",
+        "preferences": "Preference cookies: Remember your settings and preferences"
+      },
+      "control": "You can control cookie settings through our cookie banner or by adjusting your browser settings."
+    },
+    "security": {
+      "title": "Data Security",
+      "description": "We implement appropriate technical and organizational measures to protect your personal data:",
+      "measures": [
+        "SSL encryption for data transmission",
+        "Secure hosting and database storage",
+        "Regular security updates and monitoring",
+        "Access controls and staff training",
+        "Regular backups and disaster recovery procedures"
+      ],
+      "disclaimer": "While we strive to protect your personal data, no method of transmission over the internet is 100% secure. We cannot guarantee absolute security."
+    },
+    "minors": {
+      "title": "Children's Privacy",
+      "content": "Our services are not intended for children under 16 years of age. We do not knowingly collect personal data from children under 16. If you are a parent or guardian and believe your child has provided us with personal data, please contact us to have it removed."
+    },
+    "changes": {
+      "title": "Changes to This Privacy Policy",
+      "content": "We may update this Privacy Policy from time to time to reflect changes in our practices or applicable laws. We will post the updated policy on our website and indicate the revision date. For significant changes, we may provide additional notice."
+    },
+    "contact": {
+      "title": "Contact Information",
+      "description": "If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us:",
+      "email": "Email: salonconcept@gmail.com",
+      "phone": "Phone: +351 915662413",
+      "address": "Address: Rua Exemplo 12, 1500-332 Lisboa, Portugal",
+      "dpo": "Data Protection Officer: (if applicable)",
+      "response": "We will respond to your inquiry within 30 days."
+    },
+    "authority": {
+      "title": "Supervisory Authority",
+      "description": "If you are not satisfied with our response to your privacy concerns, you have the right to lodge a complaint with your local data protection authority:",
+      "portugal": "Portugal: Comissão Nacional de Proteção de Dados (CNPD)",
+      "website": "Website: https://www.cnpd.pt/",
+      "eu": "For other EU countries, visit: https://edpb.europa.eu/about-edpb/about-edpb/members_en"
+    }
+  },
+  "terms": {
+    "title": "Terms & Conditions",
+    "lastUpdated": "Last updated: July 13, 2025",
+    "effective": "Effective Date: July 13, 2025",
+    "acceptance": {
+      "title": "Acceptance of Terms",
+      "content": "By accessing and using the Salon Concept website (\"Website\"), you accept and agree to be bound by the terms and provision of this agreement.",
+      "agreement": "If you do not agree to abide by the above, please do not use this service."
+    },
+    "services": {
+      "title": "Description of Services",
+      "description": "Salon Concept provides a marketing website featuring information about our hair salon services, styling tips through our blog, contact capabilities, and promotional offers. This is not an e-commerce platform.",
+      "website": {
+        "title": "Marketing Website",
+        "content": "Information about our hair salon, services, team, and location."
+      },
+      "blog": {
+        "title": "Hair Care Blog",
+        "content": "Educational content, styling tips, and hair care advice."
+      },
+      "contact": {
+        "title": "Contact Forms",
+        "content": "Communication tools to reach our salon and book appointments."
+      },
+      "promotions": {
+        "title": "Promotional Content",
+        "content": "Special offers, gift card information, and referral programs."
+      }
+    },
+    "userObligations": {
+      "title": "User Obligations and Acceptable Use",
+      "description": "By using our website, you agree to the following obligations:",
+      "contactForms": {
+        "title": "Contact Form Usage",
+        "rules": [
+          "Provide accurate and truthful information",
+          "Use forms only for legitimate salon inquiries",
+          "Do not submit multiple duplicate requests",
+          "Respect our response times and business hours"
+        ]
+      },
+      "prohibited": {
+        "title": "Prohibited Activities",
+        "activities": [
+          "Spamming our contact forms or email systems",
+          "Attempting to hack, disrupt, or misuse our website",
+          "Posting or submitting inappropriate, offensive, or illegal content",
+          "Using automated systems to access our website",
+          "Misrepresenting your identity or affiliation",
+          "Violating any applicable laws or regulations"
+        ]
+      },
+      "consequences": "Violation of these terms may result in immediate termination of your access to our website and potential legal action."
+    },
+    "intellectualProperty": {
+      "title": "Intellectual Property Rights",
+      "description": "All content on this website is owned by or licensed to Salon Concept and is protected by copyright, trademark, and other intellectual property laws.",
+      "owned": {
+        "title": "Our Intellectual Property Includes",
+        "items": [
+          "Website design, layout, and user interface",
+          "Logo, branding, and salon imagery",
+          "Blog content, articles, and styling guides",
+          "Photography and client transformation images",
+          "Service descriptions and pricing information",
+          "Marketing materials and promotional content"
+        ]
+      },
+      "restrictions": {
+        "title": "You May Not",
+        "items": [
+          "Copy, reproduce, or distribute our content without permission",
+          "Use our logo or branding for commercial purposes",
+          "Republish our blog content on other platforms",
+          "Download or use our photography without authorization",
+          "Create derivative works based on our content"
+        ]
+      },
+      "note": "For licensing inquiries or permission requests, please contact us directly."
+    },
+    "contentLiability": {
+      "title": "Content and Blog Disclaimer",
+      "description": "While we strive to provide accurate and helpful information, we make no warranties about the completeness, reliability, or accuracy of our content.",
+      "blog": {
+        "title": "Hair Care Blog Content",
+        "disclaimer": "Our blog provides general hair care tips and styling advice for informational purposes only.",
+        "limitations": [
+          "Content should not replace professional hair consultation",
+          "Results may vary based on individual hair type and condition",
+          "We are not responsible for any adverse reactions from following our advice",
+          "Always patch test products and consult professionals for major changes",
+          "Third-party product recommendations are opinions, not endorsements"
+        ]
+      },
+      "professional": {
+        "title": "Professional Advice",
+        "advice": "For specific hair concerns, allergies, or chemical treatments, always consult with a qualified hair professional."
+      }
+    },
+    "thirdPartyServices": {
+      "title": "Third-Party Services",
+      "description": "Our website integrates with various third-party services to enhance functionality and user experience:",
+      "analytics": {
+        "title": "Analytics Services",
+        "description": "Google Analytics for website traffic analysis and user behavior insights."
+      },
+      "email": {
+        "title": "Email Systems",
+        "description": "Email service providers for contact form processing and newsletter communications."
+      },
+      "cookies": {
+        "title": "Cookie Management",
+        "description": "Cookie consent tools and preference management systems."
+      },
+      "hosting": {
+        "title": "Hosting & CDN",
+        "description": "Website hosting services and content delivery networks for optimal performance."
+      },
+      "disclaimer": "We are not responsible for the privacy practices or content of these third-party services. Please review their terms and privacy policies."
+    },
+    "promotions": {
+      "title": "Promotions and Special Offers",
+      "description": "Our website may feature special promotions, discounts, and limited-time offers.",
+      "terms": {
+        "title": "Promotional Terms",
+        "conditions": [
+          "Offers are subject to availability and salon capacity",
+          "Promotional terms and expiration dates apply",
+          "Cannot be combined with other offers unless specified",
+          "New client discounts apply to first-time visitors only",
+          "Management reserves the right to refuse service"
+        ]
+      },
+      "modification": "We reserve the right to modify, suspend, or terminate any promotion at any time without prior notice."
+    },
+    "giftCards": {
+      "title": "Gift Cards and Vouchers",
+      "description": "Gift card information and booking details may be featured on our website.",
+      "validity": {
+        "title": "Validity Period",
+        "content": "Gift cards are valid for 12 months from the date of purchase unless otherwise specified."
+      },
+      "redemption": {
+        "title": "Redemption Process",
+        "content": "Gift cards must be redeemed by appointment booking and cannot be used for online purchases."
+      },
+      "transfer": {
+        "title": "Transferability",
+        "content": "Gift cards are transferable but cannot be exchanged for cash value."
+      },
+      "refund": {
+        "title": "Refund Policy",
+        "content": "Gift cards are non-refundable except where required by law."
+      }
+    },
+    "referrals": {
+      "title": "Client Referral Program",
+      "description": "We may offer referral incentives for clients who recommend our services to others.",
+      "program": {
+        "title": "Referral Program Rules",
+        "rules": [
+          "Referral rewards apply when referred clients complete their first service",
+          "Both referrer and referee must be new or existing clients in good standing",
+          "Referral rewards cannot be combined with other promotional offers",
+          "Rewards are applied as service credits, not cash payments",
+          "Program terms may change with reasonable notice"
+        ]
+      },
+      "note": "Referral program participation is voluntary and subject to our discretion."
+    },
+    "limitationLiability": {
+      "title": "Limitation of Liability",
+      "description": "To the fullest extent permitted by law, Salon Concept shall not be liable for any damages arising from your use of this website.",
+      "exclusions": {
+        "title": "We Are Not Liable For",
+        "items": [
+          "Indirect, incidental, or consequential damages",
+          "Loss of profits, data, or business opportunities",
+          "Website downtime, technical issues, or service interruptions",
+          "Actions taken based on blog content or general advice",
+          "Third-party service failures or data breaches",
+          "Any damages exceeding the amount paid for services"
+        ]
+      }
+    },
+    "indemnification": {
+      "title": "Indemnification",
+      "content": "You agree to indemnify and hold harmless Salon Concept from any claims, damages, or expenses arising from your use of the website, violation of these terms, or infringement of any rights of another party."
+    },
+    "termination": {
+      "title": "Termination",
+      "description": "We may terminate or suspend your access to our website immediately, without prior notice, for conduct that we believe violates these Terms or is harmful to other users, us, or third parties.",
+      "effect": "Upon termination, your right to use the website will cease immediately."
+    },
+    "governingLaw": {
+      "title": "Governing Law",
+      "content": "These Terms shall be interpreted and governed by the laws of Portugal, without regard to its conflict of law provisions.",
+      "jurisdiction": "Any disputes arising from these Terms or your use of the website shall be subject to the exclusive jurisdiction of the courts of Lisbon, Portugal."
+    },
+    "changes": {
+      "title": "Changes to Terms",
+      "content": "We reserve the right to modify these Terms at any time. Changes will be effective immediately upon posting on the website.",
+      "notification": "Your continued use of the website after any changes constitutes acceptance of the new Terms."
+    },
+    "contact": {
+      "title": "Contact Information",
+      "content": "If you have any questions about these Terms & Conditions, please contact us:",
+      "email": "Email: salonconcept@gmail.com",
+      "phone": "Phone: +351 915662413",
+      "address": "Address: Rua Exemplo 12, 1500-332 Lisboa, Portugal"
+    }
+  },
+  "impressum": {
+    "title": "Legal Notice (Impressum)",
+    "subtitle": "This legal notice (Impressum) provides information about the service provider of this website in accordance with German and EU law.",
+    "description": "Legal information about the service provider of this website in accordance with German and EU legal requirements.",
+    "businessInformation": {
+      "title": "Business Information",
+      "description": "Information about the business operator and legal entity responsible for this website.",
+      "businessName": {
+        "label": "Business Name",
+        "value": "Salon Concept"
+      },
+      "legalForm": {
+        "label": "Legal Form",
+        "value": "Sole Proprietorship"
+      }
+    },
+    "contactDetails": {
+      "title": "Contact Details",
+      "description": "Official contact information for the business operator.",
+      "address": {
+        "title": "Business Address",
+        "street": "Rua Exemplo 12",
+        "postal": "1500-332",
+        "city": "Lisbon",
+        "country": "Portugal"
+      },
+      "communication": {
+        "title": "Contact Information",
+        "phone": {
+          "label": "Phone",
+          "value": "+351 915662413"
+        },
+        "email": {
+          "label": "Email",
+          "value": "salonconcept@gmail.com"
+        },
+        "website": {
+          "label": "Website",
+          "value": "https://www.salonconcept.pt"
+        }
+      }
+    },
+    "legalDetails": {
+      "title": "Legal Details",
+      "description": "Additional legal information and registration details where applicable.",
+      "vat": {
+        "title": "VAT Information",
+        "label": "VAT ID Number",
+        "value": "291787275",
+        "note": "According to §19 UStG (German VAT Act), small business regulation may apply."
+      },
+      "register": {
+        "title": "Commercial Register",
+        "label": "Registration Number",
+        "value": "096210",
+        "note": "Registration with local trade office or commercial register if required."
+      },
+      "license": {
+        "title": "Professional License",
+        "content": "Hair salon services are provided under applicable local licensing requirements and health regulations."
+      }
+    },
+    "responsiblePerson": {
+      "title": "Responsible Person",
+      "description": "Information about the person responsible for the content of this website.",
+      "name": {
+        "label": "Name",
+        "value": "Mary Jane"
+      },
+      "role": {
+        "label": "Position",
+        "value": "Owner"
+      },
+      "contact": {
+        "label": "Contact Email",
+        "value": "salonconcept@gmail.com"
+      }
+    },
+    "contentDisclaimer": {
+      "title": "Content Disclaimer",
+      "description": "Disclaimer regarding the accuracy and liability of website content.",
+      "accuracy": {
+        "title": "Content Accuracy",
+        "content": "The information on this website has been carefully prepared and is regularly updated. However, we cannot guarantee the accuracy, completeness, or currency of all content at all times."
+      },
+      "liability": {
+        "title": "Limitation of Liability",
+        "items": [
+          "We assume no liability for the accuracy of information provided",
+          "Content is provided for informational purposes only",
+          "Hair care advice should not replace professional consultation",
+          "Prices and service availability are subject to change",
+          "We reserve the right to modify website content without notice"
+        ]
+      }
+    },
+    "externalLinks": {
+      "title": "External Links",
+      "description": "Disclaimer regarding external websites and third-party content linked from this website.",
+      "disclaimer": {
+        "title": "Third-Party Content Disclaimer",
+        "content1": "Our website may contain links to external websites operated by third parties. We have no influence over the content of these external sites.",
+        "content2": "We do not assume any liability for the content, accuracy, or availability of externally linked websites. The operators of linked websites are solely responsible for their content.",
+        "content3": "External links were checked for legal violations at the time of linking. No illegal content was apparent at that time. However, permanent monitoring of linked content is not reasonable without specific evidence of violations."
+      }
+    },
+    "copyright": {
+      "title": "Copyright and Intellectual Property",
+      "description": "Information about the copyright and intellectual property rights of website content.",
+      "protection": {
+        "title": "Protected Content",
+        "items": [
+          "All website content is protected by copyright law",
+          "Text, images, graphics, and layout are proprietary",
+          "Reproduction requires written permission",
+          "Commercial use without authorization is prohibited",
+          "Third-party content is marked and used with permission"
+        ]
+      }
+    },
+    "dataProtection": {
+      "title": "Data Protection",
+      "description": "Information about data protection and privacy practices.",
+      "reference": "For detailed information about data collection and processing, please see our Privacy Policy",
+      "privacyPolicy": "Privacy Policy"
+    }
+  }
+} 

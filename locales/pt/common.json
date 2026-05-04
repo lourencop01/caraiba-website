@@ -1,0 +1,37 @@
+{
+  "site": {
+    "name": "Salon Concept",
+    "tagline": "Produtos de cuidado capilar profissional, selecionados por especialistas — entregues à sua porta."
+  },
+  "navigation": {
+    "home": "Início",
+    "shop": "Loja",
+    "collections": "Coleções",
+    "about": "Sobre",
+    "contact": "Contacto",
+    "bookNow": "Ligar",
+    "logoAlt": "Salon Concept — Cuidado Capilar Profissional",
+    "shopByCategory": "Comprar por Categoria",
+    "shopByCollection": "Comprar por Coleção",
+    "viewAll": "Ver Todos os Produtos"
+  },
+  "accessibility": {
+    "toggleMobileMenu": "Alternar menu móvel",
+    "callSalon": "Ligue para a nossa equipa para aconselhamento ou suporte"
+  },
+  "footer": {
+    "shopTitle": "Loja",
+    "companyTitle": "Empresa",
+    "supportTitle": "Suporte",
+    "shopAll": "Ver Tudo",
+    "collections": "Coleções",
+    "newArrivals": "Novidades",
+    "about": "Sobre Nós",
+    "contact": "Contacto",
+    "shipping": "Envio e Devoluções",
+    "faq": "Perguntas Frequentes",
+    "privacyPolicy": "Política de Privacidade",
+    "copyright": "© 2025 Salon Concept. Todos os direitos reservados."
+  },
+  "callCostNote": "(Chamada para rede nacional móvel)"
+} 

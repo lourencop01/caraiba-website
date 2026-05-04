@@ -1,0 +1,45 @@
+{
+  "faqs": {
+    "title": "Frequently Asked Questions",
+    "orders": {
+      "q1": "How do I place an order?",
+      "a1": "Browse our Shop or Collections, add items to your cart, and proceed to checkout. You'll be directed to our secure Shopify-powered checkout to complete your purchase.",
+      "q2": "Can I modify or cancel my order after placing it?",
+      "a2": "Orders can be modified or cancelled within 1 hour of placement. Please contact us via WhatsApp or email as soon as possible and we'll do our best to accommodate your request.",
+      "q3": "Do I need an account to order?",
+      "a3": "No account is required. You can check out as a guest. However, creating an account allows you to track orders and save your details for future purchases.",
+      "q4": "Is my payment information secure?",
+      "a4": "Yes. All payments are processed through Shopify's secure, PCI-compliant checkout. We never store your payment details on our servers."
+    },
+    "shipping": {
+      "q1": "How long does shipping take?",
+      "a1": "Standard shipping within Portugal takes 2-4 business days. International orders typically arrive within 5-10 business days depending on destination.",
+      "q2": "Do you offer free shipping?",
+      "a2": "Yes! Orders over €50 qualify for free standard shipping within Portugal. International shipping rates are calculated at checkout.",
+      "q3": "Can I track my order?",
+      "a3": "Absolutely. Once your order ships, you'll receive a tracking number by email so you can follow your delivery in real time.",
+      "q4": "Do you ship internationally?",
+      "a4": "Yes, we ship to most European countries and beyond. Shipping costs and estimated delivery times are shown at checkout based on your location."
+    },
+    "returns": {
+      "q1": "What is your return policy?",
+      "a1": "We accept returns on unopened, unused products within 14 days of delivery. Items must be in their original packaging. Contact us first to initiate a return.",
+      "q2": "How do I return a product?",
+      "a2": "Contact us via email or WhatsApp with your order number and reason for return. We'll guide you through the process and provide a return shipping label where applicable.",
+      "q3": "When will I receive my refund?",
+      "a3": "Refunds are processed within 5-7 business days after we receive and inspect the returned item. The amount will be returned to your original payment method.",
+      "q4": "What if I received a damaged or wrong item?",
+      "a4": "We're sorry to hear that! Please contact us immediately with a photo of the item and your order number. We'll arrange a replacement or full refund at no extra cost to you."
+    },
+    "products": {
+      "q1": "Are your products professional grade?",
+      "a1": "Yes. Every product in our store is professional grade, hand-selected by our team of expert stylists who use them daily in the salon.",
+      "q2": "Are the products suitable for all hair types?",
+      "a2": "Our collection includes products for all hair types — fine, thick, curly, straight, colour-treated, and more. Each product page includes guidance on which hair types it suits best.",
+      "q3": "Are your products cruelty-free?",
+      "a3": "We prioritise brands that are cruelty-free and where possible, sustainably sourced. Product pages indicate certifications relevant to each item.",
+      "q4": "How do I know which product is right for me?",
+      "a4": "Check the product description for hair type guidance, or contact us via WhatsApp — our stylists are happy to give a personal recommendation based on your hair needs."
+    }
+  }
+}

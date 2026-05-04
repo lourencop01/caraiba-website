@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+/* Base Color Palette System */
+:root {
+  /* Default Color Scheme - Professional Hairdresser */
+  --primary: #685d51;          /* Warm brown */
+  --primary-dark: #463e36;     /* Darker brown */
+  --primary-light: #a08e7b;    /* Lighter brown */
+  --secondary: #685d51;        /* Gold accent */
+  --secondary-dark: #463e36;   /* Darker gold */
+  --secondary-light: #a08e7b;  /* Lighter gold */
+  
+  /* Neutral colors */
+  --background: #FEFEFE;       /* Almost white */
+  --surface: #F8F8F8;          /* Light gray background */
+  --surface-dark: #f6f6f6;     /* Darker surface */
+  --foreground: #181818;       /* Dark gray text */
+  --foreground-light: #4a4a4a; /* Light gray text */
+  --foreground-muted: #8a8a8a; /* Muted text */
+  
+  /* Accent colors */
+  --accent: #E8B4B8;           /* Soft pink */
+  --accent-dark: #D19B9F;      /* Darker pink */
+  --success: #4CAF50;          /* Green */
+  --warning: #FF9800;          /* Orange */
+  --error: #F44336;            /* Red */
+  
+  /* Border and divider colors */
+  --border: #E0E0E0;           /* Light border */
+  --border-dark: #CCCCCC;      /* Darker border */
+  
+  /* Shadow colors */
+  --shadow: rgba(0, 0, 0, 0.1);
+  --shadow-dark: rgba(0, 0, 0, 0.2);
+}
+
+@theme inline {
+  /* Map CSS variables to Tailwind theme */
+  --color-primary: var(--primary);
+  --color-primary-dark: var(--primary-dark);
+  --color-primary-light: var(--primary-light);
+  --color-secondary: var(--secondary);
+  --color-secondary-dark: var(--secondary-dark);
+  --color-secondary-light: var(--secondary-light);
+  --color-accent: var(--accent);
+  --color-accent-dark: var(--accent-dark);
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-surface-dark: var(--surface-dark);
+  --color-foreground: var(--foreground);
+  --color-foreground-light: var(--foreground-light);
+  --color-foreground-muted: var(--foreground-muted);
+  --color-border: var(--border);
+  --color-border-dark: var(--border-dark);
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --color-error: var(--error);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}

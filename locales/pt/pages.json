@@ -1,0 +1,75 @@
+{
+  "pages": {
+    "shop": {
+      "meta": {
+        "title": "Loja de Produtos Capilares | Salon Concept",
+        "description": "Explore a nossa seleção de produtos profissionais de cuidado capilar, escolhidos pelos nossos cabeleireiros no Salon Concept em Lisboa.",
+        "ogTitle": "Loja de Produtos Profissionais | Salon Concept",
+        "ogDescription": "Descubra produtos capilares de grau profissional escolhidos pelos nossos especialistas. Qualidade de salão."
+      },
+      "hero": {
+        "eyebrow": "A Nossa Loja",
+        "title": "Todos os Produtos",
+        "description": "Essenciais de cuidado capilar profissional, selecionados pelos nossos cabeleireiros."
+      },
+      "list": {
+        "productsCount": "{count} produtos",
+        "loadMore": "Carregar Mais",
+        "loading": "A carregar…",
+        "sort": {
+          "label": "Ordenar por",
+          "featured": "Destaque",
+          "bestSelling": "Mais Vendidos",
+          "priceAsc": "Preço: Crescente",
+          "priceDesc": "Preço: Decrescente",
+          "newest": "Novidades"
+        },
+        "filters": {
+          "title": "Filtros",
+          "clearAll": "Limpar tudo",
+          "applyPrice": "Aplicar",
+          "availability": "Disponibilidade",
+          "inStockOnly": "Em stock",
+          "priceRange": "Intervalo de Preço",
+          "min": "Mín",
+          "max": "Máx",
+          "activeFilters": "Ativos:",
+          "showFilters": "Filtros",
+          "viewResults": "Ver Resultados",
+          "collections": "Coleções",
+          "category": "Categoria",
+          "noFilters": "Sem filtros disponíveis"
+        },
+        "empty": {
+          "title": "Nenhum produto encontrado",
+          "subtitle": "Tente ajustar ou limpar os seus filtros para ver mais produtos.",
+          "clearFilters": "Limpar Filtros",
+          "browseAll": "Ver Todos os Produtos"
+        }
+      }
+    },
+    "collections": {
+      "meta": {
+        "title": "Coleções de Produtos | Salon Concept",
+        "description": "Explore as nossas coleções de produtos para todos os tipos de cabelo e necessidades de estilo.",
+        "ogTitle": "Coleções de Cuidado Capilar | Salon Concept",
+        "ogDescription": "Descubra as nossas linhas de produtos cuidadosamente selecionadas para todos os tipos de cabelo."
+      },
+      "hero": {
+        "eyebrow": "Navegue por Categoria",
+        "title": "Coleções",
+        "description": "Descubra as nossas linhas de produtos cuidadosamente selecionadas para todos os tipos de cabelo."
+      },
+      "shopNow": "Ver coleção →",
+      "empty": "Ainda não há coleções disponíveis. Volte em breve!"
+    },
+    "about": {
+      "meta": {
+        "title": "Sobre Nós | Salon Concept",
+        "description": "Conheça a história, missão e os valores por detrás dos nossos produtos capilares selecionados.",
+        "ogTitle": "Sobre o Salon Concept | A Nossa História",
+        "ogDescription": "Descubra a paixão por detrás do Salon Concept — cuidado capilar profissional acessível a todos."
+      }
+    }
+  }
+}

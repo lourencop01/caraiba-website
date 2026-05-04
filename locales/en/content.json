@@ -1,0 +1,118 @@
+{
+  "hero": {
+    "eyebrow": "Professional Hair Care",
+    "title": "Hair Rituals for Every Day",
+    "subtitle": "Salon-grade products curated by our expert stylists, crafted for every hair type.",
+    "shopNow": "Shop Now",
+    "exploreCollections": "Explore Collections",
+    "trust1": "Free shipping over €50",
+    "trust2": "Salon-selected products",
+    "trust3": "4.9 ★ on Google"
+  },
+  "categoryNav": {
+    "title": "Shop by Collection",
+    "subtitle": "Find the right products for your hair type and style"
+  },
+  "featuredProducts": {
+    "title": "Featured Products",
+    "subtitle": "Best sellers loved by our clients",
+    "viewAll": "View All Products"
+  },
+  "promoBanner": {
+    "eyebrow": "New Collection",
+    "title": "Professional Results at Home",
+    "subtitle": "Our latest curated range delivers salon-quality results from the comfort of your own routine.",
+    "cta": "Shop the Collection"
+  },
+  "productShowcase": {
+    "title": "New Arrivals",
+    "subtitle": "The latest additions to our store",
+    "viewAll": "View All"
+  },
+  "newsletter": {
+    "eyebrow": "Stay in the loop",
+    "title": "Join Our Community",
+    "subtitle": "Get exclusive offers, new arrivals, and expert hair tips straight to your inbox.",
+    "placeholder": "Your email address",
+    "button": "Subscribe",
+    "success": "You're on the list — thank you!",
+    "disclaimer": "No spam. Unsubscribe at any time."
+  },
+  "about": {
+    "eyebrow": "Who We Are",
+    "title": "Born from Passion, Built for You",
+    "story": "We are a team of passionate hair care experts who believe everyone deserves access to professional-grade products without compromise. Every product in our store is hand-selected by our stylists for real results.",
+    "cta": "Our Full Story",
+    "statValue": "4.9 ★",
+    "statLabel": "Average customer rating",
+    "value1Title": "Expert Quality",
+    "value1Desc": "Every product is tested and approved by professional stylists.",
+    "value2Title": "Sustainability",
+    "value2Desc": "We prioritise eco-conscious formulations and responsible packaging.",
+    "value3Title": "For Everyone",
+    "value3Desc": "Products for all hair types, textures, and care routines.",
+    "heroTitle": "We Believe Great Hair Starts with the Right Products",
+    "heroSubtitle": "Our mission is simple: bring professional hair care to your everyday routine.",
+    "missionEyebrow": "Our Mission",
+    "mission": "To make salon-quality hair care accessible to everyone, everywhere — without the salon price tag.",
+    "storyEyebrow": "Our Story",
+    "storyTitle": "From Salon Floors to Your Front Door",
+    "storyParagraph1": "It started with a simple frustration: our stylists were tired of seeing clients struggle to recreate salon results at home because the right products simply weren't available to them. So we decided to change that. We built a curated store around the same professional products we use every day.",
+    "storyParagraph2": "Today, we're a growing community of hair care enthusiasts, stylists, and everyday people who refuse to settle for less. Every product in our store has been chosen with care — for performance, ingredient integrity, and real-world results.",
+    "valuesEyebrow": "What We Stand For",
+    "valuesTitle": "Three Pillars, One Promise",
+    "value1DescFull": "We work exclusively with brands that meet the standards used in professional salons. No compromises, no filler ingredients — just products that truly perform.",
+    "value2DescFull": "We actively seek out brands committed to sustainable sourcing, cruelty-free testing, and responsible packaging. Good hair care shouldn't cost the planet.",
+    "value3DescFull": "Curly, straight, fine, thick — our range is built to be inclusive. We stock products that work across all hair types and textures so no one is left out.",
+    "stat1Value": "10,000+",
+    "stat1Label": "Happy customers",
+    "stat2Value": "80+",
+    "stat2Label": "Curated products",
+    "stat3Value": "4.9 ★",
+    "stat3Label": "Average rating",
+    "ctaTitle": "Ready to Transform Your Routine?",
+    "ctaSubtitle": "Browse our full collection of salon-grade products, curated just for you.",
+    "ctaButton": "Shop Now"
+  },
+  "gallery": {
+    "title": "Our Lookbook",
+    "subtitle": "Lifestyle Inspiration from the Salon Concept World",
+    "description": "A curated collection of looks, moments, and results from our community. Real people, real products, real transformations.",
+    "bridal": "Bridal Looks",
+    "bridalDesc": "Elegant styles for your most special day",
+    "color": "Color Stories",
+    "colorDesc": "Vibrant, lasting colour results",
+    "cut": "Fresh Cuts",
+    "cutDesc": "Precision and style in every trim",
+    "balayageGallery": "Balayage",
+    "balayageDesc": "Sun-kissed highlights with a natural feel",
+    "styling": "Styling",
+    "stylingDesc": "Effortless everyday and occasion styling",
+    "trends": "Trending Looks",
+    "trendsDesc": "What's fresh in hair care and styling"
+  },
+  "testimonials": {
+    "title": "What Our Customers Say",
+    "subtitle": "Real Reviews from People Who Love Our Products",
+    "description": "Trusted by thousands of customers who've made salon-grade hair care part of their daily routine.",
+    "googleRating": "4.9 out of 5 stars on Google",
+    "seeMore": "See More Reviews",
+    "showLess": "Show Less",
+    "readMore": "Read more",
+    "readLess": "Read less"
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "subtitle": "We're Here to Help — Reach Out Any Time",
+    "heroDescription": "Have questions about our products, an order, or shipping? Our team is always happy to help. Reach out by phone, email, or use the form below.",
+    "address": "Address",
+    "addressValue": "Rua Exemplo 12\n1500-332 Lisboa, Portugal",
+    "phone": "Phone",
+    "phoneValue": "+351 915662413",
+    "email": "Email",
+    "emailValue": "salonconcept@gmail.com",
+    "hours": "Support Hours",
+    "hoursValue": "Tuesday - Friday: 09:00 - 18:30\nSaturday: 09:00 - 16:00\nSunday: Closed",
+    "details": "Whether you need help choosing the right product, tracking an order, or want to know more about our brand — we're here. Drop us a message and we'll get back to you as quickly as possible."
+  }
+} 

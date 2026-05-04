@@ -1,0 +1,75 @@
+{
+  "pages": {
+    "shop": {
+      "meta": {
+        "title": "Shop Hair Care Products | Salon Concept",
+        "description": "Browse our curated selection of professional hair care products, hand-picked by our stylists at Salon Concept in Lisbon.",
+        "ogTitle": "Shop Professional Hair Care Products | Salon Concept",
+        "ogDescription": "Discover salon-grade hair care products chosen by our expert stylists. Fast delivery, professional quality."
+      },
+      "hero": {
+        "eyebrow": "Our Store",
+        "title": "Shop All Products",
+        "description": "Professional hair care essentials, hand-picked by our stylists."
+      },
+      "list": {
+        "productsCount": "{count} products",
+        "loadMore": "Load More",
+        "loading": "Loading…",
+        "sort": {
+          "label": "Sort by",
+          "featured": "Featured",
+          "bestSelling": "Best Selling",
+          "priceAsc": "Price: Low to High",
+          "priceDesc": "Price: High to Low",
+          "newest": "Newest"
+        },
+        "filters": {
+          "title": "Filters",
+          "clearAll": "Clear all",
+          "applyPrice": "Apply",
+          "availability": "Availability",
+          "inStockOnly": "In stock only",
+          "priceRange": "Price Range",
+          "min": "Min",
+          "max": "Max",
+          "activeFilters": "Active:",
+          "showFilters": "Filters",
+          "viewResults": "View Results",
+          "collections": "Collections",
+          "category": "Category",
+          "noFilters": "No filters available"
+        },
+        "empty": {
+          "title": "No products found",
+          "subtitle": "Try adjusting or clearing your filters to see more products.",
+          "clearFilters": "Clear Filters",
+          "browseAll": "Browse All Products"
+        }
+      }
+    },
+    "collections": {
+      "meta": {
+        "title": "Product Collections | Salon Concept",
+        "description": "Explore our curated product collections for every hair type and style need.",
+        "ogTitle": "Hair Care Collections | Salon Concept",
+        "ogDescription": "Browse our hand-curated product lines, crafted for every hair type and style."
+      },
+      "hero": {
+        "eyebrow": "Browse by Category",
+        "title": "Collections",
+        "description": "Discover our hand-curated product lines, crafted for every hair type and style."
+      },
+      "shopNow": "Shop now →",
+      "empty": "No collections available yet. Check back soon!"
+    },
+    "about": {
+      "meta": {
+        "title": "About Us | Salon Concept",
+        "description": "Learn about our brand story, mission, and the values behind our curated hair care products.",
+        "ogTitle": "About Salon Concept | Our Brand Story",
+        "ogDescription": "Discover the passion behind Salon Concept — professional hair care made accessible for everyone."
+      }
+    }
+  }
+}

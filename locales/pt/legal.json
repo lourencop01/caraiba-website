@@ -1,0 +1,747 @@
+{
+  "cookies": {
+    "banner": {
+      "title": "Preferências de Cookies",
+      "description": "Utilizamos cookies para melhorar a sua experiência de navegação, servir conteúdo personalizado e analisar o nosso tráfego. Ao clicar 'Aceitar Todos', consente a nossa utilização de cookies.",
+      "acceptAll": "Aceitar Todos",
+      "rejectAll": "Rejeitar Todos",
+      "managePreferences": "Gerir Preferências",
+      "savePreferences": "Guardar Preferências"
+    },
+    "modal": {
+      "title": "Gerir Preferências de Cookies",
+      "description": "Respeitamos a sua privacidade e estamos comprometidos em proteger os seus dados pessoais. Pode personalizar as suas preferências de cookies abaixo.",
+      "closeModal": "Fechar",
+      "saveAndClose": "Guardar e Fechar"
+    },
+    "categories": {
+      "essential": {
+        "title": "Cookies Essenciais",
+        "description": "Estes cookies são necessários para o funcionamento do website e não podem ser desativados. São normalmente definidos apenas em resposta a ações feitas por si que equivalem a um pedido de serviços.",
+        "examples": "Autenticação, segurança, preferências de idioma"
+      },
+      "analytics": {
+        "title": "Cookies de Análise",
+        "description": "Estes cookies permitem-nos analisar o tráfego do website e compreender como os visitantes interagem com o nosso website. Isto ajuda-nos a melhorar os nossos serviços e experiência do utilizador.",
+        "examples": "Google Analytics, visualizações de página, duração da sessão"
+      },
+      "marketing": {
+        "title": "Cookies de Marketing",
+        "description": "Estes cookies rastreiam a sua atividade online para ajudar os anunciantes a fornecer publicidade mais relevante ou para limitar quantas vezes vê um anúncio. Também podem ser usados para criar um perfil dos seus interesses.",
+        "examples": "Facebook Pixel, Google Ads, retargeting"
+      }
+    },
+    "footer": {
+      "manageCookies": "Gerir Cookies",
+      "privacyPolicy": "Política de Privacidade",
+      "cookiePolicy": "Política de Cookies",
+      "termsConditions": "Termos e Condições",
+      "impressum": "Aviso Legal"
+    },
+    "policy": {
+      "title": "Política de Cookies",
+      "lastUpdated": "Última atualização: 13 de Julho de 2025",
+      "effective": "Data de entrada em vigor: 13 de Julho de 2025",
+      "introduction": {
+        "title": "O que são Cookies?",
+        "description": "Os cookies são pequenos ficheiros de texto que são colocados no seu computador ou dispositivo móvel quando visita um website. São amplamente utilizados para fazer os websites funcionarem de forma mais eficiente e para fornecer informações aos proprietários do website.",
+        "usage": "No Salon Concept, utilizamos cookies para melhorar a sua experiência de navegação, analisar a utilização do website e fornecer conteúdo personalizado. Esta Política de Cookies explica o que são os cookies, como os utilizamos e como pode gerir as suas preferências de cookies.",
+        "consent": "Ao continuar a utilizar o nosso website, consente a nossa utilização de cookies conforme descrito nesta política e na nossa Política de Privacidade."
+      },
+      "types": {
+        "title": "Tipos de Cookies que Utilizamos",
+        "description": "Utilizamos diferentes tipos de cookies para vários propósitos. Aqui está uma visão geral das categorias:",
+        "essential": "Cookies Essenciais - Necessários para funcionalidade básica do website",
+        "analytics": "Cookies de Análise - Ajudam-nos a compreender como os visitantes utilizam o nosso site",
+        "marketing": "Cookies de Marketing - Utilizados para publicidade e rastreamento de redes sociais"
+      },
+      "essential": {
+        "title": "Cookies Essenciais",
+        "description": "Estes cookies são necessários para o funcionamento do website e não podem ser desativados. São normalmente definidos apenas em resposta a ações feitas por si que equivalem a um pedido de serviços.",
+        "examples": {
+          "title": "Exemplos de Cookies Essenciais",
+          "session": "Cookies de sessão: Mantêm-no ligado durante a sua visita",
+          "security": "Cookies de segurança: Protegem contra fraude e acesso não autorizado",
+          "preferences": "Cookies de preferências: Lembram as suas configurações de tema e idioma",
+          "consent": "Consentimento de cookies: Lembram as suas preferências de cookies"
+        },
+        "note": "Nota: Os cookies essenciais não podem ser desativados pois são necessários para o website funcionar corretamente."
+      },
+      "analytics": {
+        "title": "Cookies de Análise",
+        "description": "Estes cookies permitem-nos analisar o tráfego do website e compreender como os visitantes interagem com o nosso website. Isto ajuda-nos a melhorar os nossos serviços e experiência do utilizador.",
+        "googleAnalytics": {
+          "title": "Google Analytics",
+          "description": "Utilizamos o Google Analytics para compreender como os visitantes interagem com o nosso website. Este serviço fornece-nos informações sobre visualizações de página, taxas de rejeição e padrões de comportamento do utilizador.",
+          "cookies": "Cookies utilizados: _ga, _ga_*, _gid",
+          "retention": "Retenção: Até 26 meses",
+          "purpose": "Propósito: Análise de tráfego do website e otimização da experiência do utilizador"
+        }
+      },
+      "marketing": {
+        "title": "Cookies de Marketing",
+        "description": "Estes cookies rastreiam a sua atividade online para ajudar os anunciantes a fornecer publicidade mais relevante ou para limitar quantas vezes vê um anúncio. Também podem ser usados para criar um perfil dos seus interesses.",
+        "facebook": {
+          "title": "Meta Pixel (Facebook)",
+          "description": "Utilizamos o Meta Pixel para rastrear conversões, otimizar anúncios e criar audiências personalizadas para campanhas publicitárias.",
+          "cookies": "Cookies utilizados: _fbp, _fbc",
+          "purpose": "Propósito: Rastreamento de conversões de anúncios e retargeting"
+        }
+      },
+      "thirdParty": {
+        "title": "Cookies de Terceiros",
+        "description": "Alguns cookies são definidos por serviços terceiros que aparecem nas nossas páginas. Não controlamos a definição destes cookies, por isso sugerimos que verifique os websites terceiros para mais informações sobre os seus cookies e como geri-los.",
+        "services": {
+          "title": "Serviços Terceiros",
+          "google": "Google Analytics - Para análises do website",
+          "facebook": "Meta/Facebook - Para rastreamento de conversões e publicidade",
+          "youtube": "YouTube - Para vídeos incorporados",
+          "maps": "Google Maps - Para mapas incorporados"
+        }
+      },
+      "management": {
+        "title": "Gerir as Suas Preferências de Cookies",
+        "description": "Tem várias opções para gerir cookies:",
+        "consentTool": {
+          "title": "Ferramenta de Consentimento de Cookies",
+          "description": "Pode usar a nossa ferramenta de consentimento de cookies para ativar ou desativar categorias específicas de cookies. Aceda às suas preferências através do banner de cookies ou clicando em 'Gerir Cookies' no rodapé."
+        },
+        "browserControls": {
+          "title": "Controlos do Navegador",
+          "description": "A maioria dos navegadores permite controlar cookies através das suas configurações. Normalmente pode encontrar estas opções no menu 'Opções' ou 'Preferências' do seu navegador."
+        }
+      },
+      "browserControls": {
+        "title": "Controlos de Cookies do Navegador",
+        "description": "A maioria dos navegadores permite controlar cookies através das suas configurações. Aqui estão links para instruções para navegadores populares:",
+        "browsers": {
+          "chrome": "Google Chrome: Configurações > Privacidade e segurança > Cookies e outros dados do site",
+          "firefox": "Mozilla Firefox: Preferências > Privacidade e Segurança > Cookies e Dados do Site",
+          "safari": "Safari: Preferências > Privacidade > Gerir Dados do Website",
+          "edge": "Microsoft Edge: Configurações > Permissões de cookies e site > Cookies e dados do site"
+        },
+        "note": "Nota: Desativar cookies pode afetar a funcionalidade do website."
+      },
+      "updates": {
+        "title": "Atualizações a Esta Política",
+        "description": "Podemos atualizar esta Política de Cookies periodicamente para refletir mudanças nas nossas práticas ou por outras razões operacionais, legais ou regulamentares. Recomendamos que reveja esta página ocasionalmente para se manter informado sobre como utilizamos cookies."
+      },
+      "contact": {
+        "title": "Contacte-nos",
+        "description": "Se tiver questões sobre a nossa utilização de cookies, por favor contacte-nos:",
+        "email": "Email: salonconcept@gmail.com",
+        "phone": "Telefone: +351 915662413",
+        "address": "Morada: Rua Exemplo 12, 1500-332 Lisboa, Portugal",
+        "response": "Responderemos às suas consultas dentro de 48 horas."
+      }
+    }
+  },
+  "privacy": {
+    "title": "Política de Privacidade",
+    "lastUpdated": "Última atualização: 13 de Julho de 2025",
+    "effective": "Data de entrada em vigor: 13 de Julho de 2025",
+    "introduction": {
+      "title": "Introdução",
+      "content": "No Salon Concept (\"nós\", \"nosso\" ou \"nos\"), estamos comprometidos em proteger a sua privacidade e garantir a segurança das suas informações pessoais. Esta Política de Privacidade explica como recolhemos, utilizamos, armazenamos e protegemos os seus dados pessoais quando visita o nosso website, utiliza os nossos serviços ou interage connosco.",
+      "contact": "Se tiver alguma questão sobre esta Política de Privacidade, por favor contacte-nos em salonconcept@gmail.com."
+    },
+    "dataController": {
+      "title": "Responsável pelo Tratamento",
+      "content": "O responsável pelo tratamento das suas informações pessoais é:",
+      "name": "Salon Concept",
+      "address": "Rua Exemplo 12, 1500-332 Lisboa, Portugal",
+      "email": "Email: salonconcept@gmail.com",
+      "phone": "Telefone: +351 915662413"
+    },
+    "dataCollection": {
+      "title": "Que Dados Pessoais Recolhemos",
+      "description": "Recolhemos e processamos os seguintes tipos de dados pessoais:",
+      "contactForms": {
+        "title": "Formulários de Contacto e Marcações",
+        "items": [
+          "Nome completo",
+          "Endereço de email",
+          "Número de telefone",
+          "Datas e horários de consulta preferidos",
+          "Preferências de serviços",
+          "Pedidos especiais ou alergias",
+          "Qualquer outra informação que forneça voluntariamente"
+        ]
+      },
+      "websiteUsage": {
+        "title": "Dados de Utilização do Website",
+        "items": [
+          "Endereço IP",
+          "Tipo e versão do navegador",
+          "Sistema operativo",
+          "Páginas visitadas e tempo despendido",
+          "Website de referência",
+          "Data e hora das visitas",
+          "Informações do dispositivo (móvel, tablet, desktop)"
+        ]
+      },
+      "cookies": {
+        "title": "Cookies e Tecnologias de Rastreamento",
+        "items": [
+          "Cookies essenciais para funcionalidade do website",
+          "Cookies de análise (Google Analytics)",
+          "Cookies de marketing (Meta Pixel)",
+          "Cookies de preferências (tema, configurações de idioma)"
+        ]
+      },
+      "socialMedia": {
+        "title": "Interações em Redes Sociais",
+        "items": [
+          "Comentários e mensagens nas nossas páginas de redes sociais",
+          "Fotos partilhadas com consentimento para a nossa galeria",
+          "Avaliações e testemunhos"
+        ]
+      }
+    },
+    "legalBasis": {
+      "title": "Base Legal para o Tratamento",
+      "description": "Processamos os seus dados pessoais com base nos seguintes fundamentos legais:",
+      "consent": {
+        "title": "Consentimento",
+        "content": "Quando fornece consentimento explícito para comunicações de marketing, cookies ou partilha de fotos."
+      },
+      "contract": {
+        "title": "Execução de Contrato",
+        "content": "Para fornecer serviços de cabeleireiro, processar marcações e cumprir as nossas obrigações contratuais."
+      },
+      "legitimateInterest": {
+        "title": "Interesse Legítimo",
+        "content": "Para análises do website, melhoria dos nossos serviços e comunicações empresariais."
+      },
+      "legal": {
+        "title": "Obrigação Legal",
+        "content": "Para cumprir requisitos contabilísticos, fiscais e outras obrigações legais."
+      }
+    },
+    "dataUse": {
+      "title": "Como Utilizamos os Seus Dados Pessoais",
+      "description": "Utilizamos os seus dados pessoais para os seguintes propósitos:",
+      "serviceProvision": {
+        "title": "Prestação de Serviços",
+        "items": [
+          "Processar e gerir consultas",
+          "Fornecer serviços de cabeleireiro",
+          "Comunicar sobre as suas consultas",
+          "Lidar com questões de atendimento ao cliente"
+        ]
+      },
+      "businessOperations": {
+        "title": "Operações Empresariais",
+        "items": [
+          "Gerir relacionamentos com clientes",
+          "Processar pagamentos",
+          "Manter registos empresariais",
+          "Cumprir obrigações legais"
+        ]
+      },
+      "marketing": {
+        "title": "Marketing e Comunicações",
+        "items": [
+          "Enviar emails promocionais (com consentimento)",
+          "Marketing em redes sociais",
+          "Inquéritos e feedback de clientes",
+          "Subscrições de newsletter"
+        ]
+      },
+      "websiteImprovement": {
+        "title": "Melhoria do Website e Serviços",
+        "items": [
+          "Analisar padrões de utilização do website",
+          "Melhorar a experiência do utilizador",
+          "Manutenção técnica e segurança",
+          "Desenvolver novos serviços"
+        ]
+      }
+    },
+    "dataSharing": {
+      "title": "Partilha de Dados e Terceiros",
+      "description": "Podemos partilhar os seus dados pessoais com os seguintes terceiros:",
+      "serviceProviders": {
+        "title": "Fornecedores de Serviços",
+        "content": "Trabalhamos com fornecedores terceiros de confiança que nos ajudam a operar o nosso negócio:",
+        "items": [
+          "Fornecedores de alojamento e manutenção de websites",
+          "Plataformas de email marketing",
+          "Processadores de pagamentos",
+          "Sistemas de marcação de consultas",
+          "Serviços de análise (Google Analytics)",
+          "Plataformas de redes sociais (Meta/Facebook)"
+        ]
+      },
+      "legal": {
+        "title": "Requisitos Legais",
+        "content": "Podemos divulgar a sua informação quando exigido por lei, tal como:",
+        "items": [
+          "Cumprimento de ordens judiciais ou processos legais",
+          "Proteção dos nossos direitos e propriedade",
+          "Pedidos de segurança pública ou aplicação da lei",
+          "Obrigações fiscais e contabilísticas"
+        ]
+      },
+      "businessTransfer": {
+        "title": "Transferências Empresariais",
+        "content": "No caso de uma fusão, aquisição ou venda do nosso negócio, os seus dados pessoais podem ser transferidos para o novo proprietário, sujeito às mesmas proteções de privacidade."
+      },
+      "noSelling": "Não vendemos, alugamos ou comercializamos os seus dados pessoais a terceiros para fins de marketing."
+    },
+    "dataRetention": {
+      "title": "Retenção de Dados",
+      "description": "Retemos os seus dados pessoais pelo tempo necessário para cumprir os propósitos descritos nesta política:",
+      "customerData": {
+        "title": "Dados de Clientes e Marcações",
+        "content": "Retidos até 7 anos para fins de contabilidade e conformidade legal."
+      },
+      "marketingData": {
+        "title": "Comunicações de Marketing",
+        "content": "Retidos até cancelar a subscrição ou retirar o consentimento."
+      },
+      "websiteData": {
+        "title": "Dados de Análise do Website",
+        "content": "Normalmente retidos por 26 meses (padrão do Google Analytics)."
+      },
+      "legal": {
+        "title": "Obrigações Legais",
+        "content": "Alguns dados podem ser retidos por mais tempo se exigido por lei (ex: registos fiscais)."
+      }
+    },
+    "internationalTransfers": {
+      "title": "Transferências Internacionais de Dados",
+      "description": "Alguns dos nossos fornecedores de serviços estão localizados fora do Espaço Económico Europeu (EEE). Quando transferimos os seus dados internacionalmente, garantimos proteção adequada através de:",
+      "items": [
+        "Decisões de adequação da Comissão Europeia",
+        "Cláusulas Contratuais Padrão (CCPs)",
+        "Esquemas de certificação e códigos de conduta",
+        "Outras salvaguardas apropriadas aprovadas pelas autoridades de proteção de dados"
+      ]
+    },
+    "yourRights": {
+      "title": "Os Seus Direitos ao Abrigo do RGPD",
+      "description": "Como titular de dados, tem os seguintes direitos:",
+      "access": {
+        "title": "Direito de Acesso",
+        "content": "Pode solicitar uma cópia dos dados pessoais que temos sobre si."
+      },
+      "rectification": {
+        "title": "Direito de Retificação",
+        "content": "Pode solicitar a correção de dados pessoais inexatos ou incompletos."
+      },
+      "erasure": {
+        "title": "Direito ao Apagamento ('Direito ao Esquecimento')",
+        "content": "Pode solicitar a eliminação dos seus dados pessoais em certas circunstâncias."
+      },
+      "restrict": {
+        "title": "Direito de Limitação do Tratamento",
+        "content": "Pode solicitar limitação de como processamos os seus dados pessoais."
+      },
+      "portability": {
+        "title": "Direito à Portabilidade dos Dados",
+        "content": "Pode solicitar a transferência dos seus dados para outro fornecedor de serviços."
+      },
+      "object": {
+        "title": "Direito de Oposição",
+        "content": "Pode opor-se ao tratamento baseado em interesses legítimos ou para fins de marketing."
+      },
+      "withdraw": {
+        "title": "Direito de Retirar o Consentimento",
+        "content": "Pode retirar o consentimento a qualquer momento quando o tratamento se baseia no consentimento."
+      },
+      "complaint": {
+        "title": "Direito de Apresentar Queixa",
+        "content": "Pode apresentar uma queixa à sua autoridade local de proteção de dados."
+      },
+      "exercising": "Para exercer qualquer um destes direitos, contacte-nos usando as informações fornecidas abaixo. Responderemos ao seu pedido dentro de um mês."
+    },
+    "cookiesSection": {
+      "title": "Cookies e Tecnologias de Rastreamento",
+      "description": "O nosso website utiliza cookies e tecnologias de rastreamento similares. Para informações detalhadas sobre a nossa utilização de cookies, incluindo como gerir as suas preferências, consulte a nossa Política de Cookies.",
+      "types": {
+        "title": "Tipos de Cookies que Utilizamos",
+        "essential": "Cookies essenciais: Necessários para a funcionalidade do website",
+        "analytics": "Cookies de análise: Ajudam-nos a compreender a utilização do website (Google Analytics)",
+        "marketing": "Cookies de marketing: Utilizados para publicidade e redes sociais (Meta Pixel)",
+        "preferences": "Cookies de preferências: Lembram as suas configurações e preferências"
+      },
+      "control": "Pode controlar as configurações de cookies através do nosso banner de cookies ou ajustando as configurações do seu navegador."
+    },
+    "security": {
+      "title": "Segurança de Dados",
+      "description": "Implementamos medidas técnicas e organizacionais apropriadas para proteger os seus dados pessoais:",
+      "measures": [
+        "Encriptação SSL para transmissão de dados",
+        "Armazenamento seguro de alojamento e base de dados",
+        "Atualizações de segurança regulares e monitorização",
+        "Controlos de acesso e formação de pessoal",
+        "Cópias de segurança regulares e procedimentos de recuperação de desastres"
+      ],
+      "disclaimer": "Embora nos esforcemos para proteger os seus dados pessoais, nenhum método de transmissão pela internet é 100% seguro. Não podemos garantir segurança absoluta."
+    },
+    "minors": {
+      "title": "Privacidade de Menores",
+      "content": "Os nossos serviços não se destinam a crianças com menos de 16 anos. Não recolhemos intencionalmente dados pessoais de crianças com menos de 16 anos. Se for pai ou tutor e acredita que o seu filho nos forneceu dados pessoais, contacte-nos para os remover."
+    },
+    "changes": {
+      "title": "Alterações a Esta Política de Privacidade",
+      "content": "Podemos atualizar esta Política de Privacidade periodicamente para refletir mudanças nas nossas práticas ou leis aplicáveis. Publicaremos a política atualizada no nosso website e indicaremos a data de revisão. Para alterações significativas, podemos fornecer aviso adicional."
+    },
+    "contact": {
+      "title": "Informações de Contacto",
+      "description": "Se tiver alguma questão, preocupação ou pedido relativamente a esta Política de Privacidade ou às nossas práticas de dados, por favor contacte-nos:",
+      "email": "Email: salonconcept@gmail.com",
+      "phone": "Telefone: +351 915662413",
+      "address": "Morada: Rua Exemplo 12, 1500-332 Lisboa, Portugal",
+      "dpo": "Responsável pela Proteção de Dados: (se aplicável)",
+      "response": "Responderemos à sua consulta dentro de 30 dias."
+    },
+    "authority": {
+      "title": "Autoridade Supervisora",
+      "description": "Se não estiver satisfeito com a nossa resposta às suas preocupações de privacidade, tem o direito de apresentar uma queixa à sua autoridade local de proteção de dados:",
+      "portugal": "Portugal: Comissão Nacional de Proteção de Dados (CNPD)",
+      "website": "Website: https://www.cnpd.pt/",
+      "eu": "Para outros países da UE, visite: https://edpb.europa.eu/about-edpb/about-edpb/members_en"
+    }
+  },
+  "terms": {
+    "title": "Termos e Condições",
+    "lastUpdated": "Última atualização: 13 de Julho de 2025",
+    "effective": "Data de entrada em vigor: 13 de Julho de 2025",
+    "acceptance": {
+      "title": "Aceitação dos Termos",
+      "content": "Ao aceder e utilizar o website do Salon Concept (\"Website\"), aceita e concorda em ficar vinculado aos termos e disposições deste acordo.",
+      "agreement": "Se não concordar com o acima exposto, por favor não utilize este serviço."
+    },
+    "services": {
+      "title": "Descrição dos Serviços",
+      "description": "O Salon Concept disponibiliza um website de marketing com informações sobre os nossos serviços de cabeleireiro, dicas de penteados através do nosso blog, capacidades de contacto e ofertas promocionais. Esta não é uma plataforma de e-commerce.",
+      "website": {
+        "title": "Website de Marketing",
+        "content": "Informações sobre o nosso cabeleireiro, serviços, equipa e localização."
+      },
+      "blog": {
+        "title": "Blog de Cuidados Capilares",
+        "content": "Conteúdo educativo, dicas de penteados e conselhos de cuidados capilares."
+      },
+      "contact": {
+        "title": "Formulários de Contacto",
+        "content": "Ferramentas de comunicação para contactar o nosso salão e marcar consultas."
+      },
+      "promotions": {
+        "title": "Conteúdo Promocional",
+        "content": "Ofertas especiais, informações sobre cartões presente e programas de referência."
+      }
+    },
+    "userObligations": {
+      "title": "Obrigações do Utilizador e Uso Aceitável",
+      "description": "Ao utilizar o nosso website, concorda com as seguintes obrigações:",
+      "contactForms": {
+        "title": "Utilização de Formulários de Contacto",
+        "rules": [
+          "Fornecer informações precisas e verdadeiras",
+          "Usar formulários apenas para consultas legítimas do salão",
+          "Não submeter múltiplos pedidos duplicados",
+          "Respeitar os nossos tempos de resposta e horário de funcionamento"
+        ]
+      },
+      "prohibited": {
+        "title": "Atividades Proibidas",
+        "activities": [
+          "Fazer spam aos nossos formulários de contacto ou sistemas de email",
+          "Tentar hackear, interromper ou usar indevidamente o nosso website",
+          "Publicar ou submeter conteúdo inapropriado, ofensivo ou ilegal",
+          "Usar sistemas automatizados para aceder ao nosso website",
+          "Falsificar a sua identidade ou afiliação",
+          "Violar qualquer lei ou regulamento aplicável"
+        ]
+      },
+      "consequences": "A violação destes termos pode resultar na terminação imediata do seu acesso ao nosso website e potencial ação legal."
+    },
+    "intellectualProperty": {
+      "title": "Direitos de Propriedade Intelectual",
+      "description": "Todo o conteúdo neste website é propriedade ou licenciado ao Salon Concept e está protegido por direitos autorais, marcas registadas e outras leis de propriedade intelectual.",
+      "owned": {
+        "title": "A Nossa Propriedade Intelectual Inclui",
+        "items": [
+          "Design do website, layout e interface do utilizador",
+          "Logótipo, marca e imagens do salão",
+          "Conteúdo do blog, artigos e guias de penteados",
+          "Fotografia e imagens de transformações de clientes",
+          "Descrições de serviços e informações de preços",
+          "Materiais de marketing e conteúdo promocional"
+        ]
+      },
+      "restrictions": {
+        "title": "Não Pode",
+        "items": [
+          "Copiar, reproduzir ou distribuir o nosso conteúdo sem permissão",
+          "Usar o nosso logótipo ou marca para fins comerciais",
+          "Republicar o conteúdo do nosso blog noutras plataformas",
+          "Descarregar ou usar a nossa fotografia sem autorização",
+          "Criar obras derivadas baseadas no nosso conteúdo"
+        ]
+      },
+      "note": "Para consultas de licenciamento ou pedidos de permissão, contacte-nos diretamente."
+    },
+    "contentLiability": {
+      "title": "Exclusão de Responsabilidade sobre Conteúdo",
+      "description": "Embora nos esforcemos para fornecer informações precisas e úteis, não fazemos garantias sobre a completude, confiabilidade ou precisão do nosso conteúdo.",
+      "blog": {
+        "title": "Conteúdo do Blog de Cuidados Capilares",
+        "disclaimer": "O nosso blog fornece dicas gerais de cuidados capilares e conselhos de penteados apenas para fins informativos.",
+        "limitations": [
+          "O conteúdo não deve substituir consulta profissional de cabelo",
+          "Os resultados podem variar com base no tipo e condição individual do cabelo",
+          "Não somos responsáveis por reações adversas ao seguir os nossos conselhos",
+          "Teste sempre produtos e consulte profissionais para mudanças importantes",
+          "Recomendações de produtos terceiros são opiniões, não endossos"
+        ]
+      },
+      "professional": {
+        "title": "Conselho Profissional",
+        "advice": "Para preocupações específicas de cabelo, alergias ou tratamentos químicos, consulte sempre um profissional de cabelo qualificado."
+      }
+    },
+    "thirdPartyServices": {
+      "title": "Serviços Terceiros",
+      "description": "O nosso website integra-se com vários serviços terceiros para melhorar a funcionalidade e experiência do utilizador:",
+      "analytics": {
+        "title": "Serviços de Análise",
+        "description": "Google Analytics para análise de tráfego do website e insights de comportamento do utilizador."
+      },
+      "email": {
+        "title": "Sistemas de Email",
+        "description": "Fornecedores de serviços de email para processamento de formulários de contacto e comunicações de newsletter."
+      },
+      "cookies": {
+        "title": "Gestão de Cookies",
+        "description": "Ferramentas de consentimento de cookies e sistemas de gestão de preferências."
+      },
+      "hosting": {
+        "title": "Alojamento e CDN",
+        "description": "Serviços de alojamento de websites e redes de entrega de conteúdo para desempenho ideal."
+      },
+      "disclaimer": "Não somos responsáveis pelas práticas de privacidade ou conteúdo destes serviços terceiros. Reveja os seus termos e políticas de privacidade."
+    },
+    "promotions": {
+      "title": "Promoções e Ofertas Especiais",
+      "description": "O nosso website pode apresentar promoções especiais, descontos e ofertas por tempo limitado.",
+      "terms": {
+        "title": "Termos Promocionais",
+        "conditions": [
+          "As ofertas estão sujeitas à disponibilidade e capacidade do salão",
+          "Aplicam-se termos promocionais e datas de expiração",
+          "Não pode ser combinado com outras ofertas a menos que especificado",
+          "Descontos para novos clientes aplicam-se apenas a visitantes pela primeira vez",
+          "A gestão reserva-se o direito de recusar serviço"
+        ]
+      },
+      "modification": "Reservamo-nos o direito de modificar, suspender ou terminar qualquer promoção a qualquer momento sem aviso prévio."
+    },
+    "giftCards": {
+      "title": "Cartões Presente e Vouchers",
+      "description": "Informações sobre cartões presente e detalhes de marcação podem ser apresentados no nosso website.",
+      "validity": {
+        "title": "Período de Validade",
+        "content": "Os cartões presente são válidos por 12 meses a partir da data de compra, salvo especificação em contrário."
+      },
+      "redemption": {
+        "title": "Processo de Resgate",
+        "content": "Os cartões presente devem ser resgatados por marcação de consulta e não podem ser usados para compras online."
+      },
+      "transfer": {
+        "title": "Transferibilidade",
+        "content": "Os cartões presente são transferíveis mas não podem ser trocados por valor em dinheiro."
+      },
+      "refund": {
+        "title": "Política de Reembolso",
+        "content": "Os cartões presente não são reembolsáveis exceto quando exigido por lei."
+      }
+    },
+    "referrals": {
+      "title": "Programa de Referência de Clientes",
+      "description": "Podemos oferecer incentivos de referência para clientes que recomendam os nossos serviços a outros.",
+      "program": {
+        "title": "Regras do Programa de Referência",
+        "rules": [
+          "As recompensas de referência aplicam-se quando clientes referenciados completam o seu primeiro serviço",
+          "Tanto o referenciador como o referenciado devem ser clientes novos ou existentes em boa situação",
+          "As recompensas de referência não podem ser combinadas com outras ofertas promocionais",
+          "As recompensas são aplicadas como créditos de serviço, não pagamentos em dinheiro",
+          "Os termos do programa podem mudar com aviso razoável"
+        ]
+      },
+      "note": "A participação no programa de referência é voluntária e sujeita à nossa discrição."
+    },
+    "limitationLiability": {
+      "title": "Limitação de Responsabilidade",
+      "description": "Na máxima extensão permitida por lei, o Salon Concept não será responsável por quaisquer danos decorrentes do seu uso deste website.",
+      "exclusions": {
+        "title": "Não Somos Responsáveis Por",
+        "items": [
+          "Danos indiretos, incidentais ou consequenciais",
+          "Perda de lucros, dados ou oportunidades de negócio",
+          "Tempo de inatividade do website, problemas técnicos ou interrupções de serviço",
+          "Ações tomadas com base no conteúdo do blog ou conselhos gerais",
+          "Falhas de serviços terceiros ou violações de dados",
+          "Quaisquer danos que excedam o valor pago pelos serviços"
+        ]
+      }
+    },
+    "indemnification": {
+      "title": "Indemnização",
+      "content": "Concorda em indemnizar e isentar o Salon Concept de qualquer responsabilidade por reivindicações, danos ou despesas decorrentes do seu uso do website, violação destes termos ou violação de quaisquer direitos de terceiros."
+    },
+    "termination": {
+      "title": "Terminação",
+      "description": "Podemos terminar ou suspender o seu acesso ao nosso website imediatamente, sem aviso prévio, por conduta que acreditamos violar estes Termos ou ser prejudicial a outros utilizadores, a nós ou a terceiros.",
+      "effect": "Após a terminação, o seu direito de usar o website cessará imediatamente."
+    },
+    "governingLaw": {
+      "title": "Lei Aplicável",
+      "content": "Estes Termos serão interpretados e regidos pelas leis de Portugal, sem consideração às suas disposições de conflito de leis.",
+      "jurisdiction": "Quaisquer disputas decorrentes destes Termos ou do seu uso do website estarão sujeitas à jurisdição exclusiva dos tribunais de Lisboa, Portugal."
+    },
+    "changes": {
+      "title": "Alterações aos Termos",
+      "content": "Reservamo-nos o direito de modificar estes Termos a qualquer momento. As alterações serão efetivas imediatamente após publicação no website.",
+      "notification": "O seu uso continuado do website após quaisquer alterações constitui aceitação dos novos Termos."
+    },
+    "contact": {
+      "title": "Informações de Contacto",
+      "content": "Se tiver alguma questão sobre estes Termos e Condições, por favor contacte-nos:",
+      "email": "Email: salonconcept@gmail.com",
+      "phone": "Telefone: +351 915662413",
+      "address": "Morada: Rua Exemplo 12, 1500-332 Lisboa, Portugal"
+    }
+  },
+  "impressum": {
+    "title": "Aviso Legal (Impressum)",
+    "subtitle": "Este aviso legal (Impressum) fornece informações sobre o fornecedor de serviços deste website de acordo com a lei alemã e da UE.",
+    "description": "Informações legais sobre o fornecedor de serviços deste website de acordo com os requisitos legais alemães e da UE.",
+    "businessInformation": {
+      "title": "Informações da Empresa",
+      "description": "Informações sobre o operador da empresa e entidade legal responsável por este website.",
+      "businessName": {
+        "label": "Nome da Empresa",
+        "value": "Salon Concept"
+      },
+      "legalForm": {
+        "label": "Forma Legal",
+        "value": "Empresário em Nome Individual"
+      }
+    },
+    "contactDetails": {
+      "title": "Detalhes de Contacto",
+      "description": "Informações oficiais de contacto do operador da empresa.",
+      "address": {
+        "title": "Morada da Empresa",
+        "street": "Rua Exemplo 12",
+        "postal": "1500-332",
+        "city": "Lisboa",
+        "country": "Portugal"
+      },
+      "communication": {
+        "title": "Informações de Contacto",
+        "phone": {
+          "label": "Telefone",
+          "value": "+351 915662413"
+        },
+        "email": {
+          "label": "Email",
+          "value": "salonconcept@gmail.com"
+        },
+        "website": {
+          "label": "Website",
+          "value": "https://www.salonconcept.pt"
+        }
+      }
+    },
+    "legalDetails": {
+      "title": "Detalhes Legais",
+      "description": "Informações legais adicionais e detalhes de registo quando aplicável.",
+      "vat": {
+        "title": "Informações de IVA",
+        "label": "Número de Contribuinte",
+        "value": "291787275",
+        "note": "De acordo com §19 UStG (Lei de IVA Alemã), pode aplicar-se o regulamento de pequenas empresas."
+      },
+      "register": {
+        "title": "Registo Comercial",
+        "label": "Número de Registo",
+        "value": "096210",
+        "note": "Registo na repartição de comércio local ou registo comercial se necessário."
+      },
+      "license": {
+        "title": "Licença Profissional",
+        "content": "Os serviços de cabeleireiro são fornecidos sob os requisitos de licenciamento local aplicáveis e regulamentos de saúde."
+      }
+    },
+    "responsiblePerson": {
+      "title": "Pessoa Responsável",
+      "description": "Informações sobre a pessoa responsável pelo conteúdo deste website.",
+      "name": {
+        "label": "Nome",
+        "value": "Mary Jane"
+      },
+      "role": {
+        "label": "Cargo",
+        "value": "Proprietário"
+      },
+      "contact": {
+        "label": "Email de Contacto",
+        "value": "salonconcept@gmail.com"
+      }
+    },
+    "contentDisclaimer": {
+      "title": "Exclusão de Responsabilidade sobre Conteúdo",
+      "description": "Exclusão de responsabilidade sobre a precisão e responsabilidade do conteúdo do website.",
+      "accuracy": {
+        "title": "Precisão do Conteúdo",
+        "content": "A informação neste website foi cuidadosamente preparada e é regularmente atualizada. No entanto, não podemos garantir a precisão, completude ou atualidade de todo o conteúdo em todos os momentos."
+      },
+      "liability": {
+        "title": "Limitação de Responsabilidade",
+        "items": [
+          "Não assumimos responsabilidade pela precisão das informações fornecidas",
+          "O conteúdo é fornecido apenas para fins informativos",
+          "Os conselhos de cuidados capilares não devem substituir consulta profissional",
+          "Os preços e disponibilidade de serviços estão sujeitos a alterações",
+          "Reservamo-nos o direito de modificar o conteúdo do website sem aviso"
+        ]
+      }
+    },
+    "externalLinks": {
+      "title": "Links Externos",
+      "description": "Exclusão de responsabilidade sobre websites externos e conteúdo terceiro ligado a partir deste website.",
+      "disclaimer": {
+        "title": "Exclusão de Responsabilidade sobre Conteúdo Terceiro",
+        "content1": "O nosso website pode conter links para websites externos operados por terceiros. Não temos influência sobre o conteúdo destes sites externos.",
+        "content2": "Não assumimos qualquer responsabilidade pelo conteúdo, precisão ou disponibilidade de websites ligados externamente. Os operadores de websites ligados são exclusivamente responsáveis pelo seu conteúdo.",
+        "content3": "Os links externos foram verificados quanto a violações legais no momento da ligação. Nenhum conteúdo ilegal era aparente nessa altura. No entanto, a monitorização permanente de conteúdo ligado não é razoável sem evidência específica de violações."
+      }
+    },
+    "copyright": {
+      "title": "Direitos Autorais e Propriedade Intelectual",
+      "description": "Informações sobre os direitos autorais e direitos de propriedade intelectual do conteúdo do website.",
+      "protection": {
+        "title": "Conteúdo Protegido",
+        "items": [
+          "Todo o conteúdo do website está protegido por lei de direitos autorais",
+          "Texto, imagens, gráficos e layout são proprietários",
+          "A reprodução requer permissão escrita",
+          "O uso comercial sem autorização é proibido",
+          "O conteúdo terceiro está marcado e usado com permissão"
+        ]
+      }
+    },
+    "dataProtection": {
+      "title": "Proteção de Dados",
+      "description": "Informações sobre práticas de proteção de dados e privacidade.",
+      "reference": "Para informações detalhadas sobre recolha e processamento de dados, por favor consulte a nossa Política de Privacidade",
+      "privacyPolicy": "Política de Privacidade"
+    }
+  }
+} 

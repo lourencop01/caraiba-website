@@ -1,0 +1,37 @@
+{
+  "site": {
+    "name": "Salon Concept",
+    "tagline": "Professional hair care products, curated by expert stylists — delivered to your door."
+  },
+  "navigation": {
+    "home": "Home",
+    "shop": "Shop",
+    "collections": "Collections",
+    "about": "About",
+    "contact": "Contact",
+    "bookNow": "Call Us",
+    "logoAlt": "Salon Concept — Professional Hair Care",
+    "shopByCategory": "Shop by Category",
+    "shopByCollection": "Shop by Collection",
+    "viewAll": "View All Products"
+  },
+  "accessibility": {
+    "toggleMobileMenu": "Toggle mobile menu",
+    "callSalon": "Call our team for product advice or support"
+  },
+  "footer": {
+    "shopTitle": "Shop",
+    "companyTitle": "Company",
+    "supportTitle": "Support",
+    "shopAll": "Shop All",
+    "collections": "Collections",
+    "newArrivals": "New Arrivals",
+    "about": "About Us",
+    "contact": "Contact",
+    "shipping": "Shipping & Returns",
+    "faq": "FAQ",
+    "privacyPolicy": "Privacy Policy",
+    "copyright": "© 2025 Salon Concept. All rights reserved."
+  },
+  "callCostNote": "(Call to national mobile network)"
+} 

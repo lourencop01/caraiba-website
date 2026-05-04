@@ -1,0 +1,78 @@
+# Robots.txt for Salon Concept
+# Generated automatically at build time
+
+User-agent: *
+
+# Allow all locale-specific content
+Allow: /en/
+Allow: /pt/
+
+# Allow essential files
+Allow: /sitemap.xml
+Allow: /robots.txt
+Allow: /favicon.ico
+Allow: /*.css
+Allow: /*.js
+Allow: /*.png
+Allow: /*.jpg
+Allow: /*.jpeg
+Allow: /*.gif
+Allow: /*.svg
+Allow: /*.webp
+Allow: /_next/static/
+
+# Block sensitive paths
+Disallow: /api/
+Disallow: /admin/
+Disallow: /_next/
+Disallow: /dashboard/
+Disallow: /private/
+Disallow: /temp/
+Disallow: /cache/
+Disallow: /.env
+Disallow: /config/
+Disallow: /scripts/
+
+# Block development and build files
+Disallow: /.git/
+Disallow: /node_modules/
+Disallow: /.next/
+Disallow: /build/
+Disallow: /dist/
+
+# Block common sensitive files
+Disallow: /*.env*
+Disallow: /*.log
+Disallow: /*.json$
+Disallow: /package*.json
+Disallow: /tsconfig*.json
+Disallow: /next.config.*
+Disallow: /tailwind.config.*
+
+# Allow specific crawlers optimized for local business
+User-agent: Googlebot
+Allow: /en/
+Allow: /pt/
+Allow: /sitemap.xml
+
+User-agent: Bingbot
+Allow: /en/
+Allow: /pt/
+Allow: /sitemap.xml
+
+# Allow OpenAI's search crawler for ChatGPT search
+User-agent: OAI-SearchBot
+Allow: /en/
+Allow: /pt/
+Allow: /sitemap.xml
+
+# Crawl delay for other bots (be nice to server)
+User-agent: *
+Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://www.salonconcept.pt/sitemap.xml
+
+# Additional sitemaps if you create them in the future
+# Sitemap: https://www.salonconcept.pt/sitemap-blog.xml
+# Sitemap: https://www.salonconcept.pt/sitemap-services.xml

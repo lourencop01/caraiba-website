@@ -1,0 +1,118 @@
+{
+  "hero": {
+    "eyebrow": "Cuidado Capilar Profissional",
+    "title": "Rituais de Cabelo para Cada Dia",
+    "subtitle": "Produtos de grau profissional selecionados pelos nossos especialistas, criados para todos os tipos de cabelo.",
+    "shopNow": "Comprar Agora",
+    "exploreCollections": "Explorar Coleções",
+    "trust1": "Envio grátis acima de €50",
+    "trust2": "Produtos selecionados por especialistas",
+    "trust3": "4,9 ★ no Google"
+  },
+  "categoryNav": {
+    "title": "Comprar por Coleção",
+    "subtitle": "Encontre os produtos certos para o seu tipo de cabelo"
+  },
+  "featuredProducts": {
+    "title": "Produtos em Destaque",
+    "subtitle": "Os mais vendidos, adorados pelos nossos clientes",
+    "viewAll": "Ver Todos os Produtos"
+  },
+  "promoBanner": {
+    "eyebrow": "Nova Coleção",
+    "title": "Resultados Profissionais em Casa",
+    "subtitle": "A nossa mais recente seleção oferece resultados de qualidade profissional a partir do conforto da sua rotina.",
+    "cta": "Ver a Coleção"
+  },
+  "productShowcase": {
+    "title": "Novidades",
+    "subtitle": "As mais recentes adições à nossa loja",
+    "viewAll": "Ver Tudo"
+  },
+  "newsletter": {
+    "eyebrow": "Fique a par",
+    "title": "Junte-se à Nossa Comunidade",
+    "subtitle": "Receba ofertas exclusivas, novidades e dicas de cabelo diretamente na sua caixa de entrada.",
+    "placeholder": "O seu endereço de email",
+    "button": "Subscrever",
+    "success": "Está na lista — obrigada!",
+    "disclaimer": "Sem spam. Cancele a subscrição a qualquer momento."
+  },
+  "about": {
+    "eyebrow": "Quem Somos",
+    "title": "Nascidos da Paixão, Criados para Si",
+    "story": "Somos uma equipa de especialistas apaixonados pelo cuidado capilar que acredita que todos merecem acesso a produtos de qualidade profissional sem compromissos. Cada produto da nossa loja é selecionado pelos nossos estilistas com base em resultados reais.",
+    "cta": "A Nossa História Completa",
+    "statValue": "4,9 ★",
+    "statLabel": "Avaliação média dos clientes",
+    "value1Title": "Qualidade de Especialistas",
+    "value1Desc": "Cada produto é testado e aprovado por estilistas profissionais.",
+    "value2Title": "Sustentabilidade",
+    "value2Desc": "Priorizamos formulações eco-conscientes e embalagens responsáveis.",
+    "value3Title": "Para Todos",
+    "value3Desc": "Produtos para todos os tipos, texturas e rotinas de cuidado capilar.",
+    "heroTitle": "Acreditamos que um Bom Cabelo Começa com os Produtos Certos",
+    "heroSubtitle": "A nossa missão é simples: levar o cuidado capilar profissional à sua rotina diária.",
+    "missionEyebrow": "A Nossa Missão",
+    "mission": "Tornar o cuidado capilar de qualidade profissional acessível a todos, em todo o lado — sem o preço de salão.",
+    "storyEyebrow": "A Nossa História",
+    "storyTitle": "Do Salão à Sua Porta",
+    "storyParagraph1": "Tudo começou com uma frustração simples: os nossos estilistas estavam cansados de ver clientes a lutar para recriar resultados de salão em casa porque os produtos certos simplesmente não estavam disponíveis para eles. Por isso decidimos mudar isso. Criámos uma loja selecionada em torno dos mesmos produtos profissionais que usamos todos os dias.",
+    "storyParagraph2": "Hoje somos uma comunidade crescente de entusiastas do cuidado capilar, estilistas e pessoas do dia a dia que se recusam a conformar com menos. Cada produto na nossa loja foi escolhido com cuidado — pela performance, integridade dos ingredientes e resultados reais.",
+    "valuesEyebrow": "O Que Defendemos",
+    "valuesTitle": "Três Pilares, Uma Promessa",
+    "value1DescFull": "Trabalhamos exclusivamente com marcas que cumprem os padrões usados em salões profissionais. Sem compromissos, sem ingredientes de preenchimento — apenas produtos que realmente funcionam.",
+    "value2DescFull": "Procuramos ativamente marcas comprometidas com abastecimento sustentável, testes cruelty-free e embalagens responsáveis. O bom cuidado capilar não deve custar o planeta.",
+    "value3DescFull": "Crespo, liso, fino, grosso — a nossa gama foi construída para ser inclusiva. Temos produtos que funcionam para todos os tipos e texturas de cabelo para que ninguém fique de fora.",
+    "stat1Value": "+10.000",
+    "stat1Label": "Clientes satisfeitos",
+    "stat2Value": "+80",
+    "stat2Label": "Produtos selecionados",
+    "stat3Value": "4,9 ★",
+    "stat3Label": "Avaliação média",
+    "ctaTitle": "Pronto para Transformar a Sua Rotina?",
+    "ctaSubtitle": "Explore a nossa coleção completa de produtos de grau profissional, selecionados especialmente para si.",
+    "ctaButton": "Comprar Agora"
+  },
+  "gallery": {
+    "title": "O Nosso Lookbook",
+    "subtitle": "Inspiração Lifestyle do Mundo Salon Concept",
+    "description": "Uma coleção selecionada de looks, momentos e resultados da nossa comunidade. Pessoas reais, produtos reais, transformações reais.",
+    "bridal": "Looks de Noiva",
+    "bridalDesc": "Estilos elegantes para o seu dia mais especial",
+    "color": "Histórias de Cor",
+    "colorDesc": "Resultados de cor vibrantes e duradouros",
+    "cut": "Cortes Frescos",
+    "cutDesc": "Precisão e estilo em cada corte",
+    "balayageGallery": "Balayage",
+    "balayageDesc": "Madeixas naturais com um toque solar",
+    "styling": "Penteados",
+    "stylingDesc": "Styling effortless para o dia a dia e ocasiões especiais",
+    "trends": "Looks em Tendência",
+    "trendsDesc": "O que há de mais fresco em cuidado capilar e styling"
+  },
+  "testimonials": {
+    "title": "O Que Dizem os Nossos Clientes",
+    "subtitle": "Avaliações Reais de Quem Ama os Nossos Produtos",
+    "description": "Confiado por milhares de clientes que tornaram o cuidado capilar de qualidade profissional parte da sua rotina diária.",
+    "googleRating": "4,9 de 5 estrelas no Google",
+    "seeMore": "Ver Mais Avaliações",
+    "showLess": "Ver Menos",
+    "readMore": "Ler mais",
+    "readLess": "Ler menos"
+  },
+  "contact": {
+    "title": "Fale Connosco",
+    "subtitle": "Estamos Sempre Aqui para Ajudar",
+    "heroDescription": "Tem questões sobre os nossos produtos, uma encomenda ou envio? A nossa equipa está sempre disponível para ajudar. Contacte-nos por telefone, email ou use o formulário abaixo.",
+    "address": "Morada",
+    "addressValue": "Rua Exemplo 12\n1500-332 Lisboa, Portugal",
+    "phone": "Telefone",
+    "phoneValue": "+351 915662413",
+    "email": "Email",
+    "emailValue": "salonconcept@gmail.com",
+    "hours": "Horário de Apoio",
+    "hoursValue": "Terça a Sexta: 09:00 - 18:30\nSábado: 09:00 - 16:00\nDomingo: Fechado",
+    "details": "Seja para escolher o produto certo, acompanhar uma encomenda ou saber mais sobre a nossa marca — estamos aqui. Envie-nos uma mensagem e responderemos o mais rapidamente possível."
+  }
+} 
