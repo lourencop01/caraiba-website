@@ -1,76 +1,83 @@
-'use client'
+'use client';
+
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
+import { cormorantGaramond } from '@/lib/fonts';
 
 interface GalleryProps {
   isHomePage?: boolean;
 }
 
-export default function Gallery({ isHomePage = false }: GalleryProps) { 
+export default function Gallery({ isHomePage = false }: GalleryProps) {
   const t = useTranslations();
 
   const galleryItems = [
-    { 
-      category: t('gallery.trends'), 
+    {
+      category: t('gallery.trends'),
       description: t('gallery.trendsDesc'),
-      image: '/woman-keratin-treatment.webp'
+      image: '/woman-keratin-treatment.webp',
     },
-    { 
-      category: t('gallery.bridal'), 
+    {
+      category: t('gallery.bridal'),
       description: t('gallery.bridalDesc'),
-      image: '/women-bride-hairdresser.webp'
+      image: '/women-bride-hairdresser.webp',
     },
-    { 
-      category: t('gallery.color'), 
+    {
+      category: t('gallery.color'),
       description: t('gallery.colorDesc'),
-      image: '/women-blonde-coloring.webp'
+      image: '/women-blonde-coloring.webp',
     },
-    { 
-      category: t('gallery.cut'), 
+    {
+      category: t('gallery.cut'),
       description: t('gallery.cutDesc'),
-      image: '/women-famous-hairdresser.webp'
+      image: '/women-famous-hairdresser.webp',
     },
-    { 
-      category: t('gallery.balayageGallery'), 
+    {
+      category: t('gallery.balayageGallery'),
       description: t('gallery.balayageDesc'),
-      image: '/women-balayage-haircut.webp'
+      image: '/women-balayage-haircut.webp',
     },
-    { 
-      category: t('gallery.styling'), 
+    {
+      category: t('gallery.styling'),
       description: t('gallery.stylingDesc'),
-      image: '/women-braids-hairdresser.webp'
-    }
+      image: '/women-braids-hairdresser.webp',
+    },
   ];
 
   return (
-    <section id="gallery" className="py-20 bg-background">
+    <section id="gallery" className="py-20 bg-surface">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {isHomePage && (
-          <div className="text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">{t('gallery.title')}</h2>
-            <p className="text-xl font-semibold text-foreground-light max-w-2xl mx-auto">
-              {t('gallery.subtitle')}
-            </p>
-            <p className="text-lg text-foreground-light max-w-2xl mx-auto mt-4">
-              {t('gallery.description')}
-            </p>
+          <div className="text-center mb-12 max-w-3xl mx-auto">
+            <h2
+              className={`text-3xl sm:text-4xl font-bold text-foreground mb-3 ${cormorantGaramond.className}`}
+            >
+              {t('gallery.title')}
+            </h2>
+            <p className="text-foreground-light text-lg">{t('gallery.subtitle')}</p>
+            <p className="text-foreground-muted mt-3 text-base leading-relaxed">{t('gallery.description')}</p>
           </div>
         )}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
           {galleryItems.map((item, index) => (
-            <div key={index} className="relative overflow-hidden rounded-2xl aspect-square group cursor-pointer">
+            <div
+              key={index}
+              className="group relative overflow-hidden rounded-2xl aspect-square border border-border/30 bg-background shadow-theme hover:shadow-theme-lg transition-all duration-300"
+            >
               <Image
                 src={item.image}
                 alt={item.category}
                 fill
-                className="object-cover transition-transform duration-300 group-hover:scale-105"
+                className="object-cover transition-transform duration-500 group-hover:scale-105"
+                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
               />
-              <div className="absolute inset-0 transition-colors duration-300" />
-              <div className="absolute inset-0 flex items-center justify-center">
-                {/* <div className="text-center text-white p-4">
-                  <p className="font-semibold text-lg mb-2">{item.category}</p>
-                  <p className="text-sm opacity-90">{item.description}</p>
-                </div> */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-90 group-hover:opacity-100 transition-opacity duration-300" />
+              <div className="absolute inset-x-0 bottom-0 p-5 text-left">
+                <p className="font-semibold text-white text-lg leading-tight drop-shadow-sm">
+                  {item.category}
+                </p>
+                <p className="text-sm text-white/85 mt-1.5 leading-snug max-w-sm">{item.description}</p>
               </div>
             </div>
           ))}
@@ -78,4 +85,4 @@ export default function Gallery({ isHomePage = false }: GalleryProps) {
       </div>
     </section>
   );
-} 
+}
