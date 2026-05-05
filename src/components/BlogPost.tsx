@@ -62,7 +62,7 @@ export default function BlogPost({
           <span>{readTime} {locale === 'pt' ? 'de leitura' : 'read'}</span>
         </div>
 
-        <h2 className="text-xl lg:text-2xl font-bold text-foreground mb-3 leading-tight hover:text-primary transition-colors duration-200">
+        <h2 className="text-xl lg:text-2xl font-bold text-foreground mb-3 leading-tight hover:text-primary-dark transition-colors duration-200">
           <Link href={`/${locale}/blog/${slug}`} className="block">
             {title}
           </Link>

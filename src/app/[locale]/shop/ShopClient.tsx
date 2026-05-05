@@ -27,6 +27,7 @@ interface ShopClientProps {
   availableCollections: ShopifyCollection[];
   availableProductTypes: ProductTypeOption[];
   locale: string;
+  initialOnSale?: boolean;
 }
 
 export default function ShopClient({
@@ -36,6 +37,7 @@ export default function ShopClient({
   availableCollections,
   availableProductTypes,
   locale,
+  initialOnSale = false,
 }: ShopClientProps) {
   const router = useRouter();
   const searchParams = useSearchParams();
@@ -54,11 +56,15 @@ export default function ShopClient({
   const minPrice = searchParams.get('minPrice');
   const maxPrice = searchParams.get('maxPrice');
   const inStock = searchParams.get('inStock') === 'true';
+  // Fall back to the server-resolved value so the checkbox/chip are correct
+  // on initial mount even if useSearchParams hasn't settled yet.
+  const onSale = searchParams.get('onSale') === 'true' || initialOnSale;
   const activeCollection = searchParams.get('collection');
   const activeFilterCount =
     activeFiltersJson.length +
     (minPrice || maxPrice ? 1 : 0) +
     (inStock ? 1 : 0) +
+    (onSale ? 1 : 0) +
     (activeCollection ? 1 : 0);
 
   const allProducts = [...initialProducts, ...extraProducts];
@@ -107,6 +113,12 @@ export default function ShopClient({
       else p.set('inStock', 'true');
     });
 
+  const handleOnSaleToggle = () =>
+    updateURL((p) => {
+      if (onSale) p.delete('onSale');
+      else p.set('onSale', 'true');
+    });
+
   const handleCollectionSelect = (handle: string) =>
     updateURL((p) => {
       if (p.get('collection') === handle) p.delete('collection');
@@ -133,6 +145,7 @@ export default function ShopClient({
         filterJsons: activeFiltersJson,
         collectionHandle: activeCollection,
         inStock,
+        onSale,
         minPrice,
         maxPrice,
         locale,
@@ -156,9 +169,11 @@ export default function ShopClient({
     minPrice,
     maxPrice,
     inStock,
+    onSale,
     onFilterToggle: handleFilterToggle,
     onPriceChange: handlePriceChange,
     onInStockToggle: handleInStockToggle,
+    onOnSaleToggle: handleOnSaleToggle,
     onCollectionSelect: handleCollectionSelect,
     isPending,
   };
@@ -174,7 +189,7 @@ export default function ShopClient({
             {/* Mobile filter toggle */}
             <button
               onClick={() => setIsFilterOpen(true)}
-              className="lg:hidden flex items-center gap-2 px-4 py-2 border border-border rounded-full text-sm font-medium hover:border-primary hover:text-primary transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-primary/40"
+              className="lg:hidden flex items-center gap-2 px-4 py-2 border border-border rounded-full text-sm font-medium hover:border-primary hover:text-primary-dark transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-primary/40"
             >
               <PiSlidersHorizontal className="w-4 h-4" aria-hidden />
               {t('filters.showFilters')}
@@ -202,9 +217,11 @@ export default function ShopClient({
           minPrice={minPrice}
           maxPrice={maxPrice}
           inStock={inStock}
+          onSale={onSale}
           onRemoveFilter={handleFilterToggle}
           onClearPrice={handleClearPrice}
           onToggleInStock={handleInStockToggle}
+          onToggleOnSale={handleOnSaleToggle}
           onCollectionClear={() => handleCollectionSelect(activeCollection!)}
           onClearAll={handleClearAll}
         />
@@ -255,7 +272,7 @@ export default function ShopClient({
                   <button
                     onClick={handleLoadMore}
                     disabled={isLoadingMore}
-                    className="px-10 py-4 border-2 border-border rounded-full font-semibold text-foreground hover:border-primary hover:text-primary transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed focus:outline-none focus-visible:ring-2 focus-visible:ring-primary/40"
+                    className="px-10 py-4 border-2 border-border rounded-full font-semibold text-foreground hover:border-primary hover:text-primary-dark transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed focus:outline-none focus-visible:ring-2 focus-visible:ring-primary/40"
                   >
                     {isLoadingMore ? (
                       <span className="flex items-center gap-2">
@@ -316,7 +333,7 @@ function EmptyState({
       ) : (
         <Link
           href={`/${locale}/shop`}
-          className="px-6 py-3 border-2 border-border rounded-full font-semibold text-foreground hover:border-primary hover:text-primary transition-colors"
+          className="px-6 py-3 border-2 border-border rounded-full font-semibold text-foreground hover:border-primary hover:text-primary-dark transition-colors"
         >
           {t('empty.browseAll')}
         </Link>

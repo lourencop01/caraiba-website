@@ -11,9 +11,11 @@ interface ActiveFiltersProps {
   minPrice: string | null;
   maxPrice: string | null;
   inStock: boolean;
+  onSale: boolean;
   onRemoveFilter: (input: string) => void;
   onClearPrice: () => void;
   onToggleInStock: () => void;
+  onToggleOnSale: () => void;
   onCollectionClear: () => void;
   onClearAll: () => void;
 }
@@ -26,16 +28,18 @@ export default function ActiveFilters({
   minPrice,
   maxPrice,
   inStock,
+  onSale,
   onRemoveFilter,
   onClearPrice,
   onToggleInStock,
+  onToggleOnSale,
   onCollectionClear,
   onClearAll,
 }: ActiveFiltersProps) {
   const t = useTranslations('pages.shop.list.filters');
 
   const hasActive =
-    activeFiltersJson.length > 0 || minPrice || maxPrice || inStock || activeCollection;
+    activeFiltersJson.length > 0 || minPrice || maxPrice || inStock || onSale || activeCollection;
   if (!hasActive) return null;
 
   const collectionLabel = activeCollection
@@ -70,14 +74,18 @@ export default function ActiveFilters({
         <Chip label={t('inStockOnly')} onRemove={onToggleInStock} />
       )}
 
+      {onSale && (
+        <Chip label={t('onSaleOnly')} onRemove={onToggleOnSale} />
+      )}
+
       {(minPrice || maxPrice) && (
         <Chip
           label={
             minPrice && maxPrice
-              ? `€${minPrice} – €${maxPrice}`
+              ? t('priceChipRange', { min: minPrice, max: maxPrice })
               : minPrice
-              ? `From €${minPrice}`
-              : `Up to €${maxPrice}`
+              ? t('priceChipFrom', { min: minPrice })
+              : t('priceChipUpTo', { max: maxPrice })
           }
           onRemove={onClearPrice}
         />

@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
 import { PiCheckCircle, PiEnvelopeSimple } from 'react-icons/pi';
+import { cormorantGaramond } from '@/lib/fonts';
 
 export default function Newsletter() {
   const t = useTranslations('newsletter');
@@ -32,8 +33,7 @@ export default function Newsletter() {
           </span>
 
           <h2
-            className="text-3xl sm:text-4xl font-bold text-background leading-tight mb-4"
-            style={{ fontFamily: "'Bodoni Moda', serif" }}
+            className={`text-3xl sm:text-4xl font-bold text-background leading-tight mb-4 ${cormorantGaramond.className}`}
           >
             {t('title')}
           </h2>

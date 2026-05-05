@@ -17,7 +17,7 @@ export default function CookiePolicyContent() {
                 <li>
                   <Link 
                     href="/" 
-                    className="hover:text-primary transition-colors"
+                    className="hover:text-primary-dark transition-colors"
                     aria-label="Home"
                   >
                     {tCommon('navigation.home')}

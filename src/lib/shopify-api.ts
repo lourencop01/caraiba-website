@@ -98,6 +98,7 @@ export function buildShopifyFilters(params: {
   minPrice?: string | null;
   maxPrice?: string | null;
   inStock?: boolean;
+  onSale?: boolean;
 }): Record<string, unknown>[] {
   const filters: Record<string, unknown>[] = [];
   for (const json of params.filterJsons ?? []) {
@@ -110,6 +111,7 @@ export function buildShopifyFilters(params: {
     filters.push({ price });
   }
   if (params.inStock) filters.push({ available: true });
+  if (params.onSale) filters.push({ onSale: true });
   return filters;
 }
 
@@ -259,6 +261,46 @@ async function storefrontFetch<T>(
 }
 
 // ─── Products ─────────────────────────────────────────────────────────────────
+
+export async function getFeaturedProducts(first = 8, locale?: string): Promise<ShopifyProduct[]> {
+  const language = locale ? localeToLanguageCode(locale) : undefined;
+  const query = `
+    query GetFeaturedProducts($first: Int!, $query: String!) {
+      products(first: $first, query: $query) {
+        edges {
+          node {
+            id title handle description
+            featuredImage { url altText }
+            images(first: 1) { edges { node { url altText } } }
+            priceRange {
+              minVariantPrice { amount currencyCode }
+              maxVariantPrice { amount currencyCode }
+            }
+            variants(first: 1) {
+              edges {
+                node {
+                  id
+                  availableForSale
+                  price { amount currencyCode }
+                  compareAtPrice { amount currencyCode }
+                  selectedOptions { name value }
+                  image { url altText }
+                }
+              }
+            }
+            options { id name values }
+          }
+        }
+      }
+    }
+  `;
+  const data = await storefrontFetch<{ products: { edges: { node: ShopifyProduct }[] } }>(
+    query,
+    { first, query: 'tag:Destaque' },
+    language
+  );
+  return data.products.edges.map((e) => e.node);
+}
 
 export async function getProducts(first = 24, locale?: string): Promise<ShopifyProduct[]> {
   const language = locale ? localeToLanguageCode(locale) : undefined;
@@ -546,16 +588,18 @@ const PRODUCT_FIELDS = `
 
 /**
  * Build a ProductFilter array for collection.products.
- * Only available + price work natively without the Search & Discovery app.
- * productType is handled client-side in the hybrid path.
+ * available, price, and onSale work natively. productType is handled
+ * client-side in the hybrid path.
  */
 function buildCollectionFilters(params: {
   inStock?: boolean;
+  onSale?: boolean;
   minPrice?: string | null;
   maxPrice?: string | null;
 }): Record<string, unknown>[] {
   const filters: Record<string, unknown>[] = [];
   if (params.inStock) filters.push({ available: true });
+  if (params.onSale) filters.push({ onSale: true });
   if (params.minPrice || params.maxPrice) {
     const price: Record<string, number> = {};
     if (params.minPrice) price.min = parseFloat(params.minPrice);
@@ -573,6 +617,7 @@ export async function getFilteredProducts(params: {
   filterJsons?: string[];
   collectionHandle?: string | null;
   inStock?: boolean;
+  onSale?: boolean;
   minPrice?: string | null;
   maxPrice?: string | null;
   locale?: string;
@@ -585,6 +630,7 @@ export async function getFilteredProducts(params: {
     filterJsons,
     collectionHandle,
     inStock,
+    onSale,
     minPrice,
     maxPrice,
     locale,
@@ -609,8 +655,8 @@ export async function getFilteredProducts(params: {
   // translations intact, source (canonical) and localized fetches run in parallel.
   if (collectionHandle && hasProductTypeFilter) {
     const { sortKey, reverse } = COLLECTION_SORT_OPTIONS[sort];
-    // Apply availability and price natively; productType is handled client-side
-    const nativeFilters = buildCollectionFilters({ inStock, minPrice, maxPrice });
+    // Apply availability, onSale and price natively; productType is handled client-side
+    const nativeFilters = buildCollectionFilters({ inStock, onSale, minPrice, maxPrice });
     const hasNativeFilters = nativeFilters.length > 0;
 
     const hybridGql = `
@@ -670,10 +716,10 @@ export async function getFilteredProducts(params: {
   }
 
   // When a collection is selected with no productType filter, use native
-  // collection.products with filters (available + price work without S&D app).
+  // collection.products with filters (available, onSale + price work without S&D app).
   if (collectionHandle) {
     const { sortKey, reverse } = COLLECTION_SORT_OPTIONS[sort];
-    const collectionFilters = buildCollectionFilters({ inStock, minPrice, maxPrice });
+    const collectionFilters = buildCollectionFilters({ inStock, onSale, minPrice, maxPrice });
     const hasFilters = collectionFilters.length > 0;
 
     const gql = `
@@ -750,8 +796,20 @@ export async function getFilteredProducts(params: {
     products: { pageInfo: ShopifyPageInfo; edges: { node: ShopifyProduct }[] };
   }>(gql, { first, after: after ?? null, sortKey, reverse, query: queryString || null }, language);
 
+  let products = data.products.edges.map((e) => e.node);
+
+  // Client-side sale filter: keep products where the first variant has a
+  // compareAtPrice that is strictly greater than its sale price.
+  if (onSale) {
+    products = products.filter((p) => {
+      const variant = p.variants.edges[0]?.node;
+      if (!variant?.compareAtPrice) return false;
+      return parseFloat(variant.compareAtPrice.amount) > parseFloat(variant.price.amount);
+    });
+  }
+
   return {
-    products: data.products.edges.map((e) => e.node),
+    products,
     filters: [],
     pageInfo: data.products.pageInfo,
   };
@@ -825,6 +883,59 @@ export async function getProductTypes(first = 250, locale?: string): Promise<Pro
     canonical,
     label: translationMap.get(canonical) ?? canonical,
   }));
+}
+
+// ─── Sale check ───────────────────────────────────────────────────────────────
+
+/**
+ * Returns true if at least one product in the store has a variant whose
+ * compareAtPrice is strictly greater than its current price (i.e. is on sale).
+ * Fetches a reasonable sample; cached for 5 minutes server-side.
+ */
+export async function hasSaleProducts(): Promise<boolean> {
+  const gql = `
+    query CheckSaleProducts {
+      products(first: 50) {
+        edges {
+          node {
+            variants(first: 1) {
+              edges {
+                node {
+                  price { amount }
+                  compareAtPrice { amount }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  `;
+
+  type Data = {
+    products: {
+      edges: {
+        node: {
+          variants: {
+            edges: { node: { price: ShopifyMoneyV2; compareAtPrice: ShopifyMoneyV2 | null } }[];
+          };
+        };
+      }[];
+    };
+  };
+
+  try {
+    const data = await storefrontFetch<Data>(gql, undefined);
+    return data.products.edges.some(({ node }) => {
+      const variant = node.variants.edges[0]?.node;
+      return (
+        variant?.compareAtPrice != null &&
+        parseFloat(variant.compareAtPrice.amount) > parseFloat(variant.price.amount)
+      );
+    });
+  } catch {
+    return false;
+  }
 }
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────

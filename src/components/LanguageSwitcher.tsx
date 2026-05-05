@@ -7,7 +7,11 @@ import { useEffect } from 'react';
 
 const SCROLL_POSITION_KEY = 'language_switch_scroll_position';
 
-export default function LanguageSwitcher() {
+interface LanguageSwitcherProps {
+  isTransparent?: boolean;
+}
+
+export default function LanguageSwitcher({ isTransparent = false }: LanguageSwitcherProps) {
   const params = useParams();
   const pathname = usePathname();
   const router = useRouter();
@@ -40,8 +44,12 @@ export default function LanguageSwitcher() {
           onClick={() => handleLanguageSwitch(loc)}
           className={`py-1 px-1 text-sm transition-colors border-b-2 ${
             locale === loc
-              ? 'border-primary-dark text-foreground'
-              : 'border-transparent text-foreground hover:text-primary'
+              ? isTransparent
+                ? 'border-white text-white'
+                : 'border-primary-dark text-foreground'
+              : isTransparent
+                ? 'border-transparent text-white/75 hover:text-white'
+                : 'border-transparent text-foreground hover:text-primary-dark'
           }`}
         >
           {loc.toUpperCase()}

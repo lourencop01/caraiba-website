@@ -1,4 +1,5 @@
 import { getCollections } from '@/lib/shopify-api';
+import { cormorantGaramond } from '@/lib/fonts';
 import Image from 'next/image';
 import Link from 'next/link';
 import { getTranslations } from 'next-intl/server';
@@ -28,8 +29,7 @@ export default async function CollectionsPage({ params }: PageProps) {
             {t('hero.eyebrow')}
           </p>
           <h1
-            className="text-4xl md:text-5xl font-bold text-foreground mb-4"
-            style={{ fontFamily: "'Bodoni Moda', serif" }}
+            className={`text-4xl md:text-5xl font-bold text-foreground mb-4 ${cormorantGaramond.className}`}
           >
             {t('hero.title')}
           </h1>
@@ -66,8 +66,7 @@ export default async function CollectionsPage({ params }: PageProps) {
                   ) : (
                     <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-secondary-light to-secondary">
                       <span
-                        className="text-4xl font-bold text-white/60"
-                        style={{ fontFamily: "'Bodoni Moda', serif" }}
+                        className={`text-4xl font-bold text-white/60 ${cormorantGaramond.className}`}
                       >
                         {collection.title.charAt(0)}
                       </span>
@@ -78,7 +77,7 @@ export default async function CollectionsPage({ params }: PageProps) {
 
                 {/* Info */}
                 <div className="p-5 flex flex-col gap-2 flex-1">
-                  <h2 className="text-foreground font-semibold text-lg group-hover:text-primary transition-colors">
+                  <h2 className="text-foreground font-semibold text-lg group-hover:text-primary-dark transition-colors">
                     {collection.title}
                   </h2>
                   {collection.description && (

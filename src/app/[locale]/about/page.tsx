@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { cormorantGaramond } from '@/lib/fonts';
 import Link from 'next/link';
 import { getTranslations } from 'next-intl/server';
 import type { Metadata } from 'next';
@@ -71,8 +72,7 @@ export default async function AboutPage({ params }: PageProps) {
             {t('eyebrow')}
           </span>
           <h1
-            className="text-4xl sm:text-6xl font-bold text-background leading-tight max-w-3xl mx-auto"
-            style={{ fontFamily: "'Bodoni Moda', serif" }}
+            className={`text-4xl sm:text-6xl font-bold text-background leading-tight max-w-3xl mx-auto ${cormorantGaramond.className}`}
           >
             {t('heroTitle')}
           </h1>
@@ -89,8 +89,7 @@ export default async function AboutPage({ params }: PageProps) {
             {t('missionEyebrow')}
           </span>
           <blockquote
-            className="text-3xl sm:text-4xl font-bold text-foreground leading-snug"
-            style={{ fontFamily: "'Bodoni Moda', serif" }}
+            className={`text-3xl sm:text-4xl font-bold text-foreground leading-snug ${cormorantGaramond.className}`}
           >
             &ldquo;{t('mission')}&rdquo;
           </blockquote>
@@ -118,8 +117,7 @@ export default async function AboutPage({ params }: PageProps) {
                 {t('storyEyebrow')}
               </span>
               <h2
-                className="text-3xl sm:text-4xl font-bold text-foreground leading-tight"
-                style={{ fontFamily: "'Bodoni Moda', serif" }}
+                className={`text-3xl sm:text-4xl font-bold text-foreground leading-tight ${cormorantGaramond.className}`}
               >
                 {t('storyTitle')}
               </h2>
@@ -144,8 +142,7 @@ export default async function AboutPage({ params }: PageProps) {
                   {s.icon}
                 </div>
                 <p
-                  className="text-4xl font-bold text-background"
-                  style={{ fontFamily: "'Bodoni Moda', serif" }}
+                  className={`text-4xl font-bold text-background ${cormorantGaramond.className}`}
                 >
                   {s.value}
                 </p>
@@ -164,8 +161,7 @@ export default async function AboutPage({ params }: PageProps) {
               {t('valuesEyebrow')}
             </span>
             <h2
-              className="text-3xl sm:text-4xl font-bold text-foreground"
-              style={{ fontFamily: "'Bodoni Moda', serif" }}
+              className={`text-3xl sm:text-4xl font-bold text-foreground ${cormorantGaramond.className}`}
             >
               {t('valuesTitle')}
             </h2>
@@ -192,8 +188,7 @@ export default async function AboutPage({ params }: PageProps) {
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2
-            className="text-3xl sm:text-4xl font-bold text-foreground mb-4"
-            style={{ fontFamily: "'Bodoni Moda', serif" }}
+            className={`text-3xl sm:text-4xl font-bold text-foreground mb-4 ${cormorantGaramond.className}`}
           >
             {t('ctaTitle')}
           </h2>

@@ -3,7 +3,7 @@ import { getTranslations } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
 import { generatePageSpecificStructuredData } from '@/lib/structuredData';
-import { getProducts, getCollections } from '@/lib/shopify-api';
+import { getProducts, getFeaturedProducts, getCollections } from '@/lib/shopify-api';
 import StructuredData from '@/components/StructuredData';
 
 // Sections
@@ -97,14 +97,11 @@ export default async function Home({ params }: PageProps) {
   const structuredData = generatePageSpecificStructuredData(locale as 'en' | 'pt', 'home');
 
   // Fetch data in parallel
-  const [allProducts, collections] = await Promise.all([
-    getProducts(16, locale),
+  const [featuredProducts, showcaseProducts, collections] = await Promise.all([
+    getFeaturedProducts(8, locale),
+    getProducts(8, locale),
     getCollections(6, locale),
   ]);
-
-  // Split products: first 8 featured, next 8 for the showcase
-  const featuredProducts = allProducts.slice(0, 8);
-  const showcaseProducts = allProducts.slice(8, 16);
 
   return (
     <main className="min-h-screen bg-white">
@@ -120,10 +117,13 @@ export default async function Home({ params }: PageProps) {
       <FeaturedProducts products={featuredProducts} locale={locale} />
 
       {/* 4 — Highlight / Promo Banner */}
-      <PromoBanner locale={locale} />
+      {/* <PromoBanner locale={locale} /> */}
 
       {/* 5 — Product Showcase (New Arrivals) */}
       <ProductShowcase products={showcaseProducts} locale={locale} />
+
+      {/* 8 — Brand / Story */}
+      <About isHomePage={true} />
 
       {/* 6 — Social Proof */}
       <Testimonials isHomePage={true} />
@@ -131,11 +131,8 @@ export default async function Home({ params }: PageProps) {
       {/* 7 — Visual Content */}
       <Gallery isHomePage={true} />
 
-      {/* 8 — Brand / Story */}
-      <About isHomePage={true} />
-
       {/* 9 — Newsletter / CTA */}
-      <Newsletter />
+      {/* <Newsletter /> */}
     </main>
   );
 }

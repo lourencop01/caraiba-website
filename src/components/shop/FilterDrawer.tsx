@@ -16,9 +16,11 @@ interface FilterDrawerProps {
   minPrice: string | null;
   maxPrice: string | null;
   inStock: boolean;
+  onSale: boolean;
   onFilterToggle: (input: string) => void;
   onPriceChange: (min: string, max: string) => void;
   onInStockToggle: () => void;
+  onOnSaleToggle: () => void;
   onCollectionSelect: (handle: string) => void;
   isPending: boolean;
 }

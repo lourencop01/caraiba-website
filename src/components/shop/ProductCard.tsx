@@ -1,6 +1,9 @@
+'use client';
+
 import Image from 'next/image';
 import Link from 'next/link';
 import { ShopifyProduct, formatMoney } from '@/lib/shopify-api';
+import { useTranslations } from 'next-intl';
 
 interface ProductCardProps {
   product: ShopifyProduct;
@@ -8,6 +11,7 @@ interface ProductCardProps {
 }
 
 export default function ProductCard({ product, locale }: ProductCardProps) {
+  const t = useTranslations('shop');
   const firstVariant = product.variants?.edges?.[0]?.node;
   const isAvailable = firstVariant?.availableForSale ?? product.availableForSale ?? true;
   const price = product.priceRange.minVariantPrice;
@@ -51,7 +55,7 @@ export default function ProductCard({ product, locale }: ProductCardProps) {
           </>
         ) : (
           <div className="w-full h-full flex items-center justify-center text-foreground-light text-sm">
-            No image
+            {t('noImage')}
           </div>
         )}
 
@@ -59,12 +63,12 @@ export default function ProductCard({ product, locale }: ProductCardProps) {
         <div className="absolute top-2.5 left-2.5 flex flex-col gap-1.5">
           {isOnSale && (
             <span className="bg-red-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wide">
-              Sale
+              {t('badgeSale')}
             </span>
           )}
           {!isAvailable && (
             <span className="bg-foreground/80 text-background text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wide">
-              Sold Out
+              {t('soldOut')}
             </span>
           )}
         </div>
@@ -72,7 +76,7 @@ export default function ProductCard({ product, locale }: ProductCardProps) {
 
       {/* ── Info ── */}
       <div className="py-4 flex flex-col gap-1 flex-1">
-        <p className="text-foreground font-medium leading-snug line-clamp-2 text-sm group-hover:text-primary transition-colors">
+        <p className="text-foreground font-medium leading-snug line-clamp-2 text-sm group-hover:text-primary-dark transition-colors">
           {product.title}
         </p>
 
@@ -82,7 +86,7 @@ export default function ProductCard({ product, locale }: ProductCardProps) {
 
         <div className="mt-auto pt-3 flex items-center gap-2">
           <span className="font-semibold text-foreground text-sm">
-            {hasRange ? `From ${formatMoney(price)}` : formatMoney(price)}
+            {hasRange ? t('priceFrom', { price: formatMoney(price) }) : formatMoney(price)}
           </span>
           {isOnSale && compareAtPrice && (
             <span className="text-xs text-foreground-muted line-through">

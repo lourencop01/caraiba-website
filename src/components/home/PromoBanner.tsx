@@ -2,13 +2,14 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { getTranslations } from 'next-intl/server';
 import { PiArrowRight } from 'react-icons/pi';
+import { cormorantGaramond } from '@/lib/fonts';
 
 interface PromoBannerProps {
   locale: string;
 }
 
 export default async function PromoBanner({ locale }: PromoBannerProps) {
-  const t = await getTranslations('promoBanner');
+  const t = await getTranslations({ locale, namespace: 'promoBanner' });
 
   return (
     <section className="py-20 bg-background">
@@ -32,8 +33,7 @@ export default async function PromoBanner({ locale }: PromoBannerProps) {
               {t('eyebrow')}
             </span>
             <h2
-              className="text-3xl sm:text-4xl lg:text-5xl font-bold text-background leading-tight mb-5"
-              style={{ fontFamily: "'Bodoni Moda', serif" }}
+              className={`text-3xl sm:text-4xl lg:text-5xl font-bold text-background leading-tight mb-5 ${cormorantGaramond.className}`}
             >
               {t('title')}
             </h2>

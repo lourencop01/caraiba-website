@@ -1,4 +1,6 @@
 import { getCollectionByHandle } from '@/lib/shopify-api';
+import { cormorantGaramond } from '@/lib/fonts';
+import { getTranslations } from 'next-intl/server';
 import ProductCard from '@/components/shop/ProductCard';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -19,7 +21,11 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
 export default async function CollectionPage({ params }: PageProps) {
   const { locale, handle } = await params;
-  const result = await getCollectionByHandle(handle, 24, locale);
+  const [result, tn, tc] = await Promise.all([
+    getCollectionByHandle(handle, 24, locale),
+    getTranslations({ locale, namespace: 'navigation' }),
+    getTranslations({ locale, namespace: 'pages.collections' }),
+  ]);
 
   if (!result) notFound();
 
@@ -30,12 +36,12 @@ export default async function CollectionPage({ params }: PageProps) {
       {/* Breadcrumb */}
       <div className="border-b border-border bg-surface">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center gap-2 text-sm text-foreground-light">
-          <Link href={`/${locale}`} className="hover:text-primary transition-colors">
-            {locale === 'en' ? 'Home' : 'Início'}
+          <Link href={`/${locale}`} className="hover:text-primary-dark transition-colors">
+            {tn('home')}
           </Link>
           <span>/</span>
-          <Link href={`/${locale}/collections`} className="hover:text-primary transition-colors">
-            {locale === 'en' ? 'Collections' : 'Coleções'}
+          <Link href={`/${locale}/collections`} className="hover:text-primary-dark transition-colors">
+            {tn('collections')}
           </Link>
           <span>/</span>
           <span className="text-foreground truncate max-w-[200px]">{collection.title}</span>
@@ -59,8 +65,7 @@ export default async function CollectionPage({ params }: PageProps) {
             )}
             <div>
               <h1
-                className="text-3xl md:text-4xl font-bold text-foreground mb-3"
-                style={{ fontFamily: "'Bodoni Moda', serif" }}
+                className={`text-3xl md:text-4xl font-bold text-foreground mb-3 ${cormorantGaramond.className}`}
               >
                 {collection.title}
               </h1>
@@ -77,7 +82,7 @@ export default async function CollectionPage({ params }: PageProps) {
         {products.length === 0 ? (
           <div className="text-center py-24">
             <p className="text-foreground-light text-lg">
-              {locale === 'en' ? 'No products in this collection yet.' : 'Ainda não há produtos nesta coleção.'}
+              {tc('emptyProducts')}
             </p>
           </div>
         ) : (

@@ -63,3 +63,20 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
+
+/* Global pointer cursor for all interactive elements */
+button,
+[role="button"],
+select,
+label[for],
+summary {
+  cursor: pointer;
+}
+
+/* Disabled elements always get not-allowed */
+button:disabled,
+[role="button"][aria-disabled="true"],
+select:disabled,
+input:disabled {
+  cursor: not-allowed;
+}

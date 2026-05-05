@@ -11,7 +11,8 @@
   },
   "categoryNav": {
     "title": "Shop by Collection",
-    "subtitle": "Find the right products for your hair type and style"
+    "subtitle": "Find the right products for your hair type and style",
+    "viewAll": "View All Collections"
   },
   "featuredProducts": {
     "title": "Featured Products",

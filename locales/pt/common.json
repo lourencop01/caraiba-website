@@ -13,11 +13,39 @@
     "logoAlt": "Salon Concept — Cuidado Capilar Profissional",
     "shopByCategory": "Comprar por Categoria",
     "shopByCollection": "Comprar por Coleção",
-    "viewAll": "Ver Todos os Produtos"
+    "viewAll": "Ver Todos os Produtos",
+    "sale": "SALDOS"
   },
   "accessibility": {
     "toggleMobileMenu": "Alternar menu móvel",
-    "callSalon": "Ligue para a nossa equipa para aconselhamento ou suporte"
+    "toggleShopMenu": "Alternar menu da loja",
+    "callSalon": "Ligue para a nossa equipa para aconselhamento ou suporte",
+    "openCart": "Abrir carrinho",
+    "closeCart": "Fechar carrinho",
+    "removeCartItem": "Remover item",
+    "decreaseQty": "Diminuir quantidade",
+    "increaseQty": "Aumentar quantidade"
+  },
+  "cart": {
+    "title": "O Seu Carrinho",
+    "itemCount": "{count, plural, one {# item} other {# itens}}",
+    "empty": "O seu carrinho está vazio.",
+    "subtotal": "Subtotal",
+    "taxes": "Impostos",
+    "total": "Total",
+    "checkout": "Finalizar Compra",
+    "checkoutDisclaimer": "Portes e impostos calculados no checkout"
+  },
+  "shop": {
+    "addToCart": "Adicionar ao Carrinho",
+    "addingToCart": "A adicionar…",
+    "soldOut": "Esgotado",
+    "buyNow": "Comprar Agora",
+    "processing": "A processar…",
+    "badgeSale": "Promoção",
+    "badgeNew": "Novo",
+    "priceFrom": "A partir de {price}",
+    "noImage": "Sem imagem"
   },
   "footer": {
     "shopTitle": "Loja",
@@ -34,4 +62,4 @@
     "copyright": "© 2025 Salon Concept. Todos os direitos reservados."
   },
   "callCostNote": "(Chamada para rede nacional móvel)"
-} 
+}

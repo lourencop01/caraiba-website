@@ -4,6 +4,7 @@ import { getTranslations } from 'next-intl/server';
 import { ShopifyProduct, formatMoney } from '@/lib/shopify-api';
 import { PiArrowRight, PiShoppingCartSimple } from 'react-icons/pi';
 import AddToCartButton from '@/components/shop/AddToCartButton';
+import { cormorantGaramond } from '@/lib/fonts';
 
 interface FeaturedProductsProps {
   products: ShopifyProduct[];
@@ -11,7 +12,8 @@ interface FeaturedProductsProps {
 }
 
 export default async function FeaturedProducts({ products, locale }: FeaturedProductsProps) {
-  const t = await getTranslations('featuredProducts');
+  const t = await getTranslations({ locale, namespace: 'featuredProducts' });
+  const tc = await getTranslations({ locale, namespace: 'shop' });
 
   return (
     <section className="py-20 bg-surface">
@@ -19,14 +21,14 @@ export default async function FeaturedProducts({ products, locale }: FeaturedPro
         {/* Header */}
         <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-10">
           <div>
-            <h2 className="text-3xl sm:text-4xl font-bold text-foreground" style={{ fontFamily: "'Bodoni Moda', serif" }}>
+            <h2 className={`text-3xl sm:text-4xl font-bold text-foreground ${cormorantGaramond.className}`}>
               {t('title')}
             </h2>
             <p className="text-foreground-light mt-2">{t('subtitle')}</p>
           </div>
           <Link
             href={`/${locale}/shop`}
-            className="flex items-center gap-1 text-primary font-semibold text-sm hover:gap-2 transition-all shrink-0"
+            className="flex items-center gap-1 text-primary-dark font-semibold text-sm hover:gap-2 transition-all shrink-0"
           >
             {t('viewAll')} <PiArrowRight className="w-4 h-4" />
           </Link>
@@ -62,7 +64,7 @@ export default async function FeaturedProducts({ products, locale }: FeaturedPro
 
                       {isOnSale && (
                         <span className="absolute top-3 left-3 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-full">
-                          Sale
+                          {tc('badgeSale')}
                         </span>
                       )}
 
@@ -82,7 +84,7 @@ export default async function FeaturedProducts({ products, locale }: FeaturedPro
                   {/* Info */}
                   <div className="p-4">
                     <Link href={`/${locale}/shop/${product.handle}`}>
-                      <h3 className="text-sm font-semibold text-foreground line-clamp-2 group-hover:text-primary transition-colors leading-tight mb-2">
+                      <h3 className="text-sm font-semibold text-foreground line-clamp-2 group-hover:text-primary-dark transition-colors leading-tight mb-2">
                         {product.title}
                       </h3>
                     </Link>

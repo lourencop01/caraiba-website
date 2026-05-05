@@ -3,6 +3,7 @@
 import { useState, useMemo } from 'react';
 import { ShopifyProductOption, ShopifyProductVariant } from '@/lib/shopify-api';
 import AddToCartButton from './AddToCartButton';
+import BuyNowButton from './BuyNowButton';
 
 interface VariantSelectorProps {
   options: ShopifyProductOption[];
@@ -51,7 +52,7 @@ export default function VariantSelector({ options, variants }: VariantSelectorPr
                     ${isSelected
                       ? 'border-primary bg-primary text-white'
                       : isAvailable
-                        ? 'border-border text-foreground hover:border-primary hover:text-primary'
+                        ? 'border-border text-foreground hover:border-primary hover:text-primary-dark'
                         : 'border-border text-foreground-light opacity-40 cursor-not-allowed line-through'
                     }`}
                   disabled={!isAvailable}
@@ -65,10 +66,16 @@ export default function VariantSelector({ options, variants }: VariantSelectorPr
       ))}
 
       {matchedVariant && (
-        <AddToCartButton
-          variantId={matchedVariant.id}
-          available={matchedVariant.availableForSale}
-        />
+        <div className="flex flex-col gap-3">
+          <AddToCartButton
+            variantId={matchedVariant.id}
+            available={matchedVariant.availableForSale}
+          />
+          <BuyNowButton
+            variantId={matchedVariant.id}
+            available={matchedVariant.availableForSale}
+          />
+        </div>
       )}
     </div>
   );

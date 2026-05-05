@@ -2,6 +2,7 @@ import { Suspense } from 'react';
 import { getTranslations } from 'next-intl/server';
 import type { Metadata } from 'next';
 import { getFilteredProducts, buildProductQueryString, getCollections, getProductTypes, SortOption } from '@/lib/shopify-api';
+import { cormorantGaramond } from '@/lib/fonts';
 import ShopClient from './ShopClient';
 
 type SearchParams = { [key: string]: string | string[] | undefined };
@@ -43,19 +44,20 @@ export default async function ShopPage({ params, searchParams }: PageProps) {
   const minPrice = str(sp.minPrice);
   const maxPrice = str(sp.maxPrice);
   const inStock = str(sp.inStock) === 'true';
+  const onSale = str(sp.onSale) === 'true';
   const collectionHandle = str(sp.collection);
 
   const queryString = buildProductQueryString({ filterJsons, minPrice, maxPrice, inStock });
 
   // Fetch products, collections, and product types in parallel
   const [{ products, filters, pageInfo }, collections, productTypes] = await Promise.all([
-    getFilteredProducts({ first: 24, sort, queryString, filterJsons, collectionHandle, inStock, minPrice, maxPrice, locale }),
+    getFilteredProducts({ first: 24, sort, queryString, filterJsons, collectionHandle, inStock, onSale, minPrice, maxPrice, locale }),
     getCollections(50, locale),
     getProductTypes(50, locale),
   ]);
 
   // Key forces ShopClient to remount (reset load-more state) when sort/filters change
-  const clientKey = JSON.stringify({ sort, filterJsons, minPrice, maxPrice, inStock, collectionHandle });
+  const clientKey = JSON.stringify({ sort, filterJsons, minPrice, maxPrice, inStock, onSale, collectionHandle });
 
   return (
     <main className="min-h-screen bg-background">
@@ -66,8 +68,7 @@ export default async function ShopPage({ params, searchParams }: PageProps) {
             {t('hero.eyebrow')}
           </p>
           <h1
-            className="text-4xl md:text-5xl font-bold text-foreground mb-4"
-            style={{ fontFamily: "'Bodoni Moda', serif" }}
+            className={`text-4xl md:text-5xl font-bold text-foreground mb-4 ${cormorantGaramond.className}`}
           >
             {t('hero.title')}
           </h1>
@@ -87,6 +88,7 @@ export default async function ShopPage({ params, searchParams }: PageProps) {
           availableCollections={collections}
           availableProductTypes={productTypes}
           locale={locale}
+          initialOnSale={onSale}
         />
       </Suspense>
     </main>

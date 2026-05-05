@@ -30,6 +30,7 @@
           "applyPrice": "Apply",
           "availability": "Availability",
           "inStockOnly": "In stock only",
+          "onSaleOnly": "On sale",
           "priceRange": "Price Range",
           "min": "Min",
           "max": "Max",
@@ -38,7 +39,10 @@
           "viewResults": "View Results",
           "collections": "Collections",
           "category": "Category",
-          "noFilters": "No filters available"
+          "noFilters": "No filters available",
+          "priceChipRange": "€{min} – €{max}",
+          "priceChipFrom": "From €{min}",
+          "priceChipUpTo": "Up to €{max}"
         },
         "empty": {
           "title": "No products found",
@@ -61,7 +65,13 @@
         "description": "Discover our hand-curated product lines, crafted for every hair type and style."
       },
       "shopNow": "Shop now →",
-      "empty": "No collections available yet. Check back soon!"
+      "empty": "No collections available yet. Check back soon!",
+      "emptyProducts": "No products in this collection yet."
+    },
+    "product": {
+      "trustShipping": "✓ Free shipping on orders over €50",
+      "trustQuality": "✓ Professional grade, salon-selected products",
+      "trustCheckout": "✓ Secure checkout via Shopify"
     },
     "about": {
       "meta": {

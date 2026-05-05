@@ -13,9 +13,11 @@ interface FiltersSidebarProps {
   minPrice: string | null;
   maxPrice: string | null;
   inStock: boolean;
+  onSale: boolean;
   onFilterToggle: (input: string) => void;
   onPriceChange: (min: string, max: string) => void;
   onInStockToggle: () => void;
+  onOnSaleToggle: () => void;
   onCollectionSelect: (handle: string) => void;
   isPending: boolean;
 }
@@ -29,9 +31,11 @@ export default function FiltersSidebar({
   minPrice,
   maxPrice,
   inStock,
+  onSale,
   onFilterToggle,
   onPriceChange,
   onInStockToggle,
+  onOnSaleToggle,
   onCollectionSelect,
   isPending,
 }: FiltersSidebarProps) {
@@ -115,11 +119,18 @@ export default function FiltersSidebar({
         open={openSections.has('__availability')}
         onToggle={() => toggle('__availability')}
       >
-        <CheckboxRow
-          checked={inStock}
-          label={t('inStockOnly')}
-          onChange={onInStockToggle}
-        />
+        <div className="space-y-2">
+          <CheckboxRow
+            checked={inStock}
+            label={t('inStockOnly')}
+            onChange={onInStockToggle}
+          />
+          <CheckboxRow
+            checked={onSale}
+            label={t('onSaleOnly')}
+            onChange={onOnSaleToggle}
+          />
+        </div>
       </AccordionSection>
 
       {/* ── Price ── */}

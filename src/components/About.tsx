@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 import { useParams } from 'next/navigation';
+import { cormorantGaramond } from '@/lib/fonts';
 import {
   PiLeaf,
   PiCertificate,
@@ -38,7 +39,7 @@ export default function About({ isHomePage = false }: AboutProps) {
   ];
 
   return (
-    <section className="py-20 bg-background">
+    <section className="py-20 bg-surface">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
 
@@ -57,7 +58,7 @@ export default function About({ isHomePage = false }: AboutProps) {
 
             {/* Floating stat card */}
             <div className="absolute -bottom-6 -right-4 sm:right-4 bg-surface border border-border rounded-2xl px-5 py-4 shadow-theme-lg">
-              <p className="text-3xl font-bold text-foreground" style={{ fontFamily: "'Bodoni Moda', serif" }}>
+              <p className={`text-3xl font-bold text-foreground ${cormorantGaramond.className}`}>
                 {t('statValue')}
               </p>
               <p className="text-sm text-foreground-light mt-0.5">{t('statLabel')}</p>
@@ -71,8 +72,7 @@ export default function About({ isHomePage = false }: AboutProps) {
             </span>
 
             <h2
-              className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground leading-tight"
-              style={{ fontFamily: "'Bodoni Moda', serif" }}
+              className={`text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground leading-tight ${cormorantGaramond.className}`}
             >
               {t('title')}
             </h2>

@@ -1,9 +1,10 @@
 import Navbar from './Navbar';
-import { getCollections, getProductTypes, ShopifyCollection, ProductTypeOption } from '@/lib/shopify-api';
+import { getCollections, getProductTypes, hasSaleProducts, ShopifyCollection, ProductTypeOption } from '@/lib/shopify-api';
 
 export interface NavShopData {
   collections: ShopifyCollection[];
   productTypes: ProductTypeOption[];
+  hasSaleItems: boolean;
 }
 
 interface NavbarWrapperProps {
@@ -11,13 +12,14 @@ interface NavbarWrapperProps {
 }
 
 export default async function NavbarWrapper({ locale }: NavbarWrapperProps) {
-  let shopData: NavShopData = { collections: [], productTypes: [] };
+  let shopData: NavShopData = { collections: [], productTypes: [], hasSaleItems: false };
   try {
-    const [collections, productTypes] = await Promise.all([
+    const [collections, productTypes, hasSaleItems] = await Promise.all([
       getCollections(20, locale),
       getProductTypes(20, locale),
+      hasSaleProducts(),
     ]);
-    shopData = { collections, productTypes };
+    shopData = { collections, productTypes, hasSaleItems };
   } catch {
     // Fail silently — Navbar renders without dropdown data
   }

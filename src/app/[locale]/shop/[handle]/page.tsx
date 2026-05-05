@@ -1,9 +1,12 @@
 import { getProductByHandle, formatMoney } from '@/lib/shopify-api';
+import { cormorantGaramond } from '@/lib/fonts';
 import Link from 'next/link';
+import { getTranslations } from 'next-intl/server';
 import ProductImageGallery from '@/components/shop/ProductImageGallery';
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import AddToCartButton from '@/components/shop/AddToCartButton';
+import BuyNowButton from '@/components/shop/BuyNowButton';
 import VariantSelector from '@/components/shop/VariantSelector';
 
 type PageProps = {
@@ -22,7 +25,11 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
 export default async function ProductPage({ params }: PageProps) {
   const { locale, handle } = await params;
-  const product = await getProductByHandle(handle, locale);
+  const [product, tn, tp] = await Promise.all([
+    getProductByHandle(handle, locale),
+    getTranslations({ locale, namespace: 'navigation' }),
+    getTranslations({ locale, namespace: 'pages.product' }),
+  ]);
 
   if (!product) notFound();
 
@@ -46,12 +53,12 @@ export default async function ProductPage({ params }: PageProps) {
       {/* Breadcrumb */}
       <div className="border-b border-border bg-surface">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center gap-2 text-sm text-foreground-light">
-          <Link href={`/${locale}`} className="hover:text-primary transition-colors">
-            Home
+          <Link href={`/${locale}`} className="hover:text-primary-dark transition-colors">
+            {tn('home')}
           </Link>
           <span>/</span>
-          <Link href={`/${locale}/shop`} className="hover:text-primary transition-colors">
-            Shop
+          <Link href={`/${locale}/shop`} className="hover:text-primary-dark transition-colors">
+            {tn('shop')}
           </Link>
           <span>/</span>
           <span className="text-foreground truncate max-w-[200px]">{product.title}</span>
@@ -68,8 +75,7 @@ export default async function ProductPage({ params }: PageProps) {
           <div className="flex flex-col gap-6">
             <div>
               <h1
-                className="text-3xl md:text-4xl font-bold text-foreground mb-3"
-                style={{ fontFamily: "'Bodoni Moda', serif" }}
+                className={`text-3xl md:text-4xl font-bold text-foreground mb-3 ${cormorantGaramond.className}`}
               >
                 {product.title}
               </h1>
@@ -111,18 +117,24 @@ export default async function ProductPage({ params }: PageProps) {
               />
             )}
 
-            {/* Add to cart — uses first (or only) variant when no selector needed */}
+            {/* Add to cart + Buy Now — uses first (or only) variant when no selector needed */}
             {!hasOptions && firstVariant && (
-              <AddToCartButton
-                variantId={firstVariant.id}
-                available={firstVariant.availableForSale}
-              />
+              <div className="flex flex-col gap-3">
+                <AddToCartButton
+                  variantId={firstVariant.id}
+                  available={firstVariant.availableForSale}
+                />
+                <BuyNowButton
+                  variantId={firstVariant.id}
+                  available={firstVariant.availableForSale}
+                />
+              </div>
             )}
 
             <div className="pt-2 border-t border-border space-y-2 text-sm text-foreground-light">
-              <p>✓ Free shipping on orders over €50</p>
-              <p>✓ Professional grade, salon-selected products</p>
-              <p>✓ Secure checkout via Shopify</p>
+              <p>{tp('trustShipping')}</p>
+              <p>{tp('trustQuality')}</p>
+              <p>{tp('trustCheckout')}</p>
             </div>
           </div>
         </div>

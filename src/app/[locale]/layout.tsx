@@ -143,7 +143,9 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
       <NextIntlClientProvider locale={locale} messages={messages}>
         <CartProvider>
           <NavbarWrapper locale={locale} />
-          {children}
+          <main className="pt-16">
+            {children}
+          </main>
           <Footer />
           <CartDrawer />
           <CookieConsentBanner />

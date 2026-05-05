@@ -26,6 +26,7 @@ interface CartContextType {
   openCart: () => void;
   closeCart: () => void;
   addToCart: (merchandiseId: string, quantity?: number) => Promise<void>;
+  buyNow: (merchandiseId: string, quantity?: number) => Promise<string>;
   updateQuantity: (lineId: string, quantity: number) => Promise<void>;
   removeFromCart: (lineId: string) => Promise<void>;
 }
@@ -83,6 +84,21 @@ export function CartProvider({ children }: { children: ReactNode }) {
     [ensureCart]
   );
 
+  const buyNow = useCallback(
+    async (merchandiseId: string, quantity = 1): Promise<string> => {
+      setIsLoading(true);
+      try {
+        const cartId = await ensureCart();
+        const updated = await cartLinesAdd(cartId, [{ merchandiseId, quantity }]);
+        setCart(updated);
+        return updated.checkoutUrl;
+      } finally {
+        setIsLoading(false);
+      }
+    },
+    [ensureCart]
+  );
+
   const updateQuantity = useCallback(
     async (lineId: string, quantity: number) => {
       if (!cart) return;
@@ -116,7 +132,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
 
   return (
     <CartContext.Provider
-      value={{ cart, isLoading, isOpen, openCart, closeCart, addToCart, updateQuantity, removeFromCart }}
+      value={{ cart, isLoading, isOpen, openCart, closeCart, addToCart, buyNow, updateQuantity, removeFromCart }}
     >
       {children}
     </CartContext.Provider>

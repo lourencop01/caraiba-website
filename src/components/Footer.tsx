@@ -10,6 +10,7 @@ import {
 } from 'react-icons/ai'
 import { IoLogoWhatsapp } from 'react-icons/io'
 import { trackGenerateLead } from '../lib/analytics'
+import { cormorantGaramond } from '@/lib/fonts'
 
 export default function Footer() {
   const t = useTranslations()
@@ -34,8 +35,7 @@ export default function Footer() {
                 />
               </div>
               <span
-                className="text-xl font-medium text-background"
-                style={{ fontFamily: "'Bodoni Moda', serif" }}
+                className={`text-xl font-medium text-background ${cormorantGaramond.className}`}
               >
                 {t('site.name')}
               </span>

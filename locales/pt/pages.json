@@ -30,6 +30,7 @@
           "applyPrice": "Aplicar",
           "availability": "Disponibilidade",
           "inStockOnly": "Em stock",
+          "onSaleOnly": "Em promoção",
           "priceRange": "Intervalo de Preço",
           "min": "Mín",
           "max": "Máx",
@@ -38,7 +39,10 @@
           "viewResults": "Ver Resultados",
           "collections": "Coleções",
           "category": "Categoria",
-          "noFilters": "Sem filtros disponíveis"
+          "noFilters": "Sem filtros disponíveis",
+          "priceChipRange": "€{min} – €{max}",
+          "priceChipFrom": "A partir de €{min}",
+          "priceChipUpTo": "Até €{max}"
         },
         "empty": {
           "title": "Nenhum produto encontrado",
@@ -61,7 +65,13 @@
         "description": "Descubra as nossas linhas de produtos cuidadosamente selecionadas para todos os tipos de cabelo."
       },
       "shopNow": "Ver coleção →",
-      "empty": "Ainda não há coleções disponíveis. Volte em breve!"
+      "empty": "Ainda não há coleções disponíveis. Volte em breve!",
+      "emptyProducts": "Ainda não há produtos nesta coleção."
+    },
+    "product": {
+      "trustShipping": "✓ Envio gratuito em encomendas acima de €50",
+      "trustQuality": "✓ Produtos de grau profissional, selecionados por especialistas",
+      "trustCheckout": "✓ Checkout seguro via Shopify"
     },
     "about": {
       "meta": {

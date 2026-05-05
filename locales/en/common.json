@@ -13,11 +13,39 @@
     "logoAlt": "Salon Concept — Professional Hair Care",
     "shopByCategory": "Shop by Category",
     "shopByCollection": "Shop by Collection",
-    "viewAll": "View All Products"
+    "viewAll": "View All Products",
+    "sale": "SALE"
   },
   "accessibility": {
     "toggleMobileMenu": "Toggle mobile menu",
-    "callSalon": "Call our team for product advice or support"
+    "toggleShopMenu": "Toggle shop menu",
+    "callSalon": "Call our team for product advice or support",
+    "openCart": "Open cart",
+    "closeCart": "Close cart",
+    "removeCartItem": "Remove item",
+    "decreaseQty": "Decrease quantity",
+    "increaseQty": "Increase quantity"
+  },
+  "cart": {
+    "title": "Your Cart",
+    "itemCount": "{count, plural, one {# item} other {# items}}",
+    "empty": "Your cart is empty.",
+    "subtotal": "Subtotal",
+    "taxes": "Taxes",
+    "total": "Total",
+    "checkout": "Checkout",
+    "checkoutDisclaimer": "Shipping & taxes calculated at checkout"
+  },
+  "shop": {
+    "addToCart": "Add to Cart",
+    "addingToCart": "Adding…",
+    "soldOut": "Sold Out",
+    "buyNow": "Buy Now",
+    "processing": "Processing…",
+    "badgeSale": "Sale",
+    "badgeNew": "New",
+    "priceFrom": "From {price}",
+    "noImage": "No image"
   },
   "footer": {
     "shopTitle": "Shop",
@@ -34,4 +62,4 @@
     "copyright": "© 2025 Salon Concept. All rights reserved."
   },
   "callCostNote": "(Call to national mobile network)"
-} 
+}
