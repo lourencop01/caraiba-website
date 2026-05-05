@@ -10,12 +10,10 @@ import StructuredData from '@/components/StructuredData';
 import Hero from '@/components/Hero';
 import CategoryNav from '@/components/home/CategoryNav';
 import FeaturedProducts from '@/components/home/FeaturedProducts';
-import PromoBanner from '@/components/home/PromoBanner';
 import ProductShowcase from '@/components/home/ProductShowcase';
 import Testimonials from '@/components/Testimonials';
 import Gallery from '@/components/Gallery';
 import About from '@/components/About';
-import Newsletter from '@/components/home/Newsletter';
 
 type PageProps = {
   params: Promise<{ locale: string }>;

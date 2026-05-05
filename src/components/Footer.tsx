@@ -1,5 +1,5 @@
 'use client'
-import Image from 'next/image'
+// import Image from 'next/image'
 import { useTranslations } from 'next-intl'
 import { useCookieConsent } from '@/contexts/CookieConsentContext'
 import { Link } from '@/i18n/routing'
