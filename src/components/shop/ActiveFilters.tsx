@@ -84,8 +84,10 @@ export default function ActiveFilters({
             minPrice && maxPrice
               ? t('priceChipRange', { min: minPrice, max: maxPrice })
               : minPrice
-              ? t('priceChipFrom', { min: minPrice })
-              : t('priceChipUpTo', { max: maxPrice })
+                ? t('priceChipFrom', { min: minPrice })
+                : maxPrice
+                  ? t('priceChipUpTo', { max: maxPrice })
+                  : ''
           }
           onRemove={onClearPrice}
         />
