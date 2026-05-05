@@ -25,7 +25,7 @@ export default function Hero() {
       {/* Full-bleed background image (all screen sizes) */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/pexels-2.jpg"
+          src="/pexels-2.webp"
           alt={t('backgroundAlt')}
           fill
           className="object-cover object-[20%_45%] scale-x-[-1]"
