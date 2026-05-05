@@ -3,43 +3,43 @@
     "title": "Perguntas Frequentes",
     "orders": {
       "q1": "Como faço uma encomenda?",
-      "a1": "Navegue na nossa Loja ou Coleções, adicione artigos ao carrinho e prossiga para o checkout. Será direcionada para o nosso checkout seguro da Shopify para concluir a compra.",
-      "q2": "Posso modificar ou cancelar a minha encomenda após a colocação?",
-      "a2": "As encomendas podem ser modificadas ou canceladas até 1 hora após a colocação. Por favor contacte-nos via WhatsApp ou email o mais rapidamente possível e faremos o nosso melhor para acomodar o seu pedido.",
-      "q3": "Preciso de uma conta para encomendar?",
-      "a3": "Não é necessária nenhuma conta. Pode fazer checkout como convidada. No entanto, criar uma conta permite-lhe acompanhar encomendas e guardar os seus dados para compras futuras.",
-      "q4": "As minhas informações de pagamento estão seguras?",
-      "a4": "Sim. Todos os pagamentos são processados através do checkout seguro e compatível com PCI da Shopify. Nunca guardamos os seus dados de pagamento nos nossos servidores."
+      "a1": "Navegue na Loja ou Coleções, adicione artigos ao carrinho e finalize na loja de checkout segura da Shopify.",
+      "q2": "Posso alterar ou cancelar a encomenda depois de feita?",
+      "a2": "Muitas vezes podemos ajudar dentro de uma janela curta após a compra. Contacte-nos por WhatsApp ou email o mais cedo possível.",
+      "q3": "Preciso de conta para comprar?",
+      "a3": "Não. Pode finalizar como convidada. Criar conta permite acompanhar encomendas e guardar dados.",
+      "q4": "Os meus dados de pagamento estão seguros?",
+      "a4": "Sim. Os pagamentos são processados pelo checkout seguro e compatível com PCI da Shopify. Não guardamos dados de pagamento nos nossos servidores."
     },
     "shipping": {
       "q1": "Quanto tempo demora o envio?",
-      "a1": "O envio padrão dentro de Portugal demora 2-4 dias úteis. As encomendas internacionais chegam normalmente em 5-10 dias úteis dependendo do destino.",
+      "a1": "O envio padrão em Portugal costuma demorar 2–4 dias úteis. Encomendas internacionais: 5–10 dias úteis conforme o destino.",
       "q2": "Oferecem envio gratuito?",
-      "a2": "Sim! Encomendas acima de €50 têm direito a envio padrão gratuito dentro de Portugal. Os custos de envio internacional são calculados no checkout.",
-      "q3": "Posso rastrear a minha encomenda?",
-      "a3": "Claro. Assim que a sua encomenda for enviada, receberá um número de rastreamento por email para poder seguir a entrega em tempo real.",
-      "q4": "Fazem envios internacionais?",
-      "a4": "Sim, enviamos para a maioria dos países europeus e além. Os custos de envio e os tempos de entrega estimados são mostrados no checkout com base na sua localização."
+      "a2": "Sim! Encomendas acima de €50 têm envio padrão gratuito em Portugal. Internacional: calculado no checkout.",
+      "q3": "Posso rastrear a encomenda?",
+      "a3": "Sim. Quando a encomenda for enviada, recebe o número de seguimento por email.",
+      "q4": "Enviam para o estrangeiro?",
+      "a4": "Sim, para muitos países europeus e outros. Custos e prazos aparecem no checkout."
     },
     "returns": {
-      "q1": "Qual é a vossa política de devoluções?",
-      "a1": "Aceitamos devoluções de produtos fechados e não utilizados dentro de 14 dias após a entrega. Os artigos devem estar na embalagem original. Contacte-nos primeiro para iniciar uma devolução.",
-      "q2": "Como devolvo um produto?",
-      "a2": "Contacte-nos via email ou WhatsApp com o seu número de encomenda e motivo da devolução. Vamos orientá-la no processo e fornecer uma etiqueta de envio de devolução quando aplicável.",
-      "q3": "Quando receberei o meu reembolso?",
-      "a3": "Os reembolsos são processados dentro de 5-7 dias úteis após recebermos e inspecionarmos o artigo devolvido. O valor será devolvido ao seu método de pagamento original.",
+      "q1": "Qual é a política de devoluções?",
+      "a1": "Aceitamos devoluções de artigos não usados com etiquetas, no prazo de 14 dias após a entrega, conforme condições. Contacte-nos primeiro.",
+      "q2": "Como devolvo um artigo?",
+      "a2": "Envie email ou WhatsApp com o número de encomenda e motivo. Orientamo-la e, se aplicável, enviamos etiqueta de devolução.",
+      "q3": "Quando recebo o reembolso?",
+      "a3": "Após recebermos e verificarmos o artigo, o reembolso leva normalmente 5–7 dias úteis. O valor volta ao método de pagamento original.",
       "q4": "E se recebi um artigo danificado ou errado?",
-      "a4": "Lamentamos! Por favor contacte-nos imediatamente com uma foto do artigo e o seu número de encomenda. Trataremos de um substituto ou reembolso total sem custos adicionais para si."
+      "a4": "Lamentamos! Contacte-nos de imediato com foto e número de encomenda. Organizamos substituição ou reembolso sem custos extra."
     },
     "products": {
-      "q1": "Os vossos produtos são de grau profissional?",
-      "a1": "Sim. Todos os produtos na nossa loja são de grau profissional, selecionados pela nossa equipa de estilistas especialistas que os usam diariamente no salão.",
-      "q2": "Os produtos são adequados para todos os tipos de cabelo?",
-      "a2": "A nossa coleção inclui produtos para todos os tipos de cabelo — fino, grosso, cacheado, liso, com cor tratada e muito mais. Cada página de produto inclui orientação sobre os tipos de cabelo a que melhor se adequa.",
-      "q3": "Os vossos produtos são cruelty-free?",
-      "a3": "Damos prioridade a marcas que são cruelty-free e, sempre que possível, de origem sustentável. As páginas de produto indicam as certificações relevantes para cada artigo.",
-      "q4": "Como sei qual produto é o certo para mim?",
-      "a4": "Consulte a descrição do produto para orientação sobre o tipo de cabelo, ou contacte-nos via WhatsApp — os nossos estilistas têm todo o gosto em dar uma recomendação personalizada com base nas suas necessidades capilares."
+      "q1": "O que a Caraíba vende?",
+      "a1": "Focamo-nos em moda feminina de verão: fatos de banho e biquínis, malas, bijuteria e acessórios — para mulheres.",
+      "q2": "Como escolho o tamanho certo?",
+      "a2": "Cada página tem orientações de tamanho. Se estiver entre dois ou tiver dúvidas, fale connosco — ajudamos a encontrar o melhor ajuste.",
+      "q3": "Os produtos são feitos de forma responsável?",
+      "a3": "Trabalhamos com parceiros que partilham valores e boas práticas. As páginas de produto indicam detalhes quando disponíveis.",
+      "q4": "Posso pedir ajuda com styling?",
+      "a4": "Sim — por WhatsApp ou email ajudamo-la a combinar peças e a escolher o que mais a favorece."
     }
   }
 }

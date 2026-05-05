@@ -1,31 +1,30 @@
 {
   "metadata": {
     "title": {
-      "default": "Salon Concept | Professional Hair Care Products"
+      "default": "Caraíba | Women's Summer Fashion — Swimwear, Bags & Jewelry"
     },
-    "description": "Shop professional-grade hair care products curated by expert stylists. Shampoos, treatments, styling tools and more — delivered to your door.",
+    "description": "Caraíba designs summer fashion for women 18+: bikinis, bags, and jewelry that boost confidence and celebrate your beauty. Shop curated swimwear and accessories online.",
     "keywords": [
-      "professional hair care",
-      "salon quality products",
-      "hair care online",
-      "hair shampoo",
-      "hair treatment",
-      "styling products",
-      "Salon Concept",
-      "hair care Portugal",
-      "professional hair products",
-      "expert stylists"
+      "women's swimwear",
+      "bikinis online",
+      "summer fashion women",
+      "beach bags",
+      "women's jewelry",
+      "Caraíba",
+      "Portugal fashion",
+      "summer accessories",
+      "confidence fashion"
     ],
     "openGraph": {
-      "siteName": "Salon Concept",
-      "title": "Salon Concept | Professional Hair Care Products",
-      "description": "Shop professional-grade hair care products curated by expert stylists. Fast delivery, salon quality.",
-      "imageAlt": "Salon Concept — Professional Hair Care Products"
+      "siteName": "Caraíba",
+      "title": "Caraíba | Women's Summer Fashion",
+      "description": "Bikinis, bags, and jewelry for women who want to feel confident and unique. Summer style, delivered.",
+      "imageAlt": "Caraíba — Women's summer fashion"
     },
     "twitter": {
-      "title": "Salon Concept | Professional Hair Care Products",
-      "description": "Shop professional-grade hair care products curated by expert stylists. Fast delivery, salon quality.",
-      "creator": "@SalonConcept"
+      "title": "Caraíba | Women's Summer Fashion",
+      "description": "Swimwear, bags & jewelry curated for confidence and summer living.",
+      "creator": "@caraiba"
     },
     "verification": {
       "google": "your-google-verification-code",

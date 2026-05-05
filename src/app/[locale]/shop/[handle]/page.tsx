@@ -1,4 +1,4 @@
-import { getProductByHandle, formatMoney } from '@/lib/shopify-api';
+import { getProductByHandle, formatMoney, getFirstAvailableVariant, isProductPurchasable } from '@/lib/shopify-api';
 import { cormorantGaramond } from '@/lib/fonts';
 import Link from 'next/link';
 import { getTranslations } from 'next-intl/server';
@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const product = await getProductByHandle(handle);
   if (!product) return {};
   return {
-    title: `${product.title} | Shop | Salon Concept`,
+    title: `${product.title} | Shop | Caraíba`,
     description: product.description,
   };
 }
@@ -35,6 +35,7 @@ export default async function ProductPage({ params }: PageProps) {
   if (!product) notFound();
 
   const firstVariant = product.variants.edges[0]?.node;
+  const defaultCartVariant = getFirstAvailableVariant(product) ?? firstVariant;
   const images = product.images.edges.map((e) => e.node);
   // Fall back to featuredImage if the images array is empty
   const galleryImages =
@@ -81,7 +82,7 @@ export default async function ProductPage({ params }: PageProps) {
                 >
                   {product.title}
                 </h1>
-                {!product.availableForSale && (
+                {!isProductPurchasable(product) && (
                   <span className="inline-flex items-center bg-foreground/90 text-background text-xs font-bold px-2.5 py-1 rounded-full uppercase tracking-wide">
                     {ts('soldOut')}
                   </span>
@@ -126,15 +127,15 @@ export default async function ProductPage({ params }: PageProps) {
             )}
 
             {/* Add to cart + Buy Now — uses first (or only) variant when no selector needed */}
-            {!hasOptions && firstVariant && (
+            {!hasOptions && defaultCartVariant && (
               <div className="flex flex-col gap-3">
                 <AddToCartButton
-                  variantId={firstVariant.id}
-                  available={firstVariant.availableForSale}
+                  variantId={defaultCartVariant.id}
+                  available={defaultCartVariant.availableForSale}
                 />
                 <BuyNowButton
-                  variantId={firstVariant.id}
-                  available={firstVariant.availableForSale}
+                  variantId={defaultCartVariant.id}
+                  available={defaultCartVariant.availableForSale}
                 />
               </div>
             )}

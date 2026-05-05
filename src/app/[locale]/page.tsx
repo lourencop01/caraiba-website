@@ -29,7 +29,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 
   const t = await getTranslations({ locale, namespace: 'metadata' });
-  const baseUrl = 'https://www.salonconcept.pt';
+  const baseUrl = 'https://www.caraiba.pt';
   const enUrl = `${baseUrl}/en/`;
   const ptUrl = `${baseUrl}/pt/`;
   const localizedUrl = locale === 'en' ? enUrl : ptUrl;
@@ -110,23 +110,23 @@ export default async function Home({ params }: PageProps) {
       {/* 1 — Hero */}
       <Hero />
 
-      {/* 2 — Category Navigation */}
-      <CategoryNav collections={collections} locale={locale} />
-
       {/* 3 — Featured Products */}
       <FeaturedProducts products={featuredProducts} locale={locale} />
+      
+      {/* 5 — Product Showcase (New Arrivals) */}
+      <ProductShowcase products={showcaseProducts} locale={locale} />
+
+      {/* 2 — Category Navigation */}
+      <CategoryNav collections={collections} locale={locale} />
 
       {/* 4 — Highlight / Promo Banner */}
       {/* <PromoBanner locale={locale} /> */}
 
-      {/* 5 — Product Showcase (New Arrivals) */}
-      <ProductShowcase products={showcaseProducts} locale={locale} />
+      {/* 6 — Social Proof */}
+      <Testimonials isHomePage={true} />
 
       {/* 8 — Brand / Story */}
       <About isHomePage={true} />
-
-      {/* 6 — Social Proof */}
-      <Testimonials isHomePage={true} />
 
       {/* 7 — Visual Content */}
       <Gallery isHomePage={true} />

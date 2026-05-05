@@ -51,7 +51,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 
   const t = await getTranslations({ locale, namespace: 'metadata' });
   
-  const baseUrl = "https://www.salonconcept.pt";
+  const baseUrl = "https://www.caraiba.pt";
   const localizedUrl = `${baseUrl}/${locale}/`;
 
   return {
@@ -61,9 +61,9 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     },
     description: t('description'),
     keywords: Array.isArray(t.raw('keywords')) ? t.raw('keywords') : [],
-    authors: [{ name: "Salon Concept" }],
-    creator: "Salon Concept",
-    publisher: "Salon Concept",
+    authors: [{ name: "Caraíba" }],
+    creator: "Caraíba",
+    publisher: "Caraíba",
     formatDetection: {
       email: false,
       address: false,

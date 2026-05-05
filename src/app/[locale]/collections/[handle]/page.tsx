@@ -14,7 +14,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const result = await getCollectionByHandle(handle, 24, locale);
   if (!result) return {};
   return {
-    title: `${result.collection.title} | Collections | Salon Concept`,
+    title: `${result.collection.title} | Collections | Caraíba`,
     description: result.collection.description,
   };
 }

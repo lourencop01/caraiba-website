@@ -60,7 +60,7 @@ export default async function AboutPage({ params }: PageProps) {
       <section className="relative bg-foreground overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <Image
-            src="/valentina_background.png"
+            src="/pexels-1.jpg"
             alt=""
             fill
             className="object-cover"
@@ -103,7 +103,7 @@ export default async function AboutPage({ params }: PageProps) {
             {/* Image */}
             <div className="relative rounded-3xl overflow-hidden aspect-[4/5] shadow-theme-lg">
               <Image
-                src="/female-hairdresser-italian.png"
+                src="/hero2.png"
                 alt="Our story"
                 fill
                 className="object-cover object-[50%_10%]"

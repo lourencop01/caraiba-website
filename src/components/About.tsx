@@ -47,7 +47,7 @@ export default function About({ isHomePage = false }: AboutProps) {
           <div className="relative order-2 lg:order-1">
             <div className="relative rounded-3xl overflow-hidden aspect-[4/5] shadow-theme-lg">
               <Image
-                src="/female-hairdresser-lisbon-balayage.png"
+                src="/4.jpg"
                 alt="Brand story"
                 fill
                 className="object-cover object-[40%_20%]"

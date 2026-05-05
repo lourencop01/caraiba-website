@@ -26,7 +26,7 @@ export default function Hero() {
       <div className="absolute inset-0 z-0">
         <Image
           src="/pexels-2.jpg"
-          alt="Professional hair care products"
+          alt={t('backgroundAlt')}
           fill
           className="object-cover object-[20%_45%] scale-x-[-1]"
           loading="eager"
@@ -34,7 +34,7 @@ export default function Hero() {
         />
       </div>
 
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 mt-13">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="flex items-center min-h-[100vh] py-16">
 
           {/* Content */}

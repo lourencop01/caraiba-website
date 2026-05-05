@@ -1,6 +1,8 @@
-import Contact from '@/components/Contact'
+import Image from 'next/image';
+import Contact from '@/components/Contact';
 import { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
+import { cormorantGaramond } from '@/lib/fonts';
 import { routing } from '@/i18n/routing';
 import { notFound } from 'next/navigation';
 import StructuredData from '@/components/StructuredData';
@@ -20,54 +22,74 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   const t = await getTranslations({ locale, namespace: 'metadata' });
   
-  const baseUrl = "https://www.salonconcept.pt";
-  
-  // Contact page URLs (keep consistent with routing)
+  const baseUrl = 'https://www.caraiba.pt';
+
   const enUrl = `${baseUrl}/en/contact/`;
-  const ptUrl = `${baseUrl}/pt/contacto/`; // Fixed: Use correct Portuguese route
+  const ptUrl = `${baseUrl}/pt/contacto/`;
   const localizedUrl = locale === 'en' ? enUrl : ptUrl;
 
   return {
-    title: locale === 'en' 
-      ? 'Contact Us | Book Your Appointment | Salon Concept'
-      : 'Contacte-nos | Marque a Sua Consulta | Salon Concept',
-    description: locale === 'en'
-      ? 'Contact Salon Concept to book your hair appointment. Located in the heart of Lisbon, we offer expert styling, cutting, and coloring services. Call us or visit our salon today.'
-      : 'Contacte o Salon Concept para marcar a sua consulta de cabeleireiro. Localizado no coração de Lisboa, oferecemos serviços especializados de penteados, cortes e coloração. Ligue-nos ou visite o nosso salão hoje.',
-    keywords: locale === 'en' 
-      ? ['contact hair salon Lisbon', 'book appointment', 'hair salon location', 'Lisbon hairdresser contact', 'salon booking', 'hair appointment Lisbon', 'contact hairdresser', 'salon address Lisbon', 'hair salon phone']
-      : ['contactar cabeleireiro Lisboa', 'marcar consulta', 'localização cabeleireiro', 'contacto cabeleireiro Lisboa', 'marcação cabeleireiro', 'consulta cabelo Lisboa', 'contactar cabeleireiro', 'morada cabeleireiro Lisboa', 'telefone cabeleireiro'],
+    title:
+      locale === 'en'
+        ? 'Contact | Customer support | Caraíba'
+        : 'Contacto | Apoio ao cliente | Caraíba',
+    description:
+      locale === 'en'
+        ? 'Questions about orders, sizing, delivery, or styling? Contact Caraíba by phone, WhatsApp, or email — we reply as soon as we can.'
+        : 'Dúvidas sobre encomendas, tamanhos, envios ou styling? Contacte a Caraíba por telefone, WhatsApp ou e-mail — respondemos o mais rápido possível.',
+    keywords:
+      locale === 'en'
+        ? [
+            'Caraíba contact',
+            'swimwear help Lisbon',
+            'fashion customer support',
+            'order tracking',
+            'sizing help',
+            'women swimwear Portugal',
+          ]
+        : [
+            'contacto Caraíba',
+            'apoio ao cliente moda',
+            'ajuda encomendas',
+            'tamanhos fatos de banho',
+            'moda feminina Portugal',
+          ],
     openGraph: {
-      title: locale === 'en'
-        ? 'Contact Us | Book Your Appointment | Salon Concept'
-        : 'Contacte-nos | Marque a Sua Consulta | Salon Concept',
-      description: locale === 'en'
-        ? 'Contact Salon Concept to book your hair appointment. Located in the heart of Lisbon, we offer expert styling, cutting, and coloring services. Call us or visit our salon today.'
-        : 'Contacte o Salon Concept para marcar a sua consulta de cabeleireiro. Localizado no coração de Lisboa, oferecemos serviços especializados de penteados, cortes e coloração. Ligue-nos ou visite o nosso salão hoje.',
+      title:
+        locale === 'en'
+          ? 'Contact | Customer support | Caraíba'
+          : 'Contacto | Apoio ao cliente | Caraíba',
+      description:
+        locale === 'en'
+          ? 'Questions about orders, sizing, delivery, or styling? Contact Caraíba by phone, WhatsApp, or email.'
+          : 'Dúvidas sobre encomendas, tamanhos ou envios? Contacte a Caraíba por telefone, WhatsApp ou e-mail.',
       url: localizedUrl,
       siteName: t('openGraph.siteName'),
       images: [
         {
-          url: `${baseUrl}/valentina_background.png`,
+          url: `${baseUrl}/hero1.png`,
           width: 1200,
           height: 630,
-          alt: locale === 'en' 
-            ? "Contact Salon Concept - Hair Salon in Lisbon"
-            : "Contacte o Salon Concept - Cabeleireiro em Lisboa",
+          alt:
+            locale === 'en'
+              ? 'Contact Caraíba — customer support'
+              : 'Contacto Caraíba — apoio ao cliente',
         },
       ],
-      locale: locale === 'pt' ? "pt_PT" : "en_US",
-      type: "website",
+      locale: locale === 'pt' ? 'pt_PT' : 'en_US',
+      type: 'website',
     },
     twitter: {
-      card: "summary_large_image",
-      title: locale === 'en'
-        ? 'Contact Us | Book Your Appointment | Salon Concept'
-        : 'Contacte-nos | Marque a Sua Consulta | Salon Concept',
-      description: locale === 'en'
-        ? 'Contact Salon Concept to book your hair appointment. Located in the heart of Lisbon, we offer expert styling, cutting, and coloring services. Call us or visit our salon today.'
-        : 'Contacte o Salon Concept para marcar a sua consulta de cabeleireiro. Localizado no coração de Lisboa, oferecemos serviços especializados de penteados, cortes e coloração. Ligue-nos ou visite o nosso salão hoje.',
-      images: [`${baseUrl}/og-contact-salon.jpg`],
+      card: 'summary_large_image',
+      title:
+        locale === 'en'
+          ? 'Contact | Customer support | Caraíba'
+          : 'Contacto | Apoio ao cliente | Caraíba',
+      description:
+        locale === 'en'
+          ? 'Questions about orders, sizing, delivery, or styling? Contact Caraíba by phone, WhatsApp, or email.'
+          : 'Dúvidas sobre encomendas, tamanhos ou envios? Contacte a Caraíba.',
+      images: [`${baseUrl}/hero1.png`],
       creator: t('twitter.creator'),
     },
     robots: {
@@ -106,23 +128,26 @@ export default async function ContactPage({ params }: PageProps) {
   // Generate structured data for contact page
   const structuredData = generatePageSpecificStructuredData(locale as 'en' | 'pt', 'contact');
   return (
-    <main>
+    <main className="min-h-screen bg-background">
       <StructuredData data={structuredData} />
       
-      {/* Hero Section with H1 */}
-      <section className="pt-20 bg-background">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h1 className="text-2xl lg:text-4xl font-bold text-foreground mb-6 leading-tight">
-              {t('title')}
-              <span className="text-1xl lg:text-3xl text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary-dark block leading-tight">
-                {t('subtitle')}
-              </span>
-            </h1>
-            <p className="text-xl text-foreground-light leading-relaxed max-w-2xl mx-auto">
-              {t('heroDescription')}
-            </p>
-          </div>
+      <section className="relative overflow-hidden bg-foreground pt-24 pb-20 lg:pt-28 lg:pb-24">
+        <div className="absolute inset-0 opacity-[0.12]">
+          <Image src="/pexels-2.jpg" alt="" fill className="object-cover" priority />
+        </div>
+        <div className="relative container mx-auto px-4 text-center sm:px-6 lg:px-8">
+          <span className="mb-4 block text-sm font-semibold uppercase tracking-widest text-primary">
+            {t('heroEyebrow')}
+          </span>
+          <h1
+            className={`mx-auto max-w-3xl text-4xl font-bold leading-tight text-background sm:text-5xl lg:text-6xl ${cormorantGaramond.className}`}
+          >
+            {t('title')}
+          </h1>
+          <p className="mx-auto mt-4 max-w-xl text-lg font-medium text-background/75 sm:text-xl">{t('subtitle')}</p>
+          <p className="mx-auto mt-8 max-w-2xl text-base leading-relaxed text-background/60 sm:text-lg">
+            {t('heroDescription')}
+          </p>
         </div>
       </section>
       

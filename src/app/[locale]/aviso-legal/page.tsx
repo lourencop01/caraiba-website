@@ -18,20 +18,20 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const t = await getTranslations({ locale, namespace: 'impressum' });
   
-  const baseUrl = "https://www.salonconcept.pt";
+  const baseUrl = "https://www.caraiba.pt";
   const enUrl = `${baseUrl}/en/impressum/`;
   const ptUrl = `${baseUrl}/pt/aviso-legal/`;
   const localizedUrl = locale === 'en' ? enUrl : ptUrl;
 
   return {
-    title: `${t('title')} | Salon Concept`,
+    title: `${t('title')} | Caraíba`,
     description: t('description').substring(0, 160),
     robots: 'index, follow',
     openGraph: {
-      title: `${t('title')} | Salon Concept`,
+      title: `${t('title')} | Caraíba`,
       description: t('description').substring(0, 160),
       url: localizedUrl,
-      siteName: 'Salon Concept',
+      siteName: 'Caraíba',
       locale: locale === 'pt' ? "pt_PT" : "en_US",
       type: "website",
     },

@@ -1,79 +1,96 @@
-'use client'
-import GoogleMaps from "./GoogleMaps";
+'use client';
+
+import GoogleMaps from './GoogleMaps';
 import { useTranslations } from 'next-intl';
 import { trackGenerateLead } from '../lib/analytics';
+import { cormorantGaramond } from '@/lib/fonts';
+import { PiMapPin, PiPhone, PiEnvelopeSimple, PiClock } from 'react-icons/pi';
 
 interface ContactProps {
   isHomePage?: boolean;
 }
 
 export default function Contact({ isHomePage = false }: ContactProps) {
-  const t = useTranslations();
+  const t = useTranslations('contact');
+  const telHref = `tel:${t('phoneValue').replace(/\s/g, '')}`;
+
+  const rows = [
+    {
+      icon: <PiMapPin className="h-5 w-5" aria-hidden />,
+      title: t('address'),
+      body: <p className="whitespace-pre-line text-foreground-light leading-relaxed">{t('addressValue')}</p>,
+    },
+    {
+      icon: <PiPhone className="h-5 w-5" aria-hidden />,
+      title: t('phone'),
+      body: (
+        <a
+          href={telHref}
+          onClick={() => trackGenerateLead('contact_phone')}
+          className="text-foreground-light transition-colors hover:text-primary-dark"
+        >
+          {t('phoneValue')}
+        </a>
+      ),
+    },
+    {
+      icon: <PiEnvelopeSimple className="h-5 w-5" aria-hidden />,
+      title: t('email'),
+      body: (
+        <a
+          href={`mailto:${t('emailValue')}`}
+          className="text-foreground-light transition-colors hover:text-primary-dark"
+        >
+          {t('emailValue')}
+        </a>
+      ),
+    },
+    {
+      icon: <PiClock className="h-5 w-5" aria-hidden />,
+      title: t('hours'),
+      body: <div className="whitespace-pre-line text-foreground-light leading-relaxed">{t('hoursValue')}</div>,
+    },
+  ];
 
   return (
-    <section className="py-20 bg-background">
+    <section className="py-20 lg:py-24 bg-surface">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-12">
-          <div>
+        <div className="grid grid-cols-1 items-stretch gap-12 lg:grid-cols-2 lg:gap-16">
+          <div className="flex flex-col gap-8">
             {isHomePage && (
-              <>
-                <h2 className="text-3xl font-bold text-foreground mb-2">{t('contact.title')}</h2>
-                <p className="text-xl font-semibold text-foreground-light mb-6">{t('contact.subtitle')}</p>
-              </>
+              <header className="max-w-xl">
+                <span className="mb-3 block text-sm font-semibold uppercase tracking-widest text-primary">
+                  {t('heroEyebrow')}
+                </span>
+                <h2 className={`text-3xl font-bold leading-tight text-foreground sm:text-4xl ${cormorantGaramond.className}`}>
+                  {t('title')}
+                </h2>
+                <p className="mt-3 text-lg font-medium text-foreground-light">{t('subtitle')}</p>
+              </header>
             )}
-            
-            <div className="space-y-6">
-              <div className="flex items-start space-x-4">
-                <div className="w-6 h-6 bg-accent/20 rounded-full flex items-center justify-center mt-1">
-                  <span className="text-accent text-sm">📍</span>
-                </div>
-                <div>
-                  <h3 className="font-semibold text-foreground">{t('contact.address')}</h3>
-                  <p className="text-foreground-light whitespace-pre-line">{t('contact.addressValue')}</p>
-                </div>
-              </div>
-              
-              <div className="flex items-start space-x-4">
-                <div className="w-6 h-6 bg-accent/20 rounded-full flex items-center justify-center mt-1">
-                  <span className="text-accent text-sm">📞</span>
-                </div>
-                <div>
-                  <h3 className="font-semibold text-foreground">{t('contact.phone')}</h3>
-                  <a href="tel:+351915562413" onClick={() => trackGenerateLead('contact_phone')} className="text-foreground-light hover:text-accent transition-colors cursor-pointer">
-                    {t('contact.phoneValue')}
-                  </a>
-                </div>
-              </div>
-              
-              <div className="flex items-start space-x-4">
-                <div className="w-6 h-6 bg-accent/20 rounded-full flex items-center justify-center mt-1">
-                  <span className="text-accent text-sm">✉️</span>
-                </div>
-                <div>
-                  <h3 className="font-semibold text-foreground">{t('contact.email')}</h3>
-                  <p className="text-foreground-light">{t('contact.emailValue')}</p>
-                </div>
-              </div>
-              
-              <div className="flex items-start space-x-4">
-                <div className="w-6 h-6 bg-accent/20 rounded-full flex items-center justify-center mt-1">
-                  <span className="text-accent text-sm">🕐</span>
-                </div>
-                <div>
-                  <h3 className="font-semibold text-foreground">{t('contact.hours')}</h3>
-                  <div className="text-foreground-light whitespace-pre-line">
-                    {t('contact.hoursValue')}
-                  </div>
-                </div>
-              </div>
+
+            <div className="rounded-2xl border border-border/50 bg-background p-6 shadow-theme sm:p-8">
+              <ul className="divide-y divide-border/60">
+                {rows.map(({ icon, title, body }, i) => (
+                  <li key={i} className="flex gap-4 py-6 first:pt-0 last:pb-0">
+                    <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary">
+                      {icon}
+                    </div>
+                    <div className="min-w-0 flex-1 pt-0.5">
+                      <h3 className="text-sm font-semibold uppercase tracking-wide text-foreground">{title}</h3>
+                      <div className="mt-1.5 text-sm">{body}</div>
+                    </div>
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
-          
-          <div>
+
+          <div className="min-h-[min(420px,70vh)] lg:min-h-[28rem]">
             <GoogleMaps />
           </div>
         </div>
       </div>
     </section>
   );
-} 
+}

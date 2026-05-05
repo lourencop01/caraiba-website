@@ -28,5 +28,5 @@ export const DEFAULT_CONSENT: CookieConsent = {
   marketing: false,
 };
 
-export const COOKIE_CONSENT_NAME = 'hairdresser-cookie-consent';
+export const COOKIE_CONSENT_NAME = 'caraiba-cookie-consent';
 export const COOKIE_CONSENT_EXPIRES = 180; // days 

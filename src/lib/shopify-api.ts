@@ -269,14 +269,14 @@ export async function getFeaturedProducts(first = 8, locale?: string): Promise<S
       products(first: $first, query: $query) {
         edges {
           node {
-            id title handle description
+            id title handle description availableForSale
             featuredImage { url altText }
             images(first: 1) { edges { node { url altText } } }
             priceRange {
               minVariantPrice { amount currencyCode }
               maxVariantPrice { amount currencyCode }
             }
-            variants(first: 1) {
+            variants(first: 100) {
               edges {
                 node {
                   id
@@ -309,14 +309,14 @@ export async function getProducts(first = 24, locale?: string): Promise<ShopifyP
       products(first: $first) {
         edges {
           node {
-            id title handle description
+            id title handle description availableForSale
             featuredImage { url altText }
             images(first: 1) { edges { node { url altText } } }
             priceRange {
               minVariantPrice { amount currencyCode }
               maxVariantPrice { amount currencyCode }
             }
-            variants(first: 1) {
+            variants(first: 100) {
               edges {
                 node {
                   id
@@ -940,6 +940,25 @@ export async function hasSaleProducts(): Promise<boolean> {
 }
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
+
+/**
+ * Whether the product should be treated as purchasable in listings.
+ * Prefer Shopify's `product.availableForSale` (true if any variant can be sold);
+ * fall back to scanning loaded variants when the field is missing.
+ */
+export function isProductPurchasable(product: ShopifyProduct): boolean {
+  if (typeof product.availableForSale === 'boolean') {
+    return product.availableForSale;
+  }
+  return (product.variants?.edges ?? []).some((e) => e.node.availableForSale);
+}
+
+/** First loaded variant that is available for sale, if any. */
+export function getFirstAvailableVariant(product: ShopifyProduct): ShopifyProductVariant | undefined {
+  return (product.variants?.edges ?? [])
+    .map((e) => e.node)
+    .find((v) => v.availableForSale);
+}
 
 export function formatMoney(money: ShopifyMoneyV2): string {
   return new Intl.NumberFormat('en-US', {

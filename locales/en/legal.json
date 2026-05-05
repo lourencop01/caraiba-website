@@ -18,6 +18,7 @@
       "essential": {
         "title": "Essential Cookies",
         "description": "These cookies are necessary for the website to function and cannot be switched off. They are usually only set in response to actions made by you which amount to a request for services.",
+        "alwaysOn": "Always on",
         "examples": "Authentication, security, language preferences"
       },
       "analytics": {
@@ -45,7 +46,7 @@
       "introduction": {
         "title": "What are Cookies?",
         "description": "Cookies are small text files that are placed on your computer or mobile device when you visit a website. They are widely used to make websites work more efficiently and to provide information to website owners.",
-        "usage": "At Salon Concept, we use cookies to enhance your browsing experience, analyze website usage, and deliver personalized content. This Cookie Policy explains what cookies are, how we use them, and how you can manage your cookie preferences.",
+        "usage": "At Caraíba, we use cookies to enhance your browsing experience, analyze website usage, and deliver personalized content. This Cookie Policy explains what cookies are, how we use them, and how you can manage your cookie preferences.",
         "consent": "By continuing to use our website, you consent to our use of cookies as described in this policy and our Privacy Policy."
       },
       "types": {
@@ -129,7 +130,7 @@
       "contact": {
         "title": "Contact Us",
         "description": "If you have questions about our use of cookies, please contact us:",
-        "email": "Email: salonconcept@gmail.com",
+        "email": "Email: hello@caraiba.pt",
         "phone": "Phone: +351 915662413",
         "address": "Address: Rua Exemplo 12, 1500-332 Lisboa, Portugal",
         "response": "We will respond to your inquiries within 48 hours."
@@ -142,27 +143,27 @@
     "effective": "Effective Date: 13 July 2025",
     "introduction": {
       "title": "Introduction",
-      "content": "At Salon Concept (\"we,\" \"our,\" or \"us\"), we are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, store, and protect your personal data when you visit our website, use our services, or interact with us.",
-      "contact": "If you have any questions about this Privacy Policy, please contact us at salonconcept@gmail.com."
+      "content": "At Caraíba (\"we,\" \"our,\" or \"us\"), we are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, store, and protect your personal data when you visit our website, use our services, or interact with us.",
+      "contact": "If you have any questions about this Privacy Policy, please contact us at hello@caraiba.pt."
     },
     "dataController": {
       "title": "Data Controller",
       "content": "The data controller for your personal information is:",
-      "name": "Salon Concept",
+      "name": "Caraíba",
       "address": "Rua Exemplo 12, 1500-332 Lisboa, Portugal",
-      "email": "Email: salonconcept@gmail.com",
+      "email": "Email: hello@caraiba.pt",
       "phone": "Phone: +351 915662413"
     },
     "dataCollection": {
       "title": "What Personal Data We Collect",
       "description": "We collect and process the following types of personal data:",
       "contactForms": {
-        "title": "Contact Forms and Bookings",
+        "title": "Contact Forms and Orders",
         "items": [
           "Full name",
           "Email address",
           "Phone number",
-          "Preferred appointment dates and times",
+          "Order references and delivery preferences",
           "Service preferences",
           "Special requests or allergies",
           "Any other information you voluntarily provide"
@@ -207,7 +208,7 @@
       },
       "contract": {
         "title": "Contract Performance",
-        "content": "To provide hair salon services, process bookings, and fulfill our contractual obligations."
+        "content": "To process and deliver your orders, provide customer support, and fulfill our contractual obligations."
       },
       "legitimateInterest": {
         "title": "Legitimate Interest",
@@ -224,9 +225,9 @@
       "serviceProvision": {
         "title": "Service Provision",
         "items": [
-          "Processing and managing appointments",
-          "Providing hair salon services",
-          "Communicating about your appointments",
+          "Processing and fulfilling online orders",
+          "Shipping and delivery coordination",
+          "Communicating about your orders and returns",
           "Handling customer service inquiries"
         ]
       },
@@ -268,7 +269,7 @@
           "Website hosting and maintenance providers",
           "Email marketing platforms",
           "Payment processors",
-          "Appointment booking systems",
+          "E-commerce and order management (e.g. Shopify)",
           "Analytics services (Google Analytics)",
           "Social media platforms (Meta/Facebook)"
         ]
@@ -293,7 +294,7 @@
       "title": "Data Retention",
       "description": "We retain your personal data for as long as necessary to fulfill the purposes outlined in this policy:",
       "customerData": {
-        "title": "Customer and Booking Data",
+        "title": "Customer and Order Data",
         "content": "Retained for up to 7 years for accounting and legal compliance purposes."
       },
       "marketingData": {
@@ -391,7 +392,7 @@
     "contact": {
       "title": "Contact Information",
       "description": "If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us:",
-      "email": "Email: salonconcept@gmail.com",
+      "email": "Email: hello@caraiba.pt",
       "phone": "Phone: +351 915662413",
       "address": "Address: Rua Exemplo 12, 1500-332 Lisboa, Portugal",
       "dpo": "Data Protection Officer: (if applicable)",
@@ -411,23 +412,23 @@
     "effective": "Effective Date: July 13, 2025",
     "acceptance": {
       "title": "Acceptance of Terms",
-      "content": "By accessing and using the Salon Concept website (\"Website\"), you accept and agree to be bound by the terms and provision of this agreement.",
+      "content": "By accessing and using the Caraíba website (\"Website\"), you accept and agree to be bound by the terms and provision of this agreement.",
       "agreement": "If you do not agree to abide by the above, please do not use this service."
     },
     "services": {
       "title": "Description of Services",
-      "description": "Salon Concept provides a marketing website featuring information about our hair salon services, styling tips through our blog, contact capabilities, and promotional offers. This is not an e-commerce platform.",
+      "description": "Caraíba operates an online store for women's summer fashion — swimwear, bags, jewelry, and accessories — with secure checkout, customer support, and promotional offers.",
       "website": {
-        "title": "Marketing Website",
-        "content": "Information about our hair salon, services, team, and location."
+        "title": "Online boutique",
+        "content": "Product catalogues, collections, brand information, and company contact details."
       },
       "blog": {
-        "title": "Hair Care Blog",
-        "content": "Educational content, styling tips, and hair care advice."
+        "title": "Editorial & inspiration",
+        "content": "Occasional articles on summer style, outfit ideas, and product care — for inspiration only."
       },
       "contact": {
-        "title": "Contact Forms",
-        "content": "Communication tools to reach our salon and book appointments."
+        "title": "Contact",
+        "content": "Ways to reach our team for product questions, orders, sizing help, or general enquiries."
       },
       "promotions": {
         "title": "Promotional Content",
@@ -441,7 +442,7 @@
         "title": "Contact Form Usage",
         "rules": [
           "Provide accurate and truthful information",
-          "Use forms only for legitimate salon inquiries",
+          "Use forms only for legitimate product or order enquiries",
           "Do not submit multiple duplicate requests",
           "Respect our response times and business hours"
         ]
@@ -461,15 +462,15 @@
     },
     "intellectualProperty": {
       "title": "Intellectual Property Rights",
-      "description": "All content on this website is owned by or licensed to Salon Concept and is protected by copyright, trademark, and other intellectual property laws.",
+      "description": "All content on this website is owned by or licensed to Caraíba and is protected by copyright, trademark, and other intellectual property laws.",
       "owned": {
         "title": "Our Intellectual Property Includes",
         "items": [
           "Website design, layout, and user interface",
-          "Logo, branding, and salon imagery",
-          "Blog content, articles, and styling guides",
-          "Photography and client transformation images",
-          "Service descriptions and pricing information",
+          "Logo, branding, and campaign imagery",
+          "Editorial content, lookbooks, and guides",
+          "Product and lifestyle photography",
+          "Product descriptions and pricing information",
           "Marketing materials and promotional content"
         ]
       },
@@ -478,7 +479,7 @@
         "items": [
           "Copy, reproduce, or distribute our content without permission",
           "Use our logo or branding for commercial purposes",
-          "Republish our blog content on other platforms",
+          "Republish our editorial content on other platforms without permission",
           "Download or use our photography without authorization",
           "Create derivative works based on our content"
         ]
@@ -486,22 +487,22 @@
       "note": "For licensing inquiries or permission requests, please contact us directly."
     },
     "contentLiability": {
-      "title": "Content and Blog Disclaimer",
-      "description": "While we strive to provide accurate and helpful information, we make no warranties about the completeness, reliability, or accuracy of our content.",
+      "title": "Editorial content disclaimer",
+      "description": "While we strive to provide accurate and helpful information, we make no warranties about the completeness, reliability, or accuracy of all content.",
       "blog": {
-        "title": "Hair Care Blog Content",
-        "disclaimer": "Our blog provides general hair care tips and styling advice for informational purposes only.",
+        "title": "Style inspiration",
+        "disclaimer": "Editorial pages may offer general styling and fit suggestions for informational purposes only — not personal advice.",
         "limitations": [
-          "Content should not replace professional hair consultation",
-          "Results may vary based on individual hair type and condition",
-          "We are not responsible for any adverse reactions from following our advice",
-          "Always patch test products and consult professionals for major changes",
-          "Third-party product recommendations are opinions, not endorsements"
+          "Fit and appearance vary by body shape and preference",
+          "Colours may differ slightly on screen from the physical product",
+          "Care instructions on product labels take precedence over informal tips",
+          "We are not responsible for damage caused by ignoring care labels",
+          "Third-party mentions are for context, not endorsements"
         ]
       },
       "professional": {
-        "title": "Professional Advice",
-        "advice": "For specific hair concerns, allergies, or chemical treatments, always consult with a qualified hair professional."
+        "title": "Product care",
+        "advice": "Always follow the care instructions supplied with your items. For skin sensitivity or allergies to metals or fabrics, consult a qualified professional."
       }
     },
     "thirdPartyServices": {
@@ -531,25 +532,25 @@
       "terms": {
         "title": "Promotional Terms",
         "conditions": [
-          "Offers are subject to availability and salon capacity",
+          "Offers are subject to stock availability",
           "Promotional terms and expiration dates apply",
           "Cannot be combined with other offers unless specified",
-          "New client discounts apply to first-time visitors only",
-          "Management reserves the right to refuse service"
+          "Single-use or first-order codes may apply per promotional rules",
+          "We may refuse orders that appear fraudulent or abusive"
         ]
       },
       "modification": "We reserve the right to modify, suspend, or terminate any promotion at any time without prior notice."
     },
     "giftCards": {
       "title": "Gift Cards and Vouchers",
-      "description": "Gift card information and booking details may be featured on our website.",
+      "description": "Gift card or promotional voucher terms may be featured on our website when available.",
       "validity": {
         "title": "Validity Period",
         "content": "Gift cards are valid for 12 months from the date of purchase unless otherwise specified."
       },
       "redemption": {
         "title": "Redemption Process",
-        "content": "Gift cards must be redeemed by appointment booking and cannot be used for online purchases."
+        "content": "Gift cards and store credit, when offered, can only be used as described in the terms published at the time of issue."
       },
       "transfer": {
         "title": "Transferability",
@@ -561,38 +562,38 @@
       }
     },
     "referrals": {
-      "title": "Client Referral Program",
-      "description": "We may offer referral incentives for clients who recommend our services to others.",
+      "title": "Referral incentives",
+      "description": "We may occasionally offer referral or loyalty incentives as described in the programme terms at that time.",
       "program": {
-        "title": "Referral Program Rules",
+        "title": "Programme rules",
         "rules": [
-          "Referral rewards apply when referred clients complete their first service",
-          "Both referrer and referee must be new or existing clients in good standing",
-          "Referral rewards cannot be combined with other promotional offers",
-          "Rewards are applied as service credits, not cash payments",
-          "Program terms may change with reasonable notice"
+          "Rewards apply only when conditions published in the offer are met",
+          "Participants must comply with fair-use and anti-abuse rules",
+          "Referral rewards cannot be combined with other offers unless stated",
+          "Rewards may be issued as store credit or discounts, not cash, unless required by law",
+          "We may change or end a programme with reasonable notice"
         ]
       },
-      "note": "Referral program participation is voluntary and subject to our discretion."
+      "note": "Participation is voluntary and subject to our discretion."
     },
     "limitationLiability": {
       "title": "Limitation of Liability",
-      "description": "To the fullest extent permitted by law, Salon Concept shall not be liable for any damages arising from your use of this website.",
+      "description": "To the fullest extent permitted by law, Caraíba shall not be liable for any damages arising from your use of this website.",
       "exclusions": {
         "title": "We Are Not Liable For",
         "items": [
           "Indirect, incidental, or consequential damages",
           "Loss of profits, data, or business opportunities",
           "Website downtime, technical issues, or service interruptions",
-          "Actions taken based on blog content or general advice",
+          "Actions taken based on editorial content or general advice",
           "Third-party service failures or data breaches",
-          "Any damages exceeding the amount paid for services"
+          "Any damages exceeding the value of your relevant purchase on this website"
         ]
       }
     },
     "indemnification": {
       "title": "Indemnification",
-      "content": "You agree to indemnify and hold harmless Salon Concept from any claims, damages, or expenses arising from your use of the website, violation of these terms, or infringement of any rights of another party."
+      "content": "You agree to indemnify and hold harmless Caraíba from any claims, damages, or expenses arising from your use of the website, violation of these terms, or infringement of any rights of another party."
     },
     "termination": {
       "title": "Termination",
@@ -612,7 +613,7 @@
     "contact": {
       "title": "Contact Information",
       "content": "If you have any questions about these Terms & Conditions, please contact us:",
-      "email": "Email: salonconcept@gmail.com",
+      "email": "Email: hello@caraiba.pt",
       "phone": "Phone: +351 915662413",
       "address": "Address: Rua Exemplo 12, 1500-332 Lisboa, Portugal"
     }
@@ -626,7 +627,7 @@
       "description": "Information about the business operator and legal entity responsible for this website.",
       "businessName": {
         "label": "Business Name",
-        "value": "Salon Concept"
+        "value": "Caraíba"
       },
       "legalForm": {
         "label": "Legal Form",
@@ -651,11 +652,11 @@
         },
         "email": {
           "label": "Email",
-          "value": "salonconcept@gmail.com"
+          "value": "hello@caraiba.pt"
         },
         "website": {
           "label": "Website",
-          "value": "https://www.salonconcept.pt"
+          "value": "https://www.caraiba.pt"
         }
       }
     },
@@ -675,8 +676,8 @@
         "note": "Registration with local trade office or commercial register if required."
       },
       "license": {
-        "title": "Professional License",
-        "content": "Hair salon services are provided under applicable local licensing requirements and health regulations."
+        "title": "Regulatory compliance",
+        "content": "Retail and e-commerce activities comply with applicable commercial and consumer regulations in the jurisdictions where we operate."
       }
     },
     "responsiblePerson": {
@@ -692,7 +693,7 @@
       },
       "contact": {
         "label": "Contact Email",
-        "value": "salonconcept@gmail.com"
+        "value": "hello@caraiba.pt"
       }
     },
     "contentDisclaimer": {
@@ -707,8 +708,8 @@
         "items": [
           "We assume no liability for the accuracy of information provided",
           "Content is provided for informational purposes only",
-          "Hair care advice should not replace professional consultation",
-          "Prices and service availability are subject to change",
+          "Editorial styling suggestions do not replace checking product labels and your own comfort",
+          "Prices and product availability are subject to change",
           "We reserve the right to modify website content without notice"
         ]
       }

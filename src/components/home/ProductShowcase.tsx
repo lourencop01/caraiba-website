@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { getTranslations } from 'next-intl/server';
-import { ShopifyProduct, formatMoney } from '@/lib/shopify-api';
+import { ShopifyProduct, formatMoney, getFirstAvailableVariant, isProductPurchasable } from '@/lib/shopify-api';
 import { PiArrowRight, PiShoppingCartSimple } from 'react-icons/pi';
 import { cormorantGaramond } from '@/lib/fonts';
 import AddToCartButton from '@/components/shop/AddToCartButton';
@@ -44,9 +44,10 @@ export default async function ProductShowcase({ products, locale }: ProductShowc
             const image = product.images.edges[0]?.node;
             const price = product.priceRange.minVariantPrice;
             const firstVariant = product.variants.edges[0]?.node;
+            const cartVariant = getFirstAvailableVariant(product) ?? firstVariant;
             const comparePrice = firstVariant?.compareAtPrice;
             const isOnSale = comparePrice && parseFloat(comparePrice.amount) > parseFloat(price.amount);
-            const isAvailable = firstVariant?.availableForSale ?? product.availableForSale ?? true;
+            const isAvailable = isProductPurchasable(product);
             const isSoldOut = !isAvailable;
 
             return (
@@ -88,10 +89,10 @@ export default async function ProductShowcase({ products, locale }: ProductShowc
 
                     {/* Quick-add on hover */}
                     <div className="absolute bottom-0 inset-x-0 translate-y-full group-hover:translate-y-0 transition-transform duration-300 p-3">
-                      {firstVariant && (
+                      {cartVariant && (
                         <AddToCartButton
-                          variantId={firstVariant.id}
-                          available={firstVariant.availableForSale}
+                          variantId={cartVariant.id}
+                          available={cartVariant.availableForSale}
                           compact
                         />
                       )}

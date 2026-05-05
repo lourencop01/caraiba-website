@@ -25,17 +25,17 @@ export default function Footer() {
           {/* Col 1: Brand */}
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-9 h-9 rounded-full overflow-hidden border border-background/20">
-                <Image
-                  src="/valentina-hair-concept.jpg"
+              <div className="w-6 h-6 rounded-full overflow-hidden bg-secondary">
+                {/* <Image
+                  src="/logo.jpeg"
                   alt={t('site.name')}
                   width={36}
                   height={36}
                   className="w-full h-full object-cover"
-                />
+                /> */}
               </div>
               <span
-                className={`text-xl font-medium text-background ${cormorantGaramond.className}`}
+                className={`text-xl font-medium text-background uppercase ${cormorantGaramond.className}`}
               >
                 {t('site.name')}
               </span>

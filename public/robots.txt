@@ -1,4 +1,4 @@
-# Robots.txt for Salon Concept
+# Robots.txt for Caraíba
 # Generated automatically at build time
 
 User-agent: *
@@ -71,8 +71,8 @@ User-agent: *
 Crawl-delay: 1
 
 # Sitemap location
-Sitemap: https://www.salonconcept.pt/sitemap.xml
+Sitemap: https://www.caraiba.pt/sitemap.xml
 
 # Additional sitemaps if you create them in the future
-# Sitemap: https://www.salonconcept.pt/sitemap-blog.xml
-# Sitemap: https://www.salonconcept.pt/sitemap-services.xml
+# Sitemap: https://www.caraiba.pt/sitemap-blog.xml
+# Sitemap: https://www.caraiba.pt/sitemap-services.xml

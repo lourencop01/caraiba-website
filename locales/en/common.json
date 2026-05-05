@@ -1,7 +1,7 @@
 {
   "site": {
     "name": "Caraíba",
-    "tagline": "Professional hair care products, curated by expert stylists — delivered to your door."
+    "tagline": "Summer fashion for women — bikinis, bags, and jewelry that celebrate your confidence and make you feel one of a kind."
   },
   "navigation": {
     "home": "Home",
@@ -10,7 +10,7 @@
     "about": "About",
     "contact": "Contact",
     "bookNow": "Call Us",
-    "logoAlt": "Salon Concept — Professional Hair Care",
+    "logoAlt": "Caraíba — Women's summer fashion",
     "shopByCategory": "Shop by Category",
     "shopByCollection": "Shop by Collection",
     "viewAll": "View All Products",
@@ -19,7 +19,7 @@
   "accessibility": {
     "toggleMobileMenu": "Toggle mobile menu",
     "toggleShopMenu": "Toggle shop menu",
-    "callSalon": "Call our team for product advice or support",
+    "callSupport": "Call us for sizing, styling, or order help",
     "openCart": "Open cart",
     "closeCart": "Close cart",
     "removeCartItem": "Remove item",
@@ -59,7 +59,7 @@
     "shipping": "Shipping & Returns",
     "faq": "FAQ",
     "privacyPolicy": "Privacy Policy",
-    "copyright": "© 2025 Salon Concept. All rights reserved."
+    "copyright": "© 2026 Caraíba. All rights reserved."
   },
-  "callCostNote": "(Call to national mobile network)"
+  "callCostNote": "(Calls may incur standard network charges)"
 }

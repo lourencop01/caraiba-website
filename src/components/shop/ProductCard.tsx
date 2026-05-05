@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { ShopifyProduct, formatMoney } from '@/lib/shopify-api';
+import { ShopifyProduct, formatMoney, isProductPurchasable } from '@/lib/shopify-api';
 import { useTranslations } from 'next-intl';
 
 interface ProductCardProps {
@@ -13,7 +13,7 @@ interface ProductCardProps {
 export default function ProductCard({ product, locale }: ProductCardProps) {
   const t = useTranslations('shop');
   const firstVariant = product.variants?.edges?.[0]?.node;
-  const isAvailable = firstVariant?.availableForSale ?? product.availableForSale ?? true;
+  const isAvailable = isProductPurchasable(product);
   const price = product.priceRange.minVariantPrice;
   const maxPrice = product.priceRange.maxVariantPrice;
   const hasRange = parseFloat(price.amount) !== parseFloat(maxPrice.amount);

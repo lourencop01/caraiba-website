@@ -15,32 +15,32 @@ export default function Gallery({ isHomePage = false }: GalleryProps) {
     {
       category: t('gallery.trends'),
       description: t('gallery.trendsDesc'),
-      image: '/woman-keratin-treatment.webp',
+      image: '/pexels-1.jpg',
     },
     {
       category: t('gallery.bridal'),
       description: t('gallery.bridalDesc'),
-      image: '/women-bride-hairdresser.webp',
+      image: '/1.jpg',
     },
     {
       category: t('gallery.color'),
       description: t('gallery.colorDesc'),
-      image: '/women-blonde-coloring.webp',
+      image: '/2.jpg',
     },
     {
       category: t('gallery.cut'),
       description: t('gallery.cutDesc'),
-      image: '/women-famous-hairdresser.webp',
+      image: '/hero2.png',
     },
     {
-      category: t('gallery.balayageGallery'),
-      description: t('gallery.balayageDesc'),
-      image: '/women-balayage-haircut.webp',
+      category: t('gallery.poolGallery'),
+      description: t('gallery.poolDesc'),
+      image: '/3.jpg',
     },
     {
       category: t('gallery.styling'),
       description: t('gallery.stylingDesc'),
-      image: '/women-braids-hairdresser.webp',
+      image: '/4.jpg',
     },
   ];
 
@@ -74,9 +74,7 @@ export default function Gallery({ isHomePage = false }: GalleryProps) {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-90 group-hover:opacity-100 transition-opacity duration-300" />
               <div className="absolute inset-x-0 bottom-0 p-5 text-left">
-                <p className="font-semibold text-white text-lg leading-tight drop-shadow-sm">
-                  {item.category}
-                </p>
+                <p className="font-semibold text-white text-lg leading-tight drop-shadow-sm">{item.category}</p>
                 <p className="text-sm text-white/85 mt-1.5 leading-snug max-w-sm">{item.description}</p>
               </div>
             </div>

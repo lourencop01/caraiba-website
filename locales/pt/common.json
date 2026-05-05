@@ -1,7 +1,7 @@
 {
   "site": {
     "name": "Caraíba",
-    "tagline": "Produtos de cuidado capilar profissional, selecionados por especialistas — entregues à sua porta."
+    "tagline": "Moda de verão para mulheres — biquínis, malas e bijuteria que celebram a sua confiança e fazem-no sentir única."
   },
   "navigation": {
     "home": "Início",
@@ -10,7 +10,7 @@
     "about": "Sobre",
     "contact": "Contacto",
     "bookNow": "Ligar",
-    "logoAlt": "Salon Concept — Cuidado Capilar Profissional",
+    "logoAlt": "Caraíba — Moda de verão para mulheres",
     "shopByCategory": "Comprar por Categoria",
     "shopByCollection": "Comprar por Coleção",
     "viewAll": "Ver Todos os Produtos",
@@ -19,7 +19,7 @@
   "accessibility": {
     "toggleMobileMenu": "Alternar menu móvel",
     "toggleShopMenu": "Alternar menu da loja",
-    "callSalon": "Ligue para a nossa equipa para aconselhamento ou suporte",
+    "callSupport": "Ligue para ajuda com tamanhos, styling ou encomendas",
     "openCart": "Abrir carrinho",
     "closeCart": "Fechar carrinho",
     "removeCartItem": "Remover item",
@@ -59,7 +59,7 @@
     "shipping": "Envio e Devoluções",
     "faq": "Perguntas Frequentes",
     "privacyPolicy": "Política de Privacidade",
-    "copyright": "© 2025 Salon Concept. Todos os direitos reservados."
+    "copyright": "© 2026 Caraíba. Todos os direitos reservados."
   },
-  "callCostNote": "(Chamada para rede nacional móvel)"
+  "callCostNote": "(Chamadas sujeitas à tarifa da sua operadora)"
 }

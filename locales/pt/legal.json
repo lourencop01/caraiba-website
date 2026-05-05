@@ -18,6 +18,7 @@
       "essential": {
         "title": "Cookies Essenciais",
         "description": "Estes cookies são necessários para o funcionamento do website e não podem ser desativados. São normalmente definidos apenas em resposta a ações feitas por si que equivalem a um pedido de serviços.",
+        "alwaysOn": "Sempre ativo",
         "examples": "Autenticação, segurança, preferências de idioma"
       },
       "analytics": {
@@ -45,7 +46,7 @@
       "introduction": {
         "title": "O que são Cookies?",
         "description": "Os cookies são pequenos ficheiros de texto que são colocados no seu computador ou dispositivo móvel quando visita um website. São amplamente utilizados para fazer os websites funcionarem de forma mais eficiente e para fornecer informações aos proprietários do website.",
-        "usage": "No Salon Concept, utilizamos cookies para melhorar a sua experiência de navegação, analisar a utilização do website e fornecer conteúdo personalizado. Esta Política de Cookies explica o que são os cookies, como os utilizamos e como pode gerir as suas preferências de cookies.",
+        "usage": "No Caraíba, utilizamos cookies para melhorar a sua experiência de navegação, analisar a utilização do website e fornecer conteúdo personalizado. Esta Política de Cookies explica o que são os cookies, como os utilizamos e como pode gerir as suas preferências de cookies.",
         "consent": "Ao continuar a utilizar o nosso website, consente a nossa utilização de cookies conforme descrito nesta política e na nossa Política de Privacidade."
       },
       "types": {
@@ -129,7 +130,7 @@
       "contact": {
         "title": "Contacte-nos",
         "description": "Se tiver questões sobre a nossa utilização de cookies, por favor contacte-nos:",
-        "email": "Email: salonconcept@gmail.com",
+        "email": "Email: hello@caraiba.pt",
         "phone": "Telefone: +351 915662413",
         "address": "Morada: Rua Exemplo 12, 1500-332 Lisboa, Portugal",
         "response": "Responderemos às suas consultas dentro de 48 horas."
@@ -142,29 +143,29 @@
     "effective": "Data de entrada em vigor: 13 de Julho de 2025",
     "introduction": {
       "title": "Introdução",
-      "content": "No Salon Concept (\"nós\", \"nosso\" ou \"nos\"), estamos comprometidos em proteger a sua privacidade e garantir a segurança das suas informações pessoais. Esta Política de Privacidade explica como recolhemos, utilizamos, armazenamos e protegemos os seus dados pessoais quando visita o nosso website, utiliza os nossos serviços ou interage connosco.",
-      "contact": "Se tiver alguma questão sobre esta Política de Privacidade, por favor contacte-nos em salonconcept@gmail.com."
+      "content": "No Caraíba (\"nós\", \"nosso\" ou \"nos\"), estamos comprometidos em proteger a sua privacidade e garantir a segurança das suas informações pessoais. Esta Política de Privacidade explica como recolhemos, utilizamos, armazenamos e protegemos os seus dados pessoais quando visita o nosso website, utiliza os nossos serviços ou interage connosco.",
+      "contact": "Se tiver alguma questão sobre esta Política de Privacidade, por favor contacte-nos em hello@caraiba.pt."
     },
     "dataController": {
       "title": "Responsável pelo Tratamento",
       "content": "O responsável pelo tratamento das suas informações pessoais é:",
-      "name": "Salon Concept",
+      "name": "Caraíba",
       "address": "Rua Exemplo 12, 1500-332 Lisboa, Portugal",
-      "email": "Email: salonconcept@gmail.com",
+      "email": "Email: hello@caraiba.pt",
       "phone": "Telefone: +351 915662413"
     },
     "dataCollection": {
       "title": "Que Dados Pessoais Recolhemos",
       "description": "Recolhemos e processamos os seguintes tipos de dados pessoais:",
       "contactForms": {
-        "title": "Formulários de Contacto e Marcações",
+        "title": "Formulários de contacto e encomendas",
         "items": [
           "Nome completo",
           "Endereço de email",
           "Número de telefone",
-          "Datas e horários de consulta preferidos",
-          "Preferências de serviços",
-          "Pedidos especiais ou alergias",
+          "Referências de encomenda e preferências de entrega",
+          "Preferências de produto ou tamanho",
+          "Pedidos especiais ou alergias relevantes",
           "Qualquer outra informação que forneça voluntariamente"
         ]
       },
@@ -207,7 +208,7 @@
       },
       "contract": {
         "title": "Execução de Contrato",
-        "content": "Para fornecer serviços de cabeleireiro, processar marcações e cumprir as nossas obrigações contratuais."
+        "content": "Para processar e enviar encomendas, prestar apoio ao cliente e cumprir as nossas obrigações contratuais."
       },
       "legitimateInterest": {
         "title": "Interesse Legítimo",
@@ -222,12 +223,12 @@
       "title": "Como Utilizamos os Seus Dados Pessoais",
       "description": "Utilizamos os seus dados pessoais para os seguintes propósitos:",
       "serviceProvision": {
-        "title": "Prestação de Serviços",
+        "title": "Encomendas e apoio",
         "items": [
-          "Processar e gerir consultas",
-          "Fornecer serviços de cabeleireiro",
-          "Comunicar sobre as suas consultas",
-          "Lidar com questões de atendimento ao cliente"
+          "Processar e enviar encomendas",
+          "Gerir envios, devoluções e reembolsos conforme a nossa política",
+          "Prestar apoio sobre tamanhos, produtos e encomendas",
+          "Lidar com pedidos de atendimento ao cliente"
         ]
       },
       "businessOperations": {
@@ -268,7 +269,7 @@
           "Fornecedores de alojamento e manutenção de websites",
           "Plataformas de email marketing",
           "Processadores de pagamentos",
-          "Sistemas de marcação de consultas",
+          "Transportadoras e logística de envios",
           "Serviços de análise (Google Analytics)",
           "Plataformas de redes sociais (Meta/Facebook)"
         ]
@@ -293,7 +294,7 @@
       "title": "Retenção de Dados",
       "description": "Retemos os seus dados pessoais pelo tempo necessário para cumprir os propósitos descritos nesta política:",
       "customerData": {
-        "title": "Dados de Clientes e Marcações",
+        "title": "Dados de clientes e encomendas",
         "content": "Retidos até 7 anos para fins de contabilidade e conformidade legal."
       },
       "marketingData": {
@@ -391,7 +392,7 @@
     "contact": {
       "title": "Informações de Contacto",
       "description": "Se tiver alguma questão, preocupação ou pedido relativamente a esta Política de Privacidade ou às nossas práticas de dados, por favor contacte-nos:",
-      "email": "Email: salonconcept@gmail.com",
+      "email": "Email: hello@caraiba.pt",
       "phone": "Telefone: +351 915662413",
       "address": "Morada: Rua Exemplo 12, 1500-332 Lisboa, Portugal",
       "dpo": "Responsável pela Proteção de Dados: (se aplicável)",
@@ -411,39 +412,39 @@
     "effective": "Data de entrada em vigor: 13 de Julho de 2025",
     "acceptance": {
       "title": "Aceitação dos Termos",
-      "content": "Ao aceder e utilizar o website do Salon Concept (\"Website\"), aceita e concorda em ficar vinculado aos termos e disposições deste acordo.",
+      "content": "Ao aceder e utilizar o website do Caraíba (\"Website\"), aceita e concorda em ficar vinculado aos termos e disposições deste acordo.",
       "agreement": "Se não concordar com o acima exposto, por favor não utilize este serviço."
     },
     "services": {
-      "title": "Descrição dos Serviços",
-      "description": "O Salon Concept disponibiliza um website de marketing com informações sobre os nossos serviços de cabeleireiro, dicas de penteados através do nosso blog, capacidades de contacto e ofertas promocionais. Esta não é uma plataforma de e-commerce.",
+      "title": "Descrição dos serviços",
+      "description": "A Caraíba gere uma loja online de moda de verão para mulheres — fatos de banho, malas, bijuteria e acessórios — com checkout seguro, apoio ao cliente e campanhas promocionais.",
       "website": {
-        "title": "Website de Marketing",
-        "content": "Informações sobre o nosso cabeleireiro, serviços, equipa e localização."
+        "title": "Loja online",
+        "content": "Catálogos, coleções, informação da marca e contactos da empresa."
       },
       "blog": {
-        "title": "Blog de Cuidados Capilares",
-        "content": "Conteúdo educativo, dicas de penteados e conselhos de cuidados capilares."
+        "title": "Inspiração e editoriais",
+        "content": "Artigos ocasionais sobre estilo de verão, ideias de conjuntos e cuidados com as peças — apenas para inspiração."
       },
       "contact": {
-        "title": "Formulários de Contacto",
-        "content": "Ferramentas de comunicação para contactar o nosso salão e marcar consultas."
+        "title": "Contacto",
+        "content": "Formas de contactar a nossa equipa sobre produtos, encomendas, tamanhos ou questões gerais."
       },
       "promotions": {
-        "title": "Conteúdo Promocional",
-        "content": "Ofertas especiais, informações sobre cartões presente e programas de referência."
+        "title": "Conteúdo promocional",
+        "content": "Ofertas especiais, cartões presente e programas de referência, quando disponíveis."
       }
     },
     "userObligations": {
       "title": "Obrigações do Utilizador e Uso Aceitável",
       "description": "Ao utilizar o nosso website, concorda com as seguintes obrigações:",
       "contactForms": {
-        "title": "Utilização de Formulários de Contacto",
+        "title": "Utilização dos formulários de contacto",
         "rules": [
-          "Fornecer informações precisas e verdadeiras",
-          "Usar formulários apenas para consultas legítimas do salão",
-          "Não submeter múltiplos pedidos duplicados",
-          "Respeitar os nossos tempos de resposta e horário de funcionamento"
+          "Fornecer informações corretas e verdadeiras",
+          "Usar os formulários apenas para questões legítimas sobre produtos ou encomendas",
+          "Não enviar pedidos duplicados ou spam",
+          "Respeitar os prazos de resposta e o horário de apoio indicado"
         ]
       },
       "prohibited": {
@@ -461,16 +462,16 @@
     },
     "intellectualProperty": {
       "title": "Direitos de Propriedade Intelectual",
-      "description": "Todo o conteúdo neste website é propriedade ou licenciado ao Salon Concept e está protegido por direitos autorais, marcas registadas e outras leis de propriedade intelectual.",
+      "description": "Todo o conteúdo neste website é propriedade ou licenciado ao Caraíba e está protegido por direitos autorais, marcas registadas e outras leis de propriedade intelectual.",
       "owned": {
-        "title": "A Nossa Propriedade Intelectual Inclui",
+        "title": "A nossa propriedade intelectual inclui",
         "items": [
-          "Design do website, layout e interface do utilizador",
-          "Logótipo, marca e imagens do salão",
-          "Conteúdo do blog, artigos e guias de penteados",
-          "Fotografia e imagens de transformações de clientes",
-          "Descrições de serviços e informações de preços",
-          "Materiais de marketing e conteúdo promocional"
+          "Design do website, layout e interface",
+          "Logótipo, identidade visual e imagens de campanha",
+          "Editoriais, lookbooks e guias",
+          "Fotografia de produto e lifestyle",
+          "Descrições de produtos e preços",
+          "Materiais de marketing e promoções"
         ]
       },
       "restrictions": {
@@ -478,7 +479,7 @@
         "items": [
           "Copiar, reproduzir ou distribuir o nosso conteúdo sem permissão",
           "Usar o nosso logótipo ou marca para fins comerciais",
-          "Republicar o conteúdo do nosso blog noutras plataformas",
+          "Republicar o nosso conteúdo editorial noutras plataformas sem autorização",
           "Descarregar ou usar a nossa fotografia sem autorização",
           "Criar obras derivadas baseadas no nosso conteúdo"
         ]
@@ -486,22 +487,22 @@
       "note": "Para consultas de licenciamento ou pedidos de permissão, contacte-nos diretamente."
     },
     "contentLiability": {
-      "title": "Exclusão de Responsabilidade sobre Conteúdo",
-      "description": "Embora nos esforcemos para fornecer informações precisas e úteis, não fazemos garantias sobre a completude, confiabilidade ou precisão do nosso conteúdo.",
+      "title": "Conteúdo editorial e inspiração",
+      "description": "Embora nos esforcemos por informação precisa e útil, não garantimos a completude ou exatidão absoluta de todo o conteúdo.",
       "blog": {
-        "title": "Conteúdo do Blog de Cuidados Capilares",
-        "disclaimer": "O nosso blog fornece dicas gerais de cuidados capilares e conselhos de penteados apenas para fins informativos.",
+        "title": "Inspiração de styling",
+        "disclaimer": "As páginas editoriais podem sugerir styling ou cálculo de tamanhos de forma geral — não constituem aconselhamento personalizado.",
         "limitations": [
-          "O conteúdo não deve substituir consulta profissional de cabelo",
-          "Os resultados podem variar com base no tipo e condição individual do cabelo",
-          "Não somos responsáveis por reações adversas ao seguir os nossos conselhos",
-          "Teste sempre produtos e consulte profissionais para mudanças importantes",
-          "Recomendações de produtos terceiros são opiniões, não endossos"
+          "O caimento varia consoante corpo e preferência pessoal",
+          "As cores no ecrã podem diferir ligeiramente do artigo físico",
+          "Prevalecem as instruções de cuidados do rótulo do produto",
+          "Não nos responsabilizamos por danos ao ignorar instruções de cuidados",
+          "Menções a terceiros são contexto, não endossos"
         ]
       },
       "professional": {
-        "title": "Conselho Profissional",
-        "advice": "Para preocupações específicas de cabelo, alergias ou tratamentos químicos, consulte sempre um profissional de cabelo qualificado."
+        "title": "Cuidado com as peças",
+        "advice": "Siga sempre as instruções de lavagem e conservação incluídas com as suas peças. Em caso de sensibilidade cutânea ou alergia a metais ou têxteis, consulte um profissional de saúde qualificado."
       }
     },
     "thirdPartyServices": {
@@ -529,27 +530,27 @@
       "title": "Promoções e Ofertas Especiais",
       "description": "O nosso website pode apresentar promoções especiais, descontos e ofertas por tempo limitado.",
       "terms": {
-        "title": "Termos Promocionais",
+        "title": "Termos promocionais",
         "conditions": [
-          "As ofertas estão sujeitas à disponibilidade e capacidade do salão",
-          "Aplicam-se termos promocionais e datas de expiração",
-          "Não pode ser combinado com outras ofertas a menos que especificado",
-          "Descontos para novos clientes aplicam-se apenas a visitantes pela primeira vez",
-          "A gestão reserva-se o direito de recusar serviço"
+          "As ofertas estão sujeitas a stock disponível",
+          "Aplicam-se condições e prazos de validade divulgados na oferta",
+          "Não acumulável com outras promoções salvo indicação em contrário",
+          "Códigos de primeira compra ou uso único podem aplicar-se conforme as regras publicadas",
+          "Podemos recusar encomendas suspeitas de fraude ou uso abusivo"
         ]
       },
       "modification": "Reservamo-nos o direito de modificar, suspender ou terminar qualquer promoção a qualquer momento sem aviso prévio."
     },
     "giftCards": {
-      "title": "Cartões Presente e Vouchers",
-      "description": "Informações sobre cartões presente e detalhes de marcação podem ser apresentados no nosso website.",
+      "title": "Cartões-presente e vouchers",
+      "description": "Os termos de cartões-presente ou vouchers promocionais poderão constar no website quando disponíveis.",
       "validity": {
-        "title": "Período de Validade",
-        "content": "Os cartões presente são válidos por 12 meses a partir da data de compra, salvo especificação em contrário."
+        "title": "Período de validade",
+        "content": "Os cartões-presente são válidos por 12 meses a partir da data de compra, salvo indicação em contrário."
       },
       "redemption": {
-        "title": "Processo de Resgate",
-        "content": "Os cartões presente devem ser resgatados por marcação de consulta e não podem ser usados para compras online."
+        "title": "Resgate",
+        "content": "Cartões-presente e crédito de loja, quando oferecidos, só podem ser usados conforme os termos publicados no momento da emissão."
       },
       "transfer": {
         "title": "Transferibilidade",
@@ -561,38 +562,38 @@
       }
     },
     "referrals": {
-      "title": "Programa de Referência de Clientes",
-      "description": "Podemos oferecer incentivos de referência para clientes que recomendam os nossos serviços a outros.",
+      "title": "Incentivos de referência",
+      "description": "Podemos disponibilizar incentivos de referência ou programa de fidelização conforme descrito nos respetivos termos.",
       "program": {
-        "title": "Regras do Programa de Referência",
+        "title": "Regras do programa",
         "rules": [
-          "As recompensas de referência aplicam-se quando clientes referenciados completam o seu primeiro serviço",
-          "Tanto o referenciador como o referenciado devem ser clientes novos ou existentes em boa situação",
-          "As recompensas de referência não podem ser combinadas com outras ofertas promocionais",
-          "As recompensas são aplicadas como créditos de serviço, não pagamentos em dinheiro",
-          "Os termos do programa podem mudar com aviso razoável"
+          "As recompensas aplicam-se apenas quando se cumprem as condições publicadas na oferta",
+          "Os participantes devem cumprir regras de uso justo e anti-abuso",
+          "Incentivos de referência não são cumuláveis com outras ofertas salvo menção expressa",
+          "As recompensas podem ser creditadas como desconto ou saldo na loja, não em dinheiro, salvo exigência legal",
+          "Podemos alterar ou terminar o programa com aviso razoável"
         ]
       },
-      "note": "A participação no programa de referência é voluntária e sujeita à nossa discrição."
+      "note": "A participação é voluntária e sujeita à nossa discrição."
     },
     "limitationLiability": {
       "title": "Limitação de Responsabilidade",
-      "description": "Na máxima extensão permitida por lei, o Salon Concept não será responsável por quaisquer danos decorrentes do seu uso deste website.",
+      "description": "Na máxima extensão permitida por lei, o Caraíba não será responsável por quaisquer danos decorrentes do seu uso deste website.",
       "exclusions": {
         "title": "Não Somos Responsáveis Por",
         "items": [
           "Danos indiretos, incidentais ou consequenciais",
           "Perda de lucros, dados ou oportunidades de negócio",
           "Tempo de inatividade do website, problemas técnicos ou interrupções de serviço",
-          "Ações tomadas com base no conteúdo do blog ou conselhos gerais",
-          "Falhas de serviços terceiros ou violações de dados",
-          "Quaisquer danos que excedam o valor pago pelos serviços"
+          "Ações tomadas com base em conteúdo editorial ou conselhos gerais",
+          "Falhas de serviços terceiros ou incidentes de segurança",
+          "Quaisquer danos superiores ao valor da encomenda relevante neste website"
         ]
       }
     },
     "indemnification": {
       "title": "Indemnização",
-      "content": "Concorda em indemnizar e isentar o Salon Concept de qualquer responsabilidade por reivindicações, danos ou despesas decorrentes do seu uso do website, violação destes termos ou violação de quaisquer direitos de terceiros."
+      "content": "Concorda em indemnizar e isentar o Caraíba de qualquer responsabilidade por reivindicações, danos ou despesas decorrentes do seu uso do website, violação destes termos ou violação de quaisquer direitos de terceiros."
     },
     "termination": {
       "title": "Terminação",
@@ -612,7 +613,7 @@
     "contact": {
       "title": "Informações de Contacto",
       "content": "Se tiver alguma questão sobre estes Termos e Condições, por favor contacte-nos:",
-      "email": "Email: salonconcept@gmail.com",
+      "email": "Email: hello@caraiba.pt",
       "phone": "Telefone: +351 915662413",
       "address": "Morada: Rua Exemplo 12, 1500-332 Lisboa, Portugal"
     }
@@ -626,7 +627,7 @@
       "description": "Informações sobre o operador da empresa e entidade legal responsável por este website.",
       "businessName": {
         "label": "Nome da Empresa",
-        "value": "Salon Concept"
+        "value": "Caraíba"
       },
       "legalForm": {
         "label": "Forma Legal",
@@ -651,11 +652,11 @@
         },
         "email": {
           "label": "Email",
-          "value": "salonconcept@gmail.com"
+          "value": "hello@caraiba.pt"
         },
         "website": {
           "label": "Website",
-          "value": "https://www.salonconcept.pt"
+          "value": "https://www.caraiba.pt"
         }
       }
     },
@@ -675,8 +676,8 @@
         "note": "Registo na repartição de comércio local ou registo comercial se necessário."
       },
       "license": {
-        "title": "Licença Profissional",
-        "content": "Os serviços de cabeleireiro são fornecidos sob os requisitos de licenciamento local aplicáveis e regulamentos de saúde."
+        "title": "Conformidade regulamentar",
+        "content": "A atividade de retalho e comércio eletrónico cumpre a regulamentação aplicável ao consumo e ao comércio nas jurisdições onde operamos."
       }
     },
     "responsiblePerson": {
@@ -692,7 +693,7 @@
       },
       "contact": {
         "label": "Email de Contacto",
-        "value": "salonconcept@gmail.com"
+        "value": "hello@caraiba.pt"
       }
     },
     "contentDisclaimer": {
@@ -707,8 +708,8 @@
         "items": [
           "Não assumimos responsabilidade pela precisão das informações fornecidas",
           "O conteúdo é fornecido apenas para fins informativos",
-          "Os conselhos de cuidados capilares não devem substituir consulta profissional",
-          "Os preços e disponibilidade de serviços estão sujeitos a alterações",
+          "Sugestões de styling ou medidas são apenas indicativas",
+          "Os preços e a disponibilidade de produtos estão sujeitos a alterações",
           "Reservamo-nos o direito de modificar o conteúdo do website sem aviso"
         ]
       }

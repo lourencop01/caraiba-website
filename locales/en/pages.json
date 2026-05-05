@@ -2,15 +2,15 @@
   "pages": {
     "shop": {
       "meta": {
-        "title": "Shop Hair Care Products | Salon Concept",
-        "description": "Browse our curated selection of professional hair care products, hand-picked by our stylists at Salon Concept in Lisbon.",
-        "ogTitle": "Shop Professional Hair Care Products | Salon Concept",
-        "ogDescription": "Discover salon-grade hair care products chosen by our expert stylists. Fast delivery, professional quality."
+        "title": "Shop Women's Summer Fashion | Caraíba",
+        "description": "Shop Caraíba — bikinis, bags, jewelry & summer accessories. Curated women's fashion for confidence and standout style.",
+        "ogTitle": "Shop Caraíba | Swimwear, Bags & Jewelry",
+        "ogDescription": "Discover Caraíba swimwear, bags, and accessories. Fast delivery, quality you can feel."
       },
       "hero": {
-        "eyebrow": "Our Store",
-        "title": "Shop All Products",
-        "description": "Professional hair care essentials, hand-picked by our stylists."
+        "eyebrow": "The shop",
+        "title": "All products",
+        "description": "Summer-ready fashion — swimwear, bags, and jewelry curated for women 18+."
       },
       "list": {
         "productsCount": "{count} products",
@@ -54,15 +54,15 @@
     },
     "collections": {
       "meta": {
-        "title": "Product Collections | Salon Concept",
-        "description": "Explore our curated product collections for every hair type and style need.",
-        "ogTitle": "Hair Care Collections | Salon Concept",
-        "ogDescription": "Browse our hand-curated product lines, crafted for every hair type and style."
+        "title": "Collections | Caraíba",
+        "description": "Explore Caraíba collections — swimwear, bags, jewelry, and summer accessories for women.",
+        "ogTitle": "Fashion Collections | Caraíba",
+        "ogDescription": "Curated collections for your summer wardrobe — discover your next favourite pieces."
       },
       "hero": {
-        "eyebrow": "Browse by Category",
+        "eyebrow": "Browse",
         "title": "Collections",
-        "description": "Discover our hand-curated product lines, crafted for every hair type and style."
+        "description": "Discover curated edits of bikinis, bags, and jewelry — built for sun-soaked days."
       },
       "shopNow": "Shop now →",
       "empty": "No collections available yet. Check back soon!",
@@ -70,15 +70,15 @@
     },
     "product": {
       "trustShipping": "✓ Free shipping on orders over €50",
-      "trustQuality": "✓ Professional grade, salon-selected products",
+      "trustQuality": "✓ Quality swimwear, bags & jewelry curated with care",
       "trustCheckout": "✓ Secure checkout via Shopify"
     },
     "about": {
       "meta": {
-        "title": "About Us | Salon Concept",
-        "description": "Learn about our brand story, mission, and the values behind our curated hair care products.",
-        "ogTitle": "About Salon Concept | Our Brand Story",
-        "ogDescription": "Discover the passion behind Salon Concept — professional hair care made accessible for everyone."
+        "title": "About Us | Caraíba",
+        "description": "Learn how Caraíba helps women feel confident and unique with summer fashion, swimwear, and accessories.",
+        "ogTitle": "About Caraíba | Our Story",
+        "ogDescription": "Caraíba — women's fashion with a summer soul. Confidence, beauty, and pieces made to feel like you."
       }
     }
   }

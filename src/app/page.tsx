@@ -1,20 +1,21 @@
-import { redirect } from 'next/navigation'
-import { Metadata } from 'next'
+import { redirect } from 'next/navigation';
+import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: {
-    default: "Salon Concept | Women's Hair Salon in Lisbon",
-    template: "Salon Concept | Women's Hair Salon in Lisbon"
+    default: 'Caraíba | Summer fashion for women',
+    template: 'Caraíba | Summer fashion for women',
   },
-  description: "Transform your look at Lisbon's premier hair salon. Professional cuts, coloring, balayage, styling & treatments by expert stylists. Book your appointment today!",
-  metadataBase: new URL("https://www.salonconcept.pt"),
+  description:
+    "Shop Caraíba — swimwear, bags, and jewelry for women. Summer energy, confident fits, pieces that make you feel unique.",
+  metadataBase: new URL('https://www.caraiba.pt'),
   alternates: {
-    canonical: "https://www.salonconcept.pt/en/",
+    canonical: 'https://www.caraiba.pt/en/',
     languages: {
-      'pt': "https://www.salonconcept.pt/pt/",
-      'pt-PT': "https://www.salonconcept.pt/pt/",
-      'en': "https://www.salonconcept.pt/en/",
-      'x-default': "https://www.salonconcept.pt/en/",
+      pt: 'https://www.caraiba.pt/pt/',
+      'pt-PT': 'https://www.caraiba.pt/pt/',
+      en: 'https://www.caraiba.pt/en/',
+      'x-default': 'https://www.caraiba.pt/en/',
     },
   },
   robots: {
@@ -26,24 +27,24 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Salon Concept | Women's Hair Salon in Lisbon",
-    description: "Transform your look at Lisbon's premier hair salon. Professional cuts, coloring, balayage, styling & treatments by expert stylists. Book your appointment today!",
-    url: "https://www.salonconcept.pt/en/",
-    siteName: "Salon Concept",
+    title: 'Caraíba | Summer fashion for women',
+    description:
+      "Women's summer fashion: bikinis, bags, and jewelry — confidence-first design from Lisbon.",
+    url: 'https://www.caraiba.pt/en/',
+    siteName: 'Caraíba',
     images: [
       {
-        url: "https://www.salonconcept.pt/valentina_background.png",
+        url: 'https://www.caraiba.pt/hero1.png',
         width: 1200,
         height: 630,
-        alt: "Salon Concept - Premium Hair Salon in Lisbon",
+        alt: 'Caraíba — summer fashion and beach style',
       },
     ],
-    locale: "en_US",
-    type: "website",
+    locale: 'en_US',
+    type: 'website',
   },
-}
+};
 
 export default function RootPage() {
-  // Permanent redirect to the default locale
-  redirect('/en')
-} 
+  redirect('/en');
+}

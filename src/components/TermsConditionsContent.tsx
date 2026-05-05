@@ -517,7 +517,7 @@ export default function TermsConditionsContent() {
 
               <div className="bg-surface border border-border rounded-lg p-6 space-y-2">
                 <p className="text-foreground-light">
-                  <strong>Salon Concept</strong>
+                  <strong>Caraíba</strong>
                 </p>
                 <p className="text-foreground-light">
                   <a href="mailto:salonconcept@gmail.com" className="text-primary hover:underline">{t('contact.email')}</a>

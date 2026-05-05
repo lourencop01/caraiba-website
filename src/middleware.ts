@@ -5,7 +5,7 @@ import Negotiator from 'negotiator';
 import { i18n } from './i18n/routing';
 
 // Replace with your actual canonical domain (with www)
-const CANONICAL_DOMAIN = 'www.salonconcept.pt';
+const CANONICAL_DOMAIN = 'www.caraiba.pt';
 const PROTOCOL = 'https';
 
 function getLocale(request: NextRequest): string {
