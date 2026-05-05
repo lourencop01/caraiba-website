@@ -43,6 +43,8 @@ export default async function FeaturedProducts({ products, locale }: FeaturedPro
               const firstVariant = product.variants.edges[0]?.node;
               const comparePrice = firstVariant?.compareAtPrice;
               const isOnSale = comparePrice && parseFloat(comparePrice.amount) > parseFloat(price.amount);
+              const isAvailable = firstVariant?.availableForSale ?? product.availableForSale ?? true;
+              const isSoldOut = !isAvailable;
 
               return (
                 <div key={product.id} className="group relative bg-background rounded-2xl border border-border/30 overflow-hidden hover:shadow-theme-lg transition-all duration-300">
@@ -63,8 +65,13 @@ export default async function FeaturedProducts({ products, locale }: FeaturedPro
                       )}
 
                       {isOnSale && (
-                        <span className="absolute top-3 left-3 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-full">
+                        <span className="absolute top-3 left-3 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-full z-10">
                           {tc('badgeSale')}
+                        </span>
+                      )}
+                      {isSoldOut && (
+                        <span className="absolute top-3 right-3 bg-foreground/90 text-background text-xs font-bold px-2 py-1 rounded-full uppercase tracking-wide z-10">
+                          {tc('soldOut')}
                         </span>
                       )}
 

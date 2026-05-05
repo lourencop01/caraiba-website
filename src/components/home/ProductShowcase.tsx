@@ -46,6 +46,8 @@ export default async function ProductShowcase({ products, locale }: ProductShowc
             const firstVariant = product.variants.edges[0]?.node;
             const comparePrice = firstVariant?.compareAtPrice;
             const isOnSale = comparePrice && parseFloat(comparePrice.amount) > parseFloat(price.amount);
+            const isAvailable = firstVariant?.availableForSale ?? product.availableForSale ?? true;
+            const isSoldOut = !isAvailable;
 
             return (
               <div
@@ -69,13 +71,18 @@ export default async function ProductShowcase({ products, locale }: ProductShowc
                     )}
 
                     {/* NEW badge */}
-                    <span className="absolute top-3 left-3 bg-foreground text-background text-xs font-bold px-2 py-1 rounded-full">
+                    <span className="absolute top-3 left-3 bg-foreground text-background text-xs font-bold px-2 py-1 rounded-full z-10">
                       {tc('badgeNew')}
                     </span>
 
                     {isOnSale && (
-                      <span className="absolute top-3 right-3 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-full">
+                      <span className="absolute top-3 right-3 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-full z-10">
                         {tc('badgeSale')}
+                      </span>
+                    )}
+                    {isSoldOut && (
+                      <span className="absolute bottom-3 left-3 bg-foreground/90 text-background text-xs font-bold px-2 py-1 rounded-full uppercase tracking-wide z-10">
+                        {tc('soldOut')}
                       </span>
                     )}
 

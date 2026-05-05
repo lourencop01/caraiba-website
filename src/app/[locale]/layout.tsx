@@ -11,6 +11,7 @@ import CookieConsentBanner from '@/components/CookieConsentBanner';
 import CookieConsentModal from '@/components/CookieConsentModal';
 import { CartProvider } from '@/contexts/CartContext';
 import CartDrawer from '@/components/shop/CartDrawer';
+import FloatingCartButton from '@/components/shop/FloatingCartButton';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -148,6 +149,7 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
           </main>
           <Footer />
           <CartDrawer />
+          <FloatingCartButton />
           <CookieConsentBanner />
           <CookieConsentModal />
         </CartProvider>

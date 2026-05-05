@@ -25,10 +25,11 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
 export default async function ProductPage({ params }: PageProps) {
   const { locale, handle } = await params;
-  const [product, tn, tp] = await Promise.all([
+  const [product, tn, tp, ts] = await Promise.all([
     getProductByHandle(handle, locale),
     getTranslations({ locale, namespace: 'navigation' }),
     getTranslations({ locale, namespace: 'pages.product' }),
+    getTranslations({ locale, namespace: 'shop' }),
   ]);
 
   if (!product) notFound();
@@ -74,11 +75,18 @@ export default async function ProductPage({ params }: PageProps) {
           {/* Info */}
           <div className="flex flex-col gap-6">
             <div>
-              <h1
-                className={`text-3xl md:text-4xl font-bold text-foreground mb-3 ${cormorantGaramond.className}`}
-              >
-                {product.title}
-              </h1>
+              <div className="flex flex-wrap items-center gap-3 mb-3">
+                <h1
+                  className={`text-3xl md:text-4xl font-bold text-foreground ${cormorantGaramond.className}`}
+                >
+                  {product.title}
+                </h1>
+                {!product.availableForSale && (
+                  <span className="inline-flex items-center bg-foreground/90 text-background text-xs font-bold px-2.5 py-1 rounded-full uppercase tracking-wide">
+                    {ts('soldOut')}
+                  </span>
+                )}
+              </div>
 
               {/* Price */}
               <div className="flex items-baseline gap-3">

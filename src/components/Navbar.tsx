@@ -254,7 +254,9 @@ export default function Navbar({ shopData }: NavbarProps) {
           {/* Actions */}
           <div className="flex items-center gap-2">
             <LanguageSwitcher isTransparent={isTransparent} />
-            <CartIcon isTransparent={isTransparent} />
+            <span className="hidden lg:flex">
+              <CartIcon isTransparent={isTransparent} />
+            </span>
 
             {/* Mobile hamburger */}
             <button
