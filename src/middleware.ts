@@ -44,11 +44,12 @@ export function middleware(request: NextRequest) {
   
   // 1. REDIRECT: Non-www to www (or vice versa based on CANONICAL_DOMAIN)
   // This ensures consistent subdomain usage
-  // Skip redirect for localhost and development environments
+  // Skip redirect for localhost, dev, and Vercel preview/production URLs (*.vercel.app)
   const isLocalhost = host.includes('localhost') || host.startsWith('127.0.0.1') || host.startsWith('[::1]');
   const isDevelopment = process.env.NODE_ENV === 'development';
-  
-  if (host && host !== CANONICAL_DOMAIN && !isLocalhost && !isDevelopment) {
+  const isVercelHost = host.toLowerCase().includes('vercel');
+
+  if (host && host !== CANONICAL_DOMAIN && !isLocalhost && !isDevelopment && !isVercelHost) {
     const canonicalUrl = new URL(
       `${PROTOCOL}://${CANONICAL_DOMAIN}${pathname}${search}`
     );
