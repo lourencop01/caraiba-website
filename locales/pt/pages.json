@@ -2,15 +2,15 @@
   "pages": {
     "shop": {
       "meta": {
-        "title": "Loja de Moda Feminina de Verão | Caraíba",
-        "description": "Compre na Caraíba — biquínis, malas, bijuteria e acessórios. Moda feminina pensada para confiança e estilo.",
+        "title": "Loja de Moda Feminina | Caraíba",
+        "description": "Compre na Caraíba — roupa, fatos de banho, malas, bijuteria e acessórios para todas as estações. Moda feminina pensada para confiança e estilo.",
         "ogTitle": "Loja Caraíba | Biquínis, Malas e Bijuteria",
         "ogDescription": "Descubra biquínis, malas e acessórios Caraíba. Envio rápido e qualidade que se nota."
       },
       "hero": {
         "eyebrow": "A nossa loja",
         "title": "Todos os produtos",
-        "description": "Moda pronta para o verão — biquínis, malas e bijuteria para mulheres."
+        "description": "Moda para todas as estações — roupa, fatos de banho, malas e bijuteria para mulheres."
       },
       "list": {
         "productsCount": "{count} produtos",
@@ -55,14 +55,14 @@
     "collections": {
       "meta": {
         "title": "Coleções | Caraíba",
-        "description": "Explore as coleções Caraíba — biquínis, malas, bijuteria e acessórios de verão para mulheres.",
+        "description": "Explore as coleções Caraíba — roupa, fatos de banho, malas, bijuteria e acessórios para mulheres.",
         "ogTitle": "Coleções de Moda | Caraíba",
-        "ogDescription": "Coleções com inspiração de verão — descubra as suas próximas peças favoritas."
+        "ogDescription": "Coleções para o seu guarda-roupa em qualquer estação — descubra as suas próximas peças favoritas."
       },
       "hero": {
         "eyebrow": "Navegar",
         "title": "Coleções",
-        "description": "Edições com biquínis, malas e bijuteria — feitas para dias de sol."
+        "description": "Edições com roupa, fatos de banho, malas e bijuteria — do dia a dia à escapadela."
       },
       "shopNow": "Ver coleção →",
       "empty": "Ainda não há coleções disponíveis. Volte em breve!",
@@ -70,15 +70,15 @@
     },
     "product": {
       "trustShipping": "✓ Envio gratuito em encomendas acima de €50",
-      "trustQuality": "✓ Biquínis, malas e bijuteria selecionados com cuidado",
+      "trustQuality": "✓ Roupa, fatos de banho, malas e bijuteria selecionados com cuidado",
       "trustCheckout": "✓ Checkout seguro via Shopify"
     },
     "about": {
       "meta": {
         "title": "Sobre Nós | Caraíba",
-        "description": "Conheça a Caraíba — moda de verão que ajuda mulheres a sentir-se confiantes e únicas.",
+        "description": "Conheça a Caraíba — moda para todas as estações que ajuda mulheres a sentir-se confiantes e únicas.",
         "ogTitle": "Sobre a Caraíba | A Nossa História",
-        "ogDescription": "Caraíba — moda feminina com alma de verão. Confiança, beleza e peças feitas para si."
+        "ogDescription": "Caraíba — moda feminina durante todo o ano. Confiança, beleza e peças feitas para si."
       }
     }
   }

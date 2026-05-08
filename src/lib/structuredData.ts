@@ -10,16 +10,16 @@ export function generateMainStructuredData(locale: 'en' | 'pt', baseUrl: string 
     legalName: 'Caraíba',
     description:
       locale === 'en'
-        ? "Women's summer fashion — swimwear, bags, and jewelry designed to celebrate confidence and individuality."
-        : 'Moda de verão para mulheres — fatos de banho, malas e bijuteria pensados para celebrar confiança e individualidade.',
+        ? "Women's fashion for every season — clothing, swimwear, bags, and jewelry designed to celebrate confidence and individuality."
+        : 'Moda feminina para todas as estações — roupa, fatos de banho, malas e bijuteria pensadas para celebrar confiança e individualidade.',
     url: baseUrl,
     telephone: '+351915662413',
     priceRange: '€€',
     foundingDate: '2020',
     slogan:
       locale === 'en'
-        ? 'Summer fashion for women that makes you feel one of a kind.'
-        : 'Moda de verão para mulheres que a faz sentir única.',
+        ? 'Women\'s fashion for every season that makes you feel one of a kind.'
+        : 'Moda feminina para todas as estações que a faz sentir única.',
     address: {
       '@type': 'PostalAddress',
       streetAddress: 'Rua Exemplo 12',
@@ -73,7 +73,7 @@ export function generatePageSpecificStructuredData(locale: 'en' | 'pt', pageType
   };
 
   const titles: Record<string, Record<'en' | 'pt', string>> = {
-    home: { en: 'Caraíba — Summer fashion for women', pt: 'Caraíba — Moda de verão para mulheres' },
+    home: { en: 'Caraíba — Women’s fashion for every season', pt: 'Caraíba — Moda feminina para todas as estações' },
     shop: { en: 'Shop — Caraíba', pt: 'Loja — Caraíba' },
     collections: { en: 'Collections — Caraíba', pt: 'Coleções — Caraíba' },
     about: { en: 'About — Caraíba', pt: 'Sobre — Caraíba' },
@@ -82,16 +82,16 @@ export function generatePageSpecificStructuredData(locale: 'en' | 'pt', pageType
 
   const descriptions: Record<string, Record<'en' | 'pt', string>> = {
     home: {
-      en: "Women's summer fashion: swimwear, bags, and jewelry with a confident, sun-soaked vibe.",
-      pt: 'Moda de verão para mulheres: fatos de banho, malas e bijuteria com um espírito luminoso e confiante.',
+      en: "Women's fashion for every season: clothing, swimwear, bags, and jewelry with a confident, polished vibe.",
+      pt: 'Moda feminina para todas as estações: roupa, fatos de banho, malas e bijuteria com um espírito confiante e luminoso.',
     },
     shop: {
-      en: 'Browse bikinis, bags, jewelry, and accessories from Caraíba.',
-      pt: 'Explore fatos de banho, malas, bijuteria e acessórios Caraíba.',
+      en: 'Browse clothing, swimwear, bags, jewelry, and accessories from Caraíba.',
+      pt: 'Explore roupa, fatos de banho, malas, bijuteria e acessórios Caraíba.',
     },
     collections: {
-      en: 'Shop curated summer edits and capsule collections.',
-      pt: 'Compre edições de verão e coleções curadas.',
+      en: 'Shop curated seasonal edits and capsule collections.',
+      pt: 'Compre edições sazonais e coleções curadas.',
     },
     about: {
       en: 'Our mission: fashion that lifts confidence and celebrates your uniqueness.',

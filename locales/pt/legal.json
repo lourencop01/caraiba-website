@@ -130,7 +130,7 @@
       "contact": {
         "title": "Contacte-nos",
         "description": "Se tiver questões sobre a nossa utilização de cookies, por favor contacte-nos:",
-        "email": "Email: hello@caraiba.pt",
+        "email": "Email: salonconcept@gmail.com",
         "phone": "Telefone: +351 915662413",
         "address": "Morada: Rua Exemplo 12, 1500-332 Lisboa, Portugal",
         "response": "Responderemos às suas consultas dentro de 48 horas."
@@ -144,14 +144,14 @@
     "introduction": {
       "title": "Introdução",
       "content": "No Caraíba (\"nós\", \"nosso\" ou \"nos\"), estamos comprometidos em proteger a sua privacidade e garantir a segurança das suas informações pessoais. Esta Política de Privacidade explica como recolhemos, utilizamos, armazenamos e protegemos os seus dados pessoais quando visita o nosso website, utiliza os nossos serviços ou interage connosco.",
-      "contact": "Se tiver alguma questão sobre esta Política de Privacidade, por favor contacte-nos em hello@caraiba.pt."
+      "contact": "Se tiver alguma questão sobre esta Política de Privacidade, por favor contacte-nos em salonconcept@gmail.com."
     },
     "dataController": {
       "title": "Responsável pelo Tratamento",
       "content": "O responsável pelo tratamento das suas informações pessoais é:",
       "name": "Caraíba",
       "address": "Rua Exemplo 12, 1500-332 Lisboa, Portugal",
-      "email": "Email: hello@caraiba.pt",
+      "email": "Email: salonconcept@gmail.com",
       "phone": "Telefone: +351 915662413"
     },
     "dataCollection": {
@@ -392,7 +392,7 @@
     "contact": {
       "title": "Informações de Contacto",
       "description": "Se tiver alguma questão, preocupação ou pedido relativamente a esta Política de Privacidade ou às nossas práticas de dados, por favor contacte-nos:",
-      "email": "Email: hello@caraiba.pt",
+      "email": "Email: salonconcept@gmail.com",
       "phone": "Telefone: +351 915662413",
       "address": "Morada: Rua Exemplo 12, 1500-332 Lisboa, Portugal",
       "dpo": "Responsável pela Proteção de Dados: (se aplicável)",
@@ -417,14 +417,14 @@
     },
     "services": {
       "title": "Descrição dos serviços",
-      "description": "A Caraíba gere uma loja online de moda de verão para mulheres — fatos de banho, malas, bijuteria e acessórios — com checkout seguro, apoio ao cliente e campanhas promocionais.",
+      "description": "A Caraíba gere uma loja online de moda feminina — roupa, fatos de banho, malas, bijuteria e acessórios — com checkout seguro, apoio ao cliente e campanhas promocionais.",
       "website": {
         "title": "Loja online",
         "content": "Catálogos, coleções, informação da marca e contactos da empresa."
       },
       "blog": {
         "title": "Inspiração e editoriais",
-        "content": "Artigos ocasionais sobre estilo de verão, ideias de conjuntos e cuidados com as peças — apenas para inspiração."
+        "content": "Artigos ocasionais sobre estilo, ideias de conjuntos, vestir por estação e cuidados com as peças — apenas para inspiração."
       },
       "contact": {
         "title": "Contacto",
@@ -613,7 +613,7 @@
     "contact": {
       "title": "Informações de Contacto",
       "content": "Se tiver alguma questão sobre estes Termos e Condições, por favor contacte-nos:",
-      "email": "Email: hello@caraiba.pt",
+      "email": "Email: salonconcept@gmail.com",
       "phone": "Telefone: +351 915662413",
       "address": "Morada: Rua Exemplo 12, 1500-332 Lisboa, Portugal"
     }
@@ -652,7 +652,7 @@
         },
         "email": {
           "label": "Email",
-          "value": "hello@caraiba.pt"
+          "value": "salonconcept@gmail.com"
         },
         "website": {
           "label": "Website",
@@ -693,7 +693,7 @@
       },
       "contact": {
         "label": "Email de Contacto",
-        "value": "hello@caraiba.pt"
+        "value": "salonconcept@gmail.com"
       }
     },
     "contentDisclaimer": {

@@ -39,17 +39,23 @@ export default function Hero() {
 
           {/* Content */}
           <div className="flex flex-col items-center text-center gap-5 w-full">
-            <h1
-              className={`text-5xl sm:text-6xl lg:text-8xl font-bold text-surface leading-tight mb-3 ${cormorantGaramond.className} drop-shadow-lg`}
-            >
-              {t('title')}
-            </h1>
+            <div className="flex flex-col">
+              <h1
+                className={`text-5xl sm:text-6xl lg:text-8xl font-bold text-surface leading-tight mb-3 ${cormorantGaramond.className} drop-shadow-lg`}
+              >
+                {t('title')}
+              </h1>
+
+              {/* <h2 className="text-surface text-xl drop-shadow-md">
+                {t('subtitle')}
+              </h2> */}
+            </div>
 
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row gap-4 mb-10 w-auto">
               <Link
                 href={`/${locale}/shop`}
-                className="flex items-center justify-center gap-2 border-2 border-border text-surface-dark px-16 py-4 rounded-full font-semibold text-base hover:opacity-90 hover:shadow-theme-lg transition-all duration-300 group"
+                className="flex gap-2 border-2 border-border text-surface-dark px-16 py-4 rounded-full font-semibold text-base hover:opacity-90 hover:shadow-theme-lg transition-all duration-300 group"
               >
                 {t('shopNow')}
                 <PiArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />

@@ -1,29 +1,31 @@
 {
   "metadata": {
     "title": {
-      "default": "Caraíba | Moda Feminina de Verão — Biquínis, Malas e Bijuteria"
+      "default": "Caraíba | Moda Feminina — Roupa e Acessórios para Todas as Estações"
     },
-    "description": "A Caraíba cria moda de verão para mulheres: biquínis, malas e bijuteria que reforçam a confiança e celebram a beleza. Compre online.",
+    "description": "A Caraíba cria moda feminina para todas as estações: roupa, fatos de banho, malas e bijuteria que reforçam a confiança e celebram a beleza. Compre online.",
     "keywords": [
+      "roupa mulher",
+      "moda feminina Portugal",
+      "moda todas as estações",
       "fatos de banho mulher",
       "biquínis online",
-      "moda de verão",
       "malas de praia",
-      "bijuteria femininas",
+      "bijuteria feminina",
       "Caraíba",
       "moda Portugal",
-      "acessórios de verão",
+      "acessórios mulher",
       "moda confiança"
     ],
     "openGraph": {
       "siteName": "Caraíba",
-      "title": "Caraíba | Moda Feminina de Verão",
-      "description": "Biquínis, malas e bijuteria para mulheres que querem sentir-se confiantes e únicas.",
-      "imageAlt": "Caraíba — Moda feminina de verão"
+      "title": "Caraíba | Moda Feminina para Todas as Estações",
+      "description": "Roupa, fatos de banho, malas e bijuteria para mulheres que querem sentir-se confiantes e únicas — durante todo o ano.",
+      "imageAlt": "Caraíba — Moda feminina para todas as estações"
     },
     "twitter": {
-      "title": "Caraíba | Moda Feminina de Verão",
-      "description": "Biquínis, malas e bijuteria para viver o verão com estilo.",
+      "title": "Caraíba | Moda Feminina para Todas as Estações",
+      "description": "Roupa, fatos de banho, malas e bijuteria para confiança e estilo em qualquer estação.",
       "creator": "@caraiba"
     },
     "verification": {

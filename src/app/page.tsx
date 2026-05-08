@@ -3,11 +3,11 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: {
-    default: 'Caraíba | Summer fashion for women',
-    template: 'Caraíba | Summer fashion for women',
+    default: 'Caraíba | Women\'s fashion for every season',
+    template: 'Caraíba | Women\'s fashion for every season',
   },
   description:
-    "Shop Caraíba — swimwear, bags, and jewelry for women. Summer energy, confident fits, pieces that make you feel unique.",
+    'Shop Caraíba — clothing, swimwear, bags, and jewelry for women. Confident fits and standout pieces for every season.',
   metadataBase: new URL('https://www.caraiba.pt'),
   alternates: {
     canonical: 'https://www.caraiba.pt/en/',
@@ -27,9 +27,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'Caraíba | Summer fashion for women',
+    title: 'Caraíba | Women\'s fashion for every season',
     description:
-      "Women's summer fashion: bikinis, bags, and jewelry — confidence-first design from Lisbon.",
+      'Women\'s fashion for every season: clothing, swimwear, bags, and jewelry — confidence-first design from Lisbon.',
     url: 'https://www.caraiba.pt/en/',
     siteName: 'Caraíba',
     images: [
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
         url: 'https://www.caraiba.pt/hero1.png',
         width: 1200,
         height: 630,
-        alt: 'Caraíba — summer fashion and beach style',
+        alt: 'Caraíba — women\'s fashion for every season',
       },
     ],
     locale: 'en_US',

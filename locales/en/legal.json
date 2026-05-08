@@ -130,7 +130,7 @@
       "contact": {
         "title": "Contact Us",
         "description": "If you have questions about our use of cookies, please contact us:",
-        "email": "Email: hello@caraiba.pt",
+        "email": "Email: salonconcept@gmail.com",
         "phone": "Phone: +351 915662413",
         "address": "Address: Rua Exemplo 12, 1500-332 Lisboa, Portugal",
         "response": "We will respond to your inquiries within 48 hours."
@@ -144,14 +144,14 @@
     "introduction": {
       "title": "Introduction",
       "content": "At Caraíba (\"we,\" \"our,\" or \"us\"), we are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, store, and protect your personal data when you visit our website, use our services, or interact with us.",
-      "contact": "If you have any questions about this Privacy Policy, please contact us at hello@caraiba.pt."
+      "contact": "If you have any questions about this Privacy Policy, please contact us at salonconcept@gmail.com."
     },
     "dataController": {
       "title": "Data Controller",
       "content": "The data controller for your personal information is:",
       "name": "Caraíba",
       "address": "Rua Exemplo 12, 1500-332 Lisboa, Portugal",
-      "email": "Email: hello@caraiba.pt",
+      "email": "Email: salonconcept@gmail.com",
       "phone": "Phone: +351 915662413"
     },
     "dataCollection": {
@@ -392,7 +392,7 @@
     "contact": {
       "title": "Contact Information",
       "description": "If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us:",
-      "email": "Email: hello@caraiba.pt",
+      "email": "Email: salonconcept@gmail.com",
       "phone": "Phone: +351 915662413",
       "address": "Address: Rua Exemplo 12, 1500-332 Lisboa, Portugal",
       "dpo": "Data Protection Officer: (if applicable)",
@@ -417,14 +417,14 @@
     },
     "services": {
       "title": "Description of Services",
-      "description": "Caraíba operates an online store for women's summer fashion — swimwear, bags, jewelry, and accessories — with secure checkout, customer support, and promotional offers.",
+      "description": "Caraíba operates an online store for women's fashion — clothing, swimwear, bags, jewelry, and accessories — with secure checkout, customer support, and promotional offers.",
       "website": {
         "title": "Online boutique",
         "content": "Product catalogues, collections, brand information, and company contact details."
       },
       "blog": {
         "title": "Editorial & inspiration",
-        "content": "Occasional articles on summer style, outfit ideas, and product care — for inspiration only."
+        "content": "Occasional articles on style, outfit ideas, seasonal dressing, and product care — for inspiration only."
       },
       "contact": {
         "title": "Contact",
@@ -613,7 +613,7 @@
     "contact": {
       "title": "Contact Information",
       "content": "If you have any questions about these Terms & Conditions, please contact us:",
-      "email": "Email: hello@caraiba.pt",
+      "email": "Email: salonconcept@gmail.com",
       "phone": "Phone: +351 915662413",
       "address": "Address: Rua Exemplo 12, 1500-332 Lisboa, Portugal"
     }
@@ -652,7 +652,7 @@
         },
         "email": {
           "label": "Email",
-          "value": "hello@caraiba.pt"
+          "value": "salonconcept@gmail.com"
         },
         "website": {
           "label": "Website",
@@ -693,7 +693,7 @@
       },
       "contact": {
         "label": "Contact Email",
-        "value": "hello@caraiba.pt"
+        "value": "salonconcept@gmail.com"
       }
     },
     "contentDisclaimer": {

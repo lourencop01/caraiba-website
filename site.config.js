@@ -3,7 +3,7 @@ module.exports = {
   siteUrl: process.env.SITE_URL || 'https://www.caraiba.pt',
   siteName: 'Caraíba',
   siteDescription:
-    "Women's summer fashion — bikinis, bags, and jewelry for confident, sun-soaked style.",
+    "Women's fashion for every season — clothing, swimwear, bags, and jewelry for confident, standout style.",
 
   // Supported locales
   locales: ['en', 'pt'],

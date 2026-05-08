@@ -2,15 +2,15 @@
   "pages": {
     "shop": {
       "meta": {
-        "title": "Shop Women's Summer Fashion | Caraíba",
-        "description": "Shop Caraíba — bikinis, bags, jewelry & summer accessories. Curated women's fashion for confidence and standout style.",
+        "title": "Shop Women's Fashion | Caraíba",
+        "description": "Shop Caraíba — clothing, swimwear, bags, jewelry & accessories for every season. Curated women's fashion for confidence and standout style.",
         "ogTitle": "Shop Caraíba | Swimwear, Bags & Jewelry",
         "ogDescription": "Discover Caraíba swimwear, bags, and accessories. Fast delivery, quality you can feel."
       },
       "hero": {
         "eyebrow": "The shop",
         "title": "All products",
-        "description": "Summer-ready fashion — swimwear, bags, and jewelry curated for women."
+        "description": "Fashion for every season — clothing, swimwear, bags, and jewelry curated for women."
       },
       "list": {
         "productsCount": "{count} products",
@@ -55,14 +55,14 @@
     "collections": {
       "meta": {
         "title": "Collections | Caraíba",
-        "description": "Explore Caraíba collections — swimwear, bags, jewelry, and summer accessories for women.",
+        "description": "Explore Caraíba collections — clothing, swimwear, bags, jewelry, and accessories for women.",
         "ogTitle": "Fashion Collections | Caraíba",
-        "ogDescription": "Curated collections for your summer wardrobe — discover your next favourite pieces."
+        "ogDescription": "Curated collections for your wardrobe in every season — discover your next favourite pieces."
       },
       "hero": {
         "eyebrow": "Browse",
         "title": "Collections",
-        "description": "Discover curated edits of bikinis, bags, and jewelry — built for sun-soaked days."
+        "description": "Discover curated edits of apparel, swimwear, bags, and jewelry — from everyday moments to getaways."
       },
       "shopNow": "Shop now →",
       "empty": "No collections available yet. Check back soon!",
@@ -70,15 +70,15 @@
     },
     "product": {
       "trustShipping": "✓ Free shipping on orders over €50",
-      "trustQuality": "✓ Quality swimwear, bags & jewelry curated with care",
+      "trustQuality": "✓ Quality clothing, swimwear, bags & jewelry curated with care",
       "trustCheckout": "✓ Secure checkout via Shopify"
     },
     "about": {
       "meta": {
         "title": "About Us | Caraíba",
-        "description": "Learn how Caraíba helps women feel confident and unique with summer fashion, swimwear, and accessories.",
+        "description": "Learn how Caraíba helps women feel confident and unique with year-round fashion, clothing, swimwear, and accessories.",
         "ogTitle": "About Caraíba | Our Story",
-        "ogDescription": "Caraíba — women's fashion with a summer soul. Confidence, beauty, and pieces made to feel like you."
+        "ogDescription": "Caraíba — women's fashion for every season. Confidence, beauty, and pieces made to feel like you."
       }
     }
   }
