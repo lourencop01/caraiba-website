@@ -43,7 +43,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       siteName: t('openGraph.siteName'),
       images: [
         {
-          url: `${baseUrl}/valentina_background.png`,
+          url: `${baseUrl}/caraiba_background.png`,
           width: 1200,
           height: 630,
           alt: t('openGraph.imageAlt'),
@@ -56,7 +56,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       card: 'summary_large_image',
       title: t('twitter.title'),
       description: t('twitter.description'),
-      images: [`${baseUrl}/valentina_background.png`],
+      images: [`${baseUrl}/caraiba_background.png`],
       creator: t('twitter.creator'),
     },
     robots: {

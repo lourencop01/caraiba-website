@@ -79,7 +79,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       description: t('openGraph.description'),
       images: [
         {
-          url: `${baseUrl}/valentina_background.png`,
+          url: `${baseUrl}/caraiba_background.png`,
           width: 1200,
           height: 630,
           alt: t('openGraph.imageAlt'),

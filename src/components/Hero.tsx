@@ -55,7 +55,7 @@ export default function Hero() {
             <div className="flex flex-col sm:flex-row gap-4 mb-10 w-auto">
               <Link
                 href={`/${locale}/shop`}
-                className="flex gap-2 border-2 border-border text-surface-dark px-16 py-4 rounded-full font-semibold text-base hover:opacity-90 hover:shadow-theme-lg transition-all duration-300 group"
+                className="flex gap-2 items-center justify-center border-2 border-border text-surface-dark px-16 py-4 rounded-full font-semibold text-base hover:opacity-90 hover:shadow-theme-lg transition-all duration-300 group"
               >
                 {t('shopNow')}
                 <PiArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
