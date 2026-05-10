@@ -96,6 +96,9 @@ export default function Navbar({ shopData }: NavbarProps) {
               }`}
             >
               {t('site.name')}
+              <sup className="text-sm font-bold ml-px" aria-hidden>
+                ®
+              </sup>
             </span>
           </Link>
 
@@ -140,17 +143,24 @@ export default function Navbar({ shopData }: NavbarProps) {
                 <div
                   onMouseEnter={openDropdown}
                   onMouseLeave={closeDropdown}
-                  className={`absolute left-1/2 -translate-x-1/2 top-full mt-3 bg-background border border-border rounded-2xl shadow-theme-lg overflow-hidden ${
-                    productTypes.length > 0 ? 'w-[560px]' : 'w-[360px]'
-                  }`}
+                  className={`absolute left-1/2 -translate-x-1/2 top-full mt-3 overflow-hidden
+                    ${ productTypes.length > 0 ? 'w-[560px]' : 'w-[360px]'}
+                    ${isTransparent
+                      ? 'bg-black/40 backdrop-blur-md border border-white/10'
+                      : 'bg-background border border-border shadow-lg'
+                    }`}
                 >
-                  <div className={`grid gap-0 divide-x divide-border ${
+                  <div className={`grid gap-0 ${
+                    isTransparent ? 'divide-x divide-white/10' : 'divide-x divide-border'
+                  } ${
                     productTypes.length > 0 ? 'grid-cols-3' : 'grid-cols-2'
                   }`}>
 
                     {/* ── Quick Links (leftmost) ── */}
                     <div className="p-5">
-                      <p className="text-xs font-semibold uppercase tracking-widest text-foreground-muted mb-3">
+                      <p className={`text-xs font-semibold uppercase tracking-widest mb-3 ${
+                        isTransparent ? 'text-white/50' : 'text-foreground-muted'
+                      }`}>
                         {t('navigation.shop')}
                       </p>
                       <ul className="space-y-1">
@@ -158,7 +168,11 @@ export default function Navbar({ shopData }: NavbarProps) {
                           <Link
                             href={shopHref}
                             onClick={() => setIsShopDropdownOpen(false)}
-                            className="block text-sm text-foreground-light hover:text-primary-dark hover:underline py-1 transition-colors"
+                            className={`block text-sm py-1 transition-colors hover:underline ${
+                              isTransparent
+                                ? 'text-white/80 hover:text-white'
+                                : 'text-foreground-light hover:text-primary-dark'
+                            }`}
                           >
                             {t('navigation.viewAll')}
                           </Link>
@@ -168,7 +182,7 @@ export default function Navbar({ shopData }: NavbarProps) {
                             <Link
                               href={`/${locale}/shop?onSale=true`}
                               onClick={() => setIsShopDropdownOpen(false)}
-                              className="flex items-center gap-1.5 text-sm text-red-500 hover:text-red-600 hover:underline py-1 transition-colors"
+                              className="flex items-center gap-1.5 text-sm text-red-400 hover:text-red-300 hover:underline py-1 transition-colors"
                             >
                               <PiSealPercent className="w-4 h-4" />
                               {t('navigation.sale')}
@@ -181,7 +195,9 @@ export default function Navbar({ shopData }: NavbarProps) {
                     {/* ── Shop by Category ── */}
                     {productTypes.length > 0 && (
                       <div className="p-5">
-                        <p className="text-xs font-semibold uppercase tracking-widest text-foreground-muted mb-3">
+                        <p className={`text-xs font-semibold uppercase tracking-widest mb-3 ${
+                          isTransparent ? 'text-white/50' : 'text-foreground-muted'
+                        }`}>
                           {t('navigation.shopByCategory')}
                         </p>
                         <ul className="space-y-1">
@@ -190,7 +206,11 @@ export default function Navbar({ shopData }: NavbarProps) {
                               <Link
                                 href={categoryHref(type.canonical)}
                                 onClick={() => setIsShopDropdownOpen(false)}
-                                className="block text-sm text-foreground-light hover:text-primary-dark hover:underline py-1 transition-colors"
+                                className={`block text-sm py-1 transition-colors hover:underline ${
+                                  isTransparent
+                                    ? 'text-white/80 hover:text-white'
+                                    : 'text-foreground-light hover:text-primary-dark'
+                                }`}
                               >
                                 {type.label}
                               </Link>
@@ -202,7 +222,9 @@ export default function Navbar({ shopData }: NavbarProps) {
 
                     {/* ── Shop by Collection ── */}
                     <div className="p-5">
-                      <p className="text-xs font-semibold uppercase tracking-widest text-foreground-muted mb-3">
+                      <p className={`text-xs font-semibold uppercase tracking-widest mb-3 ${
+                        isTransparent ? 'text-white/50' : 'text-foreground-muted'
+                      }`}>
                         {t('navigation.shopByCollection')}
                       </p>
                       <ul className="space-y-1">
@@ -211,7 +233,11 @@ export default function Navbar({ shopData }: NavbarProps) {
                             <Link
                               href={`/${locale}/collections/${col.handle}`}
                               onClick={() => setIsShopDropdownOpen(false)}
-                              className="block text-sm text-foreground-light hover:text-primary-dark hover:underline py-1 transition-colors"
+                              className={`block text-sm py-1 transition-colors hover:underline ${
+                                isTransparent
+                                  ? 'text-white/80 hover:text-white'
+                                  : 'text-foreground-light hover:text-primary-dark'
+                              }`}
                             >
                               {col.title}
                             </Link>
@@ -286,7 +312,11 @@ export default function Navbar({ shopData }: NavbarProps) {
           isMobileMenuOpen ? 'opacity-100 pointer-events-auto' : 'max-h-0 opacity-0 pointer-events-none'
         }`}
       >
-        <div className="bg-surface/95 backdrop-blur-sm border-t border-border shadow-theme-lg">
+        <div className={`border-t backdrop-blur-sm ${
+          isTransparent
+            ? 'bg-black/40 border-white/10'
+            : 'bg-surface/95 border-border shadow-theme-lg'
+        }`}>
           <div className="container mx-auto px-6 py-4 space-y-1">
 
             {/* Home */}
@@ -294,7 +324,9 @@ export default function Navbar({ shopData }: NavbarProps) {
               href={`/${locale}`}
               onClick={closeMobileMenu}
               className={`flex items-center px-4 py-3 font-medium transition-all duration-200 rounded-xl ${
-                isActive(`/${locale}`) ? 'text-primary bg-background/70' : 'text-foreground-light hover:text-primary-dark hover:bg-background/70'
+                isTransparent
+                  ? isActive(`/${locale}`) ? 'text-white bg-white/10' : 'text-white/80 hover:text-white hover:bg-white/10'
+                  : isActive(`/${locale}`) ? 'text-primary bg-background/70' : 'text-foreground-light hover:text-primary-dark hover:bg-background/70'
               }`}
             >
               {t('navigation.home')}
@@ -305,7 +337,9 @@ export default function Navbar({ shopData }: NavbarProps) {
               <button
                 onClick={() => setIsMobileShopOpen((v) => !v)}
                 className={`flex items-center justify-between w-full px-4 py-3 font-medium transition-all duration-200 rounded-xl ${
-                  isShopActive ? 'text-primary bg-background/70' : 'text-foreground-light hover:text-primary-dark hover:bg-background/70'
+                  isTransparent
+                    ? isShopActive ? 'text-white bg-white/10' : 'text-white/80 hover:text-white hover:bg-white/10'
+                    : isShopActive ? 'text-primary bg-background/70' : 'text-foreground-light hover:text-primary-dark hover:bg-background/70'
                 }`}
               >
                 <span>{t('navigation.shop')}</span>
@@ -313,10 +347,14 @@ export default function Navbar({ shopData }: NavbarProps) {
               </button>
 
               {isMobileShopOpen && (
-                <div className="ml-4 mt-1 mb-2 border-l-2 border-border pl-4 space-y-1">
+                <div className={`ml-4 mt-1 mb-2 border-l-2 pl-4 space-y-1 ${
+                  isTransparent ? 'border-white/20' : 'border-border'
+                }`}>
                   {productTypes.length > 0 && (
                     <>
-                      <p className="text-xs font-semibold uppercase tracking-widest text-foreground-muted px-2 pt-2 pb-1">
+                      <p className={`text-xs font-semibold uppercase tracking-widest px-2 pt-2 pb-1 ${
+                        isTransparent ? 'text-white/50' : 'text-foreground-muted'
+                      }`}>
                         {t('navigation.shopByCategory')}
                       </p>
                       {productTypes.map((type) => (
@@ -324,7 +362,11 @@ export default function Navbar({ shopData }: NavbarProps) {
                           key={type.canonical}
                           href={categoryHref(type.canonical)}
                           onClick={closeMobileMenu}
-                          className="block px-2 py-2 text-sm text-foreground-light hover:text-primary-dark rounded-lg transition-colors"
+                          className={`block px-2 py-2 text-sm rounded-lg transition-colors ${
+                            isTransparent
+                              ? 'text-white/80 hover:text-white hover:bg-white/10'
+                              : 'text-foreground-light hover:text-primary-dark'
+                          }`}
                         >
                           {type.label}
                         </Link>
@@ -332,7 +374,9 @@ export default function Navbar({ shopData }: NavbarProps) {
                     </>
                   )}
 
-                  <p className="text-xs font-semibold uppercase tracking-widest text-foreground-muted px-2 pt-3 pb-1">
+                  <p className={`text-xs font-semibold uppercase tracking-widest px-2 pt-3 pb-1 ${
+                    isTransparent ? 'text-white/50' : 'text-foreground-muted'
+                  }`}>
                     {t('navigation.shopByCollection')}
                   </p>
                   {collections.map((col) => (
@@ -340,7 +384,11 @@ export default function Navbar({ shopData }: NavbarProps) {
                       key={col.handle}
                       href={`/${locale}/collections/${col.handle}`}
                       onClick={closeMobileMenu}
-                      className="block px-2 py-2 text-sm text-foreground-light hover:text-primary-dark rounded-lg transition-colors"
+                      className={`block px-2 py-2 text-sm rounded-lg transition-colors ${
+                        isTransparent
+                          ? 'text-white/80 hover:text-white hover:bg-white/10'
+                          : 'text-foreground-light hover:text-primary-dark'
+                      }`}
                     >
                       {col.title}
                     </Link>
@@ -349,7 +397,9 @@ export default function Navbar({ shopData }: NavbarProps) {
                   <Link
                     href={shopHref}
                     onClick={closeMobileMenu}
-                    className="flex items-center gap-2 px-2 py-2 text-sm font-semibold text-primary hover:underline"
+                    className={`flex items-center gap-2 px-2 py-2 text-sm font-semibold hover:underline ${
+                      isTransparent ? 'text-white' : 'text-primary'
+                    }`}
                   >
                     {t('navigation.viewAll')} <PiArrowRight className="w-3.5 h-3.5" />
                   </Link>
@@ -364,7 +414,9 @@ export default function Navbar({ shopData }: NavbarProps) {
                 href={link.href}
                 onClick={closeMobileMenu}
                 className={`flex items-center px-4 py-3 font-medium transition-all duration-200 rounded-xl ${
-                  isActive(link.href) ? 'text-primary bg-background/70' : 'text-foreground-light hover:text-primary-dark hover:bg-background/70'
+                  isTransparent
+                    ? isActive(link.href) ? 'text-white bg-white/10' : 'text-white/80 hover:text-white hover:bg-white/10'
+                    : isActive(link.href) ? 'text-primary bg-background/70' : 'text-foreground-light hover:text-primary-dark hover:bg-background/70'
                 }`}
               >
                 {link.label}
@@ -376,7 +428,11 @@ export default function Navbar({ shopData }: NavbarProps) {
               <Link
                 href={`/${locale}/shop?onSale=true`}
                 onClick={closeMobileMenu}
-                className="flex items-center gap-2 px-4 py-3 font-medium tracking-wide transition-all duration-200 rounded-xl text-red-500 hover:bg-red-50"
+                className={`flex items-center gap-2 px-4 py-3 font-medium tracking-wide transition-all duration-200 rounded-xl ${
+                  isTransparent
+                    ? 'text-red-300 hover:text-red-200 hover:bg-white/10'
+                    : 'text-red-500 hover:bg-red-50'
+                }`}
               >
                 <PiSealPercent className="w-4 h-4" />
                 {t('navigation.sale')}

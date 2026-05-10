@@ -10,7 +10,7 @@
 4. facebook handle = example
 5. main name = Example Name
 6. phone number = 912345678
-7. address = Rua Exemplo 123
+7. address = Rua Virgilio Correia 83
 8. postal code = 1112-555
 9. opening time and days = Monday to Friday - 10am to 11pm; Saturday - 10 am to 1pm
 10. google maps url = https://maps.app.goo.gl/V9WF9Gi97u6QMdni9
@@ -32,7 +32,7 @@ To replace the required fields, text should be matched with match case and match
 
 To replace the required fields, please replace by this order:
 
-1. salonconcept@gmail.com - email
+1. caraibalisboa@gmail.com - email
 2. info@lisbonglamstudio.com - email
 3. salonconcept.pt - domain
 4. lisbonglamstudio.com - domain
@@ -42,11 +42,11 @@ To replace the required fields, please replace by this order:
 8. @salonconcept - @instagram handle
 9. Salon Concept - main name
 10. 915662413 - phone number
-11. Rua Exemplo 12 - address
-12. 1500-332 - postal code
+11. Rua Virgilio Correia 8 - address
+12. 1600-223 - postal code
 13. facebook.com/ParrucchieriLisbona - facebook.com/facebook handle
 14. <https://maps.app.goo.gl/V9WF9Gi97u6QMdni9> - google maps url
-15. Mary Jane - owner name
+15. Luana Roger - owner name
 16. LisbonGlamStudio - main name
 17. 2020 - founding date
 18. 4.9 - google review rating

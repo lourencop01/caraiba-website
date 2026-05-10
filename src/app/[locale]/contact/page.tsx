@@ -1,4 +1,4 @@
-import Image from 'next/image';
+// import Image from 'next/image';
 import Contact from '@/components/Contact';
 import { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
@@ -133,7 +133,7 @@ export default async function ContactPage({ params }: PageProps) {
       
       <section className="relative overflow-hidden bg-foreground pt-24 pb-20 lg:pt-28 lg:pb-24">
         <div className="absolute inset-0 opacity-[0.12]">
-          <Image src="/pexels-2.jpg" alt="" fill className="object-cover" priority />
+          {/* <Image src="/pexels-2.jpg" alt="" fill className="object-cover" priority /> */}
         </div>
         <div className="relative container mx-auto px-4 text-center sm:px-6 lg:px-8">
           <span className="mb-4 block text-sm font-semibold uppercase tracking-widest text-primary">

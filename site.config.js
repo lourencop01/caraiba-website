@@ -11,17 +11,16 @@ module.exports = {
 
   // Social media and contact
   social: {
-    facebook: 'https://www.facebook.com/ParrucchieriLisbona',
-    instagram: 'https://www.instagram.com/salonconcept',
+    instagram: 'https://www.instagram.com/caraiba_biquinis',
   },
 
   contact: {
-    phone: '+351915662413',
-    email: 'salonconcept@gmail.com',
+    phone: '+351961725650',
+    email: 'caraibalisboa@gmail.com',
     address: {
-      street: 'Rua Exemplo 12',
+      street: 'Rua Virgilio Correia 8',
       city: 'Lisboa',
-      postalCode: '1500-332',
+      postalCode: '1600-223',
       country: 'Portugal',
     },
   },

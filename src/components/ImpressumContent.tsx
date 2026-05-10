@@ -155,29 +155,29 @@ export default function ImpressumContent() {
               </p>
 
               <div className="space-y-4">
-                <div className="bg-surface border border-border rounded-lg p-6">
+                {/* <div className="bg-surface border border-border rounded-lg p-6">
                   <h3 className="text-lg font-medium text-foreground mb-3">
                     {t('legalDetails.vat.title')}
                   </h3>
                   <p className="text-foreground-light">
                     <strong>{t('legalDetails.vat.label')}:</strong> {t('legalDetails.vat.value')}
                   </p>
-                  {/* <p className="text-foreground-light text-sm mt-2">
+                  <p className="text-foreground-light text-sm mt-2">
                     {t('legalDetails.vat.note')}
-                  </p> */}
-                </div>
+                  </p>
+                </div> */}
 
-                <div className="bg-surface border border-border rounded-lg p-6">
+                {/* <div className="bg-surface border border-border rounded-lg p-6">
                   <h3 className="text-lg font-medium text-foreground mb-3">
                     {t('legalDetails.register.title')}
                   </h3>
                   <p className="text-foreground-light">
                     <strong>{t('legalDetails.register.label')}:</strong> {t('legalDetails.register.value')}
                   </p>
-                  {/* <p className="text-foreground-light text-sm mt-2">
+                  <p className="text-foreground-light text-sm mt-2">
                     {t('legalDetails.register.note')}
-                  </p> */}
-                </div>
+                  </p>
+                </div> */}
 
                 <div className="bg-surface border border-border rounded-lg p-6">
                   <h3 className="text-lg font-medium text-foreground mb-3">

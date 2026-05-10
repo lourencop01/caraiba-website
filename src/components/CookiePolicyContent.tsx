@@ -346,7 +346,7 @@ export default function CookiePolicyContent() {
               <div className="bg-surface border border-border rounded-lg p-6 space-y-2">
                 <p className="text-foreground-light">{t('contact.email')}</p>
                 <p className="text-foreground-light">
-                  <a href="tel:+351930418141" className="text-primary hover:underline">{t('contact.phone')}</a>
+                  <a href="tel:+351961725650" className="text-primary hover:underline">{t('contact.phone')}</a>
                   <span className="ml-2 text-sm text-foreground-light opacity-80">{tCommon('callCostNote')}</span>
                 </p>
                 <p className="text-foreground-light">{t('contact.address')}</p>

@@ -52,7 +52,7 @@ export default async function CategoryNav({ collections, locale }: CategoryNavPr
                 href={`/${locale}/collections/${collection.handle}`}
                 className="group flex flex-col items-center gap-3"
               >
-                <div className="relative w-full aspect-square rounded-2xl overflow-hidden hover:shadow-lg hover:-translate-y-1 group-hover:shadow-theme-lg transition-all duration-300">
+                <div className="relative w-full aspect-square overflow-hidden hover:shadow-lg hover:-translate-y-1 group-hover:shadow-theme-lg transition-all duration-300">
                   {collection.image ? (
                     <Image
                       src={collection.image.url}

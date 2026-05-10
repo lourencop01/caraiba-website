@@ -2,7 +2,7 @@ const BASE_URL = 'https://www.caraiba.pt';
 
 export function generateMainStructuredData(locale: 'en' | 'pt', baseUrl: string = BASE_URL) {
   return {
-    "email": "salonconcept@gmail.com",
+    "email": "caraibalisboa@gmail.com",
     '@context': 'https://schema.org',
     '@type': 'Store',
     '@id': `${baseUrl}/#business`,
@@ -13,36 +13,46 @@ export function generateMainStructuredData(locale: 'en' | 'pt', baseUrl: string 
         ? "Women's fashion for every season — clothing, swimwear, bags, and jewelry designed to celebrate confidence and individuality."
         : 'Moda feminina para todas as estações — roupa, fatos de banho, malas e bijuteria pensadas para celebrar confiança e individualidade.',
     url: baseUrl,
-    telephone: '+351915662413',
+    telephone: '+351961725650',
     priceRange: '€€',
-    foundingDate: '2020',
+    foundingDate: '2026',
     slogan:
       locale === 'en'
         ? 'Women\'s fashion for every season that makes you feel one of a kind.'
         : 'Moda feminina para todas as estações que a faz sentir única.',
     address: {
       '@type': 'PostalAddress',
-      streetAddress: 'Rua Exemplo 12',
+      streetAddress: 'Rua Virgilio Correia 8',
       addressLocality: 'Lisboa',
       addressRegion: 'Lisboa',
-      postalCode: '1500-332',
+      postalCode: '1600-223',
       addressCountry: 'PT',
     },
     geo: {
       '@type': 'GeoCoordinates',
-      latitude: 38.719142,
-      longitude: -9.167943,
+      latitude: 38.75240,
+      longitude: -9.17226,
     },
     contactPoint: {
       '@type': 'ContactPoint',
-      telephone: '+351915662413',
+      telephone: '+351961725650',
       contactType: 'Customer Service',
       areaServed: 'PT',
       availableLanguage: ['Portuguese', 'English'],
     },
+    "hasReturnPolicy": {
+      "@type": "MerchantReturnPolicy",
+      "applicableCountry": "PT",
+      "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+      "merchantReturnDays": 14,
+      "returnMethod": "https://schema.org/ReturnByMail",
+      "returnFees": "https://schema.org/FreeReturn",
+      "refundType": "https://schema.org/FullRefund",
+      "url": `${BASE_URL}/en/return-policy/`,
+    },
     "sameAs": [
-      "https://www.instagram.com/salonconcept",
-      "https://www.facebook.com/ParrucchieriLisbona"
+      "https://www.instagram.com/caraiba_biquinis",
+
     ],
     "image": `${baseUrl}/icon.png`,
     "logo": `${baseUrl}/icon.png`,

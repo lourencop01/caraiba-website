@@ -48,7 +48,7 @@ export default async function FeaturedProducts({ products, locale }: FeaturedPro
               const isSoldOut = !isAvailable;
 
               return (
-                <div key={product.id} className="group relative bg-background rounded-2xl border border-border/30 overflow-hidden hover:shadow-theme-lg transition-all duration-300">
+                <div key={product.id} className="group relative overflow-hidden hover:shadow-theme-lg transition-all duration-300">
                   {/* Image */}
                   <Link href={`/${locale}/shop/${product.handle}`} className="block">
                     <div className="relative aspect-square overflow-hidden bg-surface">
@@ -90,7 +90,7 @@ export default async function FeaturedProducts({ products, locale }: FeaturedPro
                   </Link>
 
                   {/* Info */}
-                  <div className="p-4">
+                  <div className="py-4">
                     <Link href={`/${locale}/shop/${product.handle}`}>
                       <h3 className="text-sm font-semibold text-foreground line-clamp-2 group-hover:text-primary-dark transition-colors leading-tight mb-2">
                         {product.title}

@@ -6,7 +6,6 @@ import { Link } from '@/i18n/routing'
 import {
   AiFillInstagram,
   AiFillPhone,
-  AiFillFacebook,
 } from 'react-icons/ai'
 import { IoLogoWhatsapp } from 'react-icons/io'
 import { trackGenerateLead } from '../lib/analytics'
@@ -38,6 +37,9 @@ export default function Footer() {
                 className={`text-xl font-medium text-background uppercase ${cormorantGaramond.className}`}
               >
                 {t('site.name')}
+                <sup className="text-sm font-bold ml-px" aria-hidden>
+                  ®
+                </sup>
               </span>
             </div>
             <p className="text-background/60 text-sm leading-relaxed mb-6 max-w-xs">
@@ -47,7 +49,7 @@ export default function Footer() {
             {/* Social icons */}
             <div className="flex items-center gap-4">
               <a
-                href="https://www.instagram.com/salonconcept"
+                href="https://www.instagram.com/caraiba_biquinis"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram"
@@ -56,16 +58,7 @@ export default function Footer() {
                 <AiFillInstagram className="w-4 h-4 text-background" />
               </a>
               <a
-                href="https://facebook.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Facebook"
-                className="w-9 h-9 bg-background/10 hover:bg-primary rounded-full flex items-center justify-center transition-colors"
-              >
-                <AiFillFacebook className="w-4 h-4 text-background" />
-              </a>
-              <a
-                href="https://wa.me/915662413"
+                href="https://wa.me/961725650"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="WhatsApp"
@@ -75,7 +68,7 @@ export default function Footer() {
                 <IoLogoWhatsapp className="w-4 h-4 text-background" />
               </a>
               <a
-                href="tel:+351915662413"
+                href="tel:+351961725650"
                 aria-label="Phone"
                 onClick={() => trackGenerateLead('footer_phone')}
                 className="w-9 h-9 bg-background/10 hover:bg-primary rounded-full flex items-center justify-center transition-colors"
@@ -135,7 +128,7 @@ export default function Footer() {
             </h3>
             <ul className="space-y-3 text-sm text-background/60">
               <li>
-                <Link href="/contact" className="hover:text-primary transition-colors">
+                <Link href="/return-policy" className="hover:text-primary transition-colors">
                   {t('footer.shipping')}
                 </Link>
               </li>

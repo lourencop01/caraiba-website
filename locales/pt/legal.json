@@ -130,9 +130,9 @@
       "contact": {
         "title": "Contacte-nos",
         "description": "Se tiver questões sobre a nossa utilização de cookies, por favor contacte-nos:",
-        "email": "Email: salonconcept@gmail.com",
-        "phone": "Telefone: +351 915662413",
-        "address": "Morada: Rua Exemplo 12, 1500-332 Lisboa, Portugal",
+        "email": "Email: caraibalisboa@gmail.com",
+        "phone": "Telefone: +351 961725650",
+        "address": "Morada: Rua Virgilio Correia 8, 1600-223 Lisboa, Portugal",
         "response": "Responderemos às suas consultas dentro de 48 horas."
       }
     }
@@ -144,15 +144,15 @@
     "introduction": {
       "title": "Introdução",
       "content": "No Caraíba (\"nós\", \"nosso\" ou \"nos\"), estamos comprometidos em proteger a sua privacidade e garantir a segurança das suas informações pessoais. Esta Política de Privacidade explica como recolhemos, utilizamos, armazenamos e protegemos os seus dados pessoais quando visita o nosso website, utiliza os nossos serviços ou interage connosco.",
-      "contact": "Se tiver alguma questão sobre esta Política de Privacidade, por favor contacte-nos em salonconcept@gmail.com."
+      "contact": "Se tiver alguma questão sobre esta Política de Privacidade, por favor contacte-nos em caraibalisboa@gmail.com."
     },
     "dataController": {
       "title": "Responsável pelo Tratamento",
       "content": "O responsável pelo tratamento das suas informações pessoais é:",
       "name": "Caraíba",
-      "address": "Rua Exemplo 12, 1500-332 Lisboa, Portugal",
-      "email": "Email: salonconcept@gmail.com",
-      "phone": "Telefone: +351 915662413"
+      "address": "Rua Virgilio Correia 8, 1600-223 Lisboa, Portugal",
+      "email": "Email: caraibalisboa@gmail.com",
+      "phone": "Telefone: +351 961725650"
     },
     "dataCollection": {
       "title": "Que Dados Pessoais Recolhemos",
@@ -165,7 +165,7 @@
           "Número de telefone",
           "Referências de encomenda e preferências de entrega",
           "Preferências de produto ou tamanho",
-          "Pedidos especiais ou alergias relevantes",
+          "Pedidos especiais ou sensibilidades a materiais",
           "Qualquer outra informação que forneça voluntariamente"
         ]
       },
@@ -392,9 +392,9 @@
     "contact": {
       "title": "Informações de Contacto",
       "description": "Se tiver alguma questão, preocupação ou pedido relativamente a esta Política de Privacidade ou às nossas práticas de dados, por favor contacte-nos:",
-      "email": "Email: salonconcept@gmail.com",
-      "phone": "Telefone: +351 915662413",
-      "address": "Morada: Rua Exemplo 12, 1500-332 Lisboa, Portugal",
+      "email": "Email: caraibalisboa@gmail.com",
+      "phone": "Telefone: +351 961725650",
+      "address": "Morada: Rua Virgilio Correia 8, 1600-223 Lisboa, Portugal",
       "dpo": "Responsável pela Proteção de Dados: (se aplicável)",
       "response": "Responderemos à sua consulta dentro de 30 dias."
     },
@@ -613,15 +613,60 @@
     "contact": {
       "title": "Informações de Contacto",
       "content": "Se tiver alguma questão sobre estes Termos e Condições, por favor contacte-nos:",
-      "email": "Email: salonconcept@gmail.com",
-      "phone": "Telefone: +351 915662413",
-      "address": "Morada: Rua Exemplo 12, 1500-332 Lisboa, Portugal"
+      "email": "Email: caraibalisboa@gmail.com",
+      "phone": "Telefone: +351 961725650",
+      "address": "Morada: Rua Virgilio Correia 8, 1600-223 Lisboa, Portugal"
+    }
+  },
+  "returnPolicy": {
+    "title": "Política de Compra e Devolução",
+    "intro": "Seja bem-vinda à Caraíba – Women's Fashion. Queremos que a sua experiência de compra seja simples, segura e agradável. Por isso, criámos a nossa política de compras, trocas e devoluções com transparência e respeito pelas nossas clientes.",
+    "purchases": {
+      "title": "Compras",
+      "content1": "Após a confirmação do pagamento, o pedido será preparado e enviado dentro do prazo informado no momento da compra.",
+      "content2": "Receberá as informações de envio e acompanhamento do pedido através do e-mail ou WhatsApp cadastrado."
+    },
+    "exchanges": {
+      "title": "Trocas",
+      "intro": "Aceitamos trocas no prazo de até 14 dias após o recebimento da encomenda, conforme legislação aplicável.",
+      "conditionsTitle": "Para que a troca seja realizada, o produto deverá:",
+      "conditions": [
+        "Estar sem sinais de uso",
+        "Conter etiqueta original",
+        "Estar em perfeitas condições",
+        "Ser enviado na embalagem original, sempre que possível"
+      ],
+      "note": "Produtos em promoção ou liquidação poderão não possuir troca, salvo defeito de fabrico."
+    },
+    "returns": {
+      "title": "Devoluções",
+      "content1": "Caso deseje devolver um produto, o pedido deverá ser solicitado em até 14 dias após o recebimento.",
+      "content2": "Após recebermos o artigo e verificarmos as condições do produto, o reembolso será realizado através de transferência bancária ou MBWAY.",
+      "content3": "O prazo para processamento do reembolso poderá variar conforme a instituição bancária ou operadora de pagamento."
+    },
+    "defects": {
+      "title": "Produtos com Defeito",
+      "content1": "Se o produto apresentar defeito ou problema de fabrico, entre em contacto connosco o mais rápido possível através do nosso atendimento.",
+      "content2": "A nossa equipa irá analisar o caso e oferecer a melhor solução."
+    },
+    "shippingCosts": {
+      "title": "Custos de Envio",
+      "items": [
+        "Em casos de troca por escolha da cliente, os custos de envio poderão ser da responsabilidade da cliente.",
+        "Em casos de defeito ou erro no envio, os custos serão assumidos pela Caraíba."
+      ]
+    },
+    "contact": {
+      "title": "Atendimento",
+      "description": "Para solicitar troca, devolução ou esclarecer dúvidas, entre em contacto:",
+      "email": "E-mail: caraibalisboa@gmail.com",
+      "whatsapp": "WhatsApp: 961 725 650"
     }
   },
   "impressum": {
     "title": "Aviso Legal (Impressum)",
-    "subtitle": "Este aviso legal (Impressum) fornece informações sobre o fornecedor de serviços deste website de acordo com a lei alemã e da UE.",
-    "description": "Informações legais sobre o fornecedor de serviços deste website de acordo com os requisitos legais alemães e da UE.",
+    "subtitle": "Este aviso legal fornece informações sobre o fornecedor de serviços deste website de acordo com a lei portuguesa e da UE.",
+    "description": "Informações legais sobre o fornecedor de serviços deste website de acordo com os requisitos legais portugueses e da UE.",
     "businessInformation": {
       "title": "Informações da Empresa",
       "description": "Informações sobre o operador da empresa e entidade legal responsável por este website.",
@@ -639,8 +684,8 @@
       "description": "Informações oficiais de contacto do operador da empresa.",
       "address": {
         "title": "Morada da Empresa",
-        "street": "Rua Exemplo 12",
-        "postal": "1500-332",
+        "street": "Rua Virgilio Correia 8",
+        "postal": "1600-223",
         "city": "Lisboa",
         "country": "Portugal"
       },
@@ -648,11 +693,11 @@
         "title": "Informações de Contacto",
         "phone": {
           "label": "Telefone",
-          "value": "+351 915662413"
+          "value": "+351 961725650"
         },
         "email": {
           "label": "Email",
-          "value": "salonconcept@gmail.com"
+          "value": "caraibalisboa@gmail.com"
         },
         "website": {
           "label": "Website",
@@ -663,17 +708,17 @@
     "legalDetails": {
       "title": "Detalhes Legais",
       "description": "Informações legais adicionais e detalhes de registo quando aplicável.",
-      "vat": {
+        "vat": {
         "title": "Informações de IVA",
-        "label": "Número de Contribuinte",
+        "label": "NIF (Número de Identificação Fiscal)",
         "value": "291787275",
-        "note": "De acordo com §19 UStG (Lei de IVA Alemã), pode aplicar-se o regulamento de pequenas empresas."
+        "note": "Registado para efeitos de IVA em Portugal."
       },
       "register": {
         "title": "Registo Comercial",
         "label": "Número de Registo",
         "value": "096210",
-        "note": "Registo na repartição de comércio local ou registo comercial se necessário."
+        "note": "Registado junto da autoridade comercial competente em Portugal."
       },
       "license": {
         "title": "Conformidade regulamentar",
@@ -685,7 +730,7 @@
       "description": "Informações sobre a pessoa responsável pelo conteúdo deste website.",
       "name": {
         "label": "Nome",
-        "value": "Mary Jane"
+        "value": "Luana Roger"
       },
       "role": {
         "label": "Cargo",
@@ -693,7 +738,7 @@
       },
       "contact": {
         "label": "Email de Contacto",
-        "value": "salonconcept@gmail.com"
+        "value": "caraibalisboa@gmail.com"
       }
     },
     "contentDisclaimer": {

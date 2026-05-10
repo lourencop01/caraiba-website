@@ -53,7 +53,7 @@ export default async function ProductShowcase({ products, locale }: ProductShowc
             return (
               <div
                 key={product.id}
-                className="group relative bg-background rounded-2xl overflow-hidden flex-shrink-0 w-[220px] sm:w-[260px] lg:w-auto snap-start hover:shadow-theme-lg transition-all duration-300"
+                className="group relative bg-background overflow-hidden flex-shrink-0 w-[220px] sm:w-[260px] lg:w-auto snap-start hover:shadow-theme-lg transition-all duration-300"
               >
                 {/* Image */}
                 <Link href={`/${locale}/shop/${product.handle}`} className="block">

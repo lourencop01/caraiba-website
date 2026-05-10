@@ -34,6 +34,10 @@ export const routing = defineRouting({
     '/impressum': {
       en: '/impressum',
       pt: '/aviso-legal'
+    },
+    '/return-policy': {
+      en: '/return-policy',
+      pt: '/politica-devolucao'
     }
   }
 });

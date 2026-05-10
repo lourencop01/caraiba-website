@@ -28,7 +28,7 @@ export default function Hero() {
           src="/pexels-2.webp"
           alt={t('backgroundAlt')}
           fill
-          className="object-cover object-[20%_45%] scale-x-[-1]"
+          className="object-cover object-[40%_45%] scale-x-[-1]"
           loading="eager"
           fetchPriority="high"
         />

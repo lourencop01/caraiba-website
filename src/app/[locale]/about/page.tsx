@@ -58,7 +58,7 @@ export default async function AboutPage({ params }: PageProps) {
 
       {/* ── Hero ── */}
       <section className="relative bg-foreground overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
+        {/* <div className="absolute inset-0 opacity-10">
           <Image
             src="/pexels-1.jpg"
             alt=""
@@ -66,7 +66,7 @@ export default async function AboutPage({ params }: PageProps) {
             className="object-cover"
             priority
           />
-        </div>
+        </div> */}
         <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 py-28 text-center">
           <span className="text-primary text-sm font-semibold uppercase tracking-widest mb-4 block">
             {t('eyebrow')}

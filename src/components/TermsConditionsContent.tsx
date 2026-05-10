@@ -520,10 +520,10 @@ export default function TermsConditionsContent() {
                   <strong>Caraíba</strong>
                 </p>
                 <p className="text-foreground-light">
-                  <a href="mailto:salonconcept@gmail.com" className="text-primary hover:underline">{t('contact.email')}</a>
+                  <a href="mailto:caraibalisboa@gmail.com" className="text-primary hover:underline">{t('contact.email')}</a>
                 </p>
                 <p className="text-foreground-light">
-                  <a href="tel:+351915662413" className="text-primary hover:underline">{t('contact.phone')}</a>
+                  <a href="tel:+351961725650" className="text-primary hover:underline">{t('contact.phone')}</a>
                   <span className="ml-2 text-sm text-foreground-light opacity-80">{tCommon('callCostNote')}</span>
                 </p>
                 <p className="text-foreground-light">

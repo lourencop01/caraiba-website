@@ -71,7 +71,8 @@
     "product": {
       "trustShipping": "✓ Envio gratuito em encomendas acima de €50",
       "trustQuality": "✓ Roupa, fatos de banho, malas e bijuteria selecionados com cuidado",
-      "trustCheckout": "✓ Checkout seguro via Shopify"
+      "trustCheckout": "✓ Checkout seguro via Shopify",
+      "trustReturns": "✓ Trocas e devoluções até 14 dias"
     },
     "about": {
       "meta": {

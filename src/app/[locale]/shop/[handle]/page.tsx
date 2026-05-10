@@ -1,6 +1,7 @@
 import { getProductByHandle, formatMoney, getFirstAvailableVariant, isProductPurchasable } from '@/lib/shopify-api';
 import { cormorantGaramond } from '@/lib/fonts';
 import Link from 'next/link';
+import { Link as LocaleLink } from '@/i18n/routing';
 import { getTranslations } from 'next-intl/server';
 import ProductImageGallery from '@/components/shop/ProductImageGallery';
 import { notFound } from 'next/navigation';
@@ -142,8 +143,12 @@ export default async function ProductPage({ params }: PageProps) {
 
             <div className="pt-2 border-t border-border space-y-2 text-sm text-foreground-light">
               <p>{tp('trustShipping')}</p>
-              <p>{tp('trustQuality')}</p>
               <p>{tp('trustCheckout')}</p>
+              <p>
+                <LocaleLink href="/return-policy" className="hover:text-primary-dark transition-colors underline underline-offset-2">
+                  {tp('trustReturns')}
+                </LocaleLink>
+              </p>
             </div>
           </div>
         </div>

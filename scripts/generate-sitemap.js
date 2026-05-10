@@ -16,6 +16,7 @@ const routeMappings = {
   'cookie-policy': { en: 'cookie-policy', pt: 'politica-cookies' },
   'terms-conditions': { en: 'terms-conditions', pt: 'termos-condicoes' },
   impressum: { en: 'impressum', pt: 'aviso-legal' },
+  'return-policy': { en: 'return-policy', pt: 'politica-devolucao' },
 };
 
 const pagePriorities = {
@@ -28,6 +29,7 @@ const pagePriorities = {
   'cookie-policy': 0.4,
   'terms-conditions': 0.4,
   impressum: 0.4,
+  'return-policy': 0.5,
 };
 
 const changeFrequencies = {
@@ -40,6 +42,7 @@ const changeFrequencies = {
   'cookie-policy': 'yearly',
   'terms-conditions': 'yearly',
   impressum: 'yearly',
+  'return-policy': 'yearly',
 };
 
 export function generateSitemap() {

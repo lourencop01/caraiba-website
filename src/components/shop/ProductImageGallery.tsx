@@ -18,7 +18,7 @@ export default function ProductImageGallery({ images, title }: ProductImageGalle
   return (
     <div className="space-y-3">
       {/* Main image */}
-      <div className="relative aspect-square rounded-2xl overflow-hidden bg-surface border border-border">
+      <div className="relative aspect-square overflow-hidden bg-surface border border-border">
         <Image
           key={active.url}
           src={active.url}
@@ -40,10 +40,10 @@ export default function ProductImageGallery({ images, title }: ProductImageGalle
               onMouseEnter={() => setHoveredIndex(i)}
               onMouseLeave={() => setHoveredIndex(null)}
               aria-label={`View image ${i + 1}`}
-              className={`relative aspect-square rounded-xl overflow-hidden bg-surface border-2 transition-all duration-150 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary/40 ${
+              className={`relative aspect-square overflow-hidden bg-surface transition-all duration-150 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary/40 ${
                 i === (hoveredIndex ?? activeIndex)
-                  ? 'border-primary'
-                  : 'border-border hover:border-primary/50'
+                  ? 'border border-primary'
+                  : 'hover:border-primary/50'
               }`}
             >
               <Image

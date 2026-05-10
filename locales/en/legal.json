@@ -130,9 +130,9 @@
       "contact": {
         "title": "Contact Us",
         "description": "If you have questions about our use of cookies, please contact us:",
-        "email": "Email: salonconcept@gmail.com",
-        "phone": "Phone: +351 915662413",
-        "address": "Address: Rua Exemplo 12, 1500-332 Lisboa, Portugal",
+        "email": "Email: caraibalisboa@gmail.com",
+        "phone": "Phone: +351 961725650",
+        "address": "Address: Rua Virgilio Correia 8, 1600-223 Lisboa, Portugal",
         "response": "We will respond to your inquiries within 48 hours."
       }
     }
@@ -144,15 +144,15 @@
     "introduction": {
       "title": "Introduction",
       "content": "At Caraíba (\"we,\" \"our,\" or \"us\"), we are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, store, and protect your personal data when you visit our website, use our services, or interact with us.",
-      "contact": "If you have any questions about this Privacy Policy, please contact us at salonconcept@gmail.com."
+      "contact": "If you have any questions about this Privacy Policy, please contact us at caraibalisboa@gmail.com."
     },
     "dataController": {
       "title": "Data Controller",
       "content": "The data controller for your personal information is:",
       "name": "Caraíba",
-      "address": "Rua Exemplo 12, 1500-332 Lisboa, Portugal",
-      "email": "Email: salonconcept@gmail.com",
-      "phone": "Phone: +351 915662413"
+      "address": "Rua Virgilio Correia 8, 1600-223 Lisboa, Portugal",
+      "email": "Email: caraibalisboa@gmail.com",
+      "phone": "Phone: +351 961725650"
     },
     "dataCollection": {
       "title": "What Personal Data We Collect",
@@ -164,8 +164,8 @@
           "Email address",
           "Phone number",
           "Order references and delivery preferences",
-          "Service preferences",
-          "Special requests or allergies",
+          "Sizing and product preferences",
+          "Special requests or material sensitivities",
           "Any other information you voluntarily provide"
         ]
       },
@@ -392,9 +392,9 @@
     "contact": {
       "title": "Contact Information",
       "description": "If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us:",
-      "email": "Email: salonconcept@gmail.com",
-      "phone": "Phone: +351 915662413",
-      "address": "Address: Rua Exemplo 12, 1500-332 Lisboa, Portugal",
+      "email": "Email: caraibalisboa@gmail.com",
+      "phone": "Phone: +351 961725650",
+      "address": "Address: Rua Virgilio Correia 8, 1600-223 Lisboa, Portugal",
       "dpo": "Data Protection Officer: (if applicable)",
       "response": "We will respond to your inquiry within 30 days."
     },
@@ -613,15 +613,60 @@
     "contact": {
       "title": "Contact Information",
       "content": "If you have any questions about these Terms & Conditions, please contact us:",
-      "email": "Email: salonconcept@gmail.com",
-      "phone": "Phone: +351 915662413",
-      "address": "Address: Rua Exemplo 12, 1500-332 Lisboa, Portugal"
+      "email": "Email: caraibalisboa@gmail.com",
+      "phone": "Phone: +351 961725650",
+      "address": "Address: Rua Virgilio Correia 8, 1600-223 Lisboa, Portugal"
+    }
+  },
+  "returnPolicy": {
+    "title": "Purchase & Return Policy",
+    "intro": "Welcome to Caraíba – Women's Fashion. We want your shopping experience to be simple, safe, and enjoyable. That's why we've created our purchasing, exchange, and return policy with transparency and respect for our customers.",
+    "purchases": {
+      "title": "Purchases",
+      "content1": "After payment confirmation, your order will be prepared and dispatched within the timeframe indicated at the time of purchase.",
+      "content2": "You will receive shipping and tracking information via the email or WhatsApp number provided at checkout."
+    },
+    "exchanges": {
+      "title": "Exchanges",
+      "intro": "We accept exchanges within 14 days of receiving your order, in accordance with applicable legislation.",
+      "conditionsTitle": "For an exchange to be accepted, the item must:",
+      "conditions": [
+        "Show no signs of use",
+        "Have the original tag attached",
+        "Be in perfect condition",
+        "Be sent in the original packaging whenever possible"
+      ],
+      "note": "Sale or clearance items may not be eligible for exchange, except in the case of a manufacturing defect."
+    },
+    "returns": {
+      "title": "Returns",
+      "content1": "If you wish to return an item, the request must be made within 14 days of receiving your order.",
+      "content2": "Once we receive the item and verify its condition, the refund will be processed via bank transfer or MBWAY.",
+      "content3": "The refund processing time may vary depending on your bank or payment provider."
+    },
+    "defects": {
+      "title": "Defective Items",
+      "content1": "If your item has a defect or manufacturing issue, please contact us as soon as possible through our customer support.",
+      "content2": "Our team will review the case and offer the best solution."
+    },
+    "shippingCosts": {
+      "title": "Shipping Costs",
+      "items": [
+        "For exchanges at the customer's request, shipping costs may be the customer's responsibility.",
+        "In cases of defect or shipping error, costs will be covered by Caraíba."
+      ]
+    },
+    "contact": {
+      "title": "Customer Support",
+      "description": "To request an exchange, return, or for any questions, please contact us:",
+      "email": "Email: caraibalisboa@gmail.com",
+      "whatsapp": "WhatsApp: 961 725 650"
     }
   },
   "impressum": {
     "title": "Legal Notice (Impressum)",
-    "subtitle": "This legal notice (Impressum) provides information about the service provider of this website in accordance with German and EU law.",
-    "description": "Legal information about the service provider of this website in accordance with German and EU legal requirements.",
+    "subtitle": "This legal notice provides information about the service provider of this website in accordance with Portuguese and EU law.",
+    "description": "Legal information about the service provider of this website in accordance with Portuguese and EU legal requirements.",
     "businessInformation": {
       "title": "Business Information",
       "description": "Information about the business operator and legal entity responsible for this website.",
@@ -639,8 +684,8 @@
       "description": "Official contact information for the business operator.",
       "address": {
         "title": "Business Address",
-        "street": "Rua Exemplo 12",
-        "postal": "1500-332",
+        "street": "Rua Virgilio Correia 8",
+        "postal": "1600-223",
         "city": "Lisbon",
         "country": "Portugal"
       },
@@ -648,11 +693,11 @@
         "title": "Contact Information",
         "phone": {
           "label": "Phone",
-          "value": "+351 915662413"
+          "value": "+351 961725650"
         },
         "email": {
           "label": "Email",
-          "value": "salonconcept@gmail.com"
+          "value": "caraibalisboa@gmail.com"
         },
         "website": {
           "label": "Website",
@@ -663,17 +708,17 @@
     "legalDetails": {
       "title": "Legal Details",
       "description": "Additional legal information and registration details where applicable.",
-      "vat": {
+        "vat": {
         "title": "VAT Information",
-        "label": "VAT ID Number",
+        "label": "NIF (Tax Identification Number)",
         "value": "291787275",
-        "note": "According to §19 UStG (German VAT Act), small business regulation may apply."
+        "note": "Registered for VAT purposes in Portugal."
       },
       "register": {
         "title": "Commercial Register",
         "label": "Registration Number",
         "value": "096210",
-        "note": "Registration with local trade office or commercial register if required."
+        "note": "Registered with the competent Portuguese commercial authority."
       },
       "license": {
         "title": "Regulatory compliance",
@@ -685,7 +730,7 @@
       "description": "Information about the person responsible for the content of this website.",
       "name": {
         "label": "Name",
-        "value": "Mary Jane"
+        "value": "Luana Roger"
       },
       "role": {
         "label": "Position",
@@ -693,7 +738,7 @@
       },
       "contact": {
         "label": "Contact Email",
-        "value": "salonconcept@gmail.com"
+        "value": "caraibalisboa@gmail.com"
       }
     },
     "contentDisclaimer": {

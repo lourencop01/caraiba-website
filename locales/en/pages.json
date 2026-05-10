@@ -71,7 +71,8 @@
     "product": {
       "trustShipping": "✓ Free shipping on orders over €50",
       "trustQuality": "✓ Quality clothing, swimwear, bags & jewelry curated with care",
-      "trustCheckout": "✓ Secure checkout via Shopify"
+      "trustCheckout": "✓ Secure checkout via Shopify",
+      "trustReturns": "✓ 14-day returns & exchanges"
     },
     "about": {
       "meta": {

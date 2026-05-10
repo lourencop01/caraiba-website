@@ -51,7 +51,7 @@ export default async function CollectionsPage({ params }: PageProps) {
               <Link
                 key={collection.id}
                 href={`/${locale}/collections/${collection.handle}`}
-                className="group relative flex flex-col overflow-hidden rounded-2xl border border-border bg-surface shadow-theme hover:shadow-theme-lg transition-all duration-300 hover:-translate-y-1"
+                className="group relative flex flex-col overflow-hidden shadow-theme hover:shadow-theme-lg transition-all duration-300 hover:-translate-y-1"
               >
                 {/* Image */}
                 <div className="relative aspect-[4/3] overflow-hidden bg-background">
@@ -76,7 +76,7 @@ export default async function CollectionsPage({ params }: PageProps) {
                 </div>
 
                 {/* Info */}
-                <div className="p-5 flex flex-col gap-2 flex-1">
+                <div className="py-5 flex flex-col gap-2 flex-1">
                   <h2 className="text-foreground font-semibold text-lg group-hover:text-primary-dark transition-colors">
                     {collection.title}
                   </h2>

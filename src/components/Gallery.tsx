@@ -63,7 +63,7 @@ export default function Gallery({ isHomePage = false }: GalleryProps) {
           {galleryItems.map((item, index) => (
             <div
               key={index}
-              className="group relative overflow-hidden rounded-2xl aspect-square border border-border/30 bg-background shadow-theme hover:shadow-theme-lg transition-all duration-300"
+              className="group relative overflow-hidden aspect-square border border-border/30 bg-background shadow-theme hover:shadow-theme-lg transition-all duration-300"
             >
               <Image
                 src={item.image}

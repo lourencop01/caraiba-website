@@ -45,7 +45,7 @@ export default function About({ isHomePage = false }: AboutProps) {
 
           {/* ── Image side ── */}
           <div className="relative order-2 lg:order-1">
-            <div className="relative rounded-3xl overflow-hidden aspect-[4/5] shadow-theme-lg">
+            <div className="relative overflow-hidden aspect-[4/5] shadow-theme-lg">
               <Image
                 src="/4.jpg"
                 alt="Brand story"
