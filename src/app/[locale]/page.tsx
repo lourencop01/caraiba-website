@@ -12,7 +12,7 @@ import CategoryNav from '@/components/home/CategoryNav';
 import FeaturedProducts from '@/components/home/FeaturedProducts';
 import ProductShowcase from '@/components/home/ProductShowcase';
 import Testimonials from '@/components/Testimonials';
-import Gallery from '@/components/Gallery';
+// import Gallery from '@/components/Gallery';
 import About from '@/components/About';
 
 type PageProps = {
