@@ -127,7 +127,7 @@ export default async function Home({ params }: PageProps) {
       <About isHomePage={true} />
 
       {/* 7 — Visual Content */}
-      <Gallery isHomePage={true} />
+      {/* <Gallery isHomePage={true} /> */}
 
       {/* 9 — Newsletter / CTA */}
       {/* <Newsletter /> */}
