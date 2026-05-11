@@ -69,7 +69,7 @@ export default function Navbar({ shopData }: NavbarProps) {
   const isHomepage = pathname === `/${locale}` || pathname === `/${locale}/`;
   const isTransparent = isHomepage && !isScrolled;
 
-  const linkBase = 'font-medium transition-colors text-sm';
+  const linkBase = 'font-medium transition-colors text-sm py-2';
   const linkColor = isTransparent
     ? 'text-white/85 hover:text-white'
     : 'text-foreground-light hover:text-primary-dark';
@@ -130,7 +130,7 @@ export default function Navbar({ shopData }: NavbarProps) {
                   onClick={() => setIsShopDropdownOpen((v) => !v)}
                   aria-expanded={isShopDropdownOpen}
                   aria-label={t('accessibility.toggleShopMenu')}
-                  className={`p-0.5 focus:outline-none ${isShopActive ? activeLinkColor : linkColor}`}
+                  className={`p-2 focus:outline-none ${isShopActive ? activeLinkColor : linkColor}`}
                 >
                   <PiCaretDown
                     className={`w-3.5 h-3.5 transition-transform duration-200 ${isShopDropdownOpen ? 'rotate-180' : ''}`}

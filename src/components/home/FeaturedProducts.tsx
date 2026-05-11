@@ -66,7 +66,7 @@ export default async function FeaturedProducts({ products, locale }: FeaturedPro
                       )}
 
                       {isOnSale && (
-                        <span className="absolute top-3 left-3 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-full z-10">
+                        <span className="absolute top-3 left-3 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded-full z-10">
                           {tc('badgeSale')}
                         </span>
                       )}

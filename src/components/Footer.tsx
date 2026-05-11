@@ -85,17 +85,17 @@ export default function Footer() {
             </h3>
             <ul className="space-y-3 text-sm text-background/60">
               <li>
-                <Link href="/shop" className="hover:text-primary transition-colors">
+                <Link href="/shop" className="hover:text-primary-light transition-colors">
                   {t('footer.shopAll')}
                 </Link>
               </li>
               <li>
-                <Link href="/collections" className="hover:text-primary transition-colors">
+                <Link href="/collections" className="hover:text-primary-light transition-colors">
                   {t('footer.collections')}
                 </Link>
               </li>
               <li>
-                <Link href="/shop" className="hover:text-primary transition-colors">
+                <Link href="/shop" className="hover:text-primary-light transition-colors">
                   {t('footer.newArrivals')}
                 </Link>
               </li>
@@ -109,12 +109,12 @@ export default function Footer() {
             </h3>
             <ul className="space-y-3 text-sm text-background/60">
               <li>
-                <Link href="/about" className="hover:text-primary transition-colors">
+                <Link href="/about" className="hover:text-primary-light transition-colors">
                   {t('footer.about')}
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="hover:text-primary transition-colors">
+                <Link href="/contact" className="hover:text-primary-light transition-colors">
                   {t('footer.contact')}
                 </Link>
               </li>
@@ -128,12 +128,12 @@ export default function Footer() {
             </h3>
             <ul className="space-y-3 text-sm text-background/60">
               <li>
-                <Link href="/return-policy" className="hover:text-primary transition-colors">
+                <Link href="/return-policy" className="hover:text-primary-light transition-colors">
                   {t('footer.shipping')}
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="hover:text-primary transition-colors">
+                <Link href="/contact" className="hover:text-primary-light transition-colors">
                   {t('footer.faq')}
                 </Link>
               </li>
@@ -145,26 +145,26 @@ export default function Footer() {
       {/* Bottom bar */}
       <div className="border-t border-background/10">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-5">
-          <div className="flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-background/40">
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-background/60">
             <p>{t('footer.copyright')}</p>
             <div className="flex flex-wrap items-center gap-4">
               <button
                 onClick={showModal}
-                className="hover:text-primary transition-colors underline"
+                className="hover:text-primary-light transition-colors underline"
                 aria-label={t('cookies.footer.manageCookies')}
               >
                 {t('cookies.footer.manageCookies')}
               </button>
-              <Link href="/privacy-policy" className="hover:text-primary transition-colors underline">
+              <Link href="/privacy-policy" className="hover:text-primary-light transition-colors underline">
                 {t('cookies.footer.privacyPolicy')}
               </Link>
-              <Link href="/cookie-policy" className="hover:text-primary transition-colors underline">
+              <Link href="/cookie-policy" className="hover:text-primary-light transition-colors underline">
                 {t('cookies.footer.cookiePolicy')}
               </Link>
-              <Link href="/terms-conditions" className="hover:text-primary transition-colors underline">
+              <Link href="/terms-conditions" className="hover:text-primary-light transition-colors underline">
                 {t('cookies.footer.termsConditions')}
               </Link>
-              <Link href="/impressum" className="hover:text-primary transition-colors underline">
+              <Link href="/impressum" className="hover:text-primary-light transition-colors underline">
                 {t('cookies.footer.impressum')}
               </Link>
             </div>

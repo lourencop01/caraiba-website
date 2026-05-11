@@ -3,8 +3,8 @@
 /* Base Color Palette System */
 :root {
   /* Default color scheme — Caraíba */
-  --primary: #ad9a88;          /* Warm brown */
-  --primary-dark: #8e8073;     /* Darker brown */
+  --primary: #7a6452;          /* Warm brown — AA accessible on light bg */
+  --primary-dark: #5c4d42;     /* Darker brown — AA accessible on light bg */
   --primary-light: #d5bea8;    /* Lighter brown */
   --secondary: #7ab0cc;        /* Gold accent */
   --secondary-dark: #608ba1;   /* Darker gold */
@@ -16,7 +16,7 @@
   --surface-dark: #f6f6f6;     /* Darker surface */
   --foreground: #181818;       /* Dark gray text */
   --foreground-light: #4a4a4a; /* Light gray text */
-  --foreground-muted: #8a8a8a; /* Muted text */
+  --foreground-muted: #6b6b6b; /* Muted text — AA accessible on light bg */
   
   /* Accent colors */
   --accent: #E8B4B8;           /* Soft pink */
