@@ -132,7 +132,7 @@
         "description": "Se tiver questões sobre a nossa utilização de cookies, por favor contacte-nos:",
         "email": "Email: caraibalisboa@gmail.com",
         "phone": "Telefone: +351 961725650",
-        "address": "Morada: Rua Virgilio Correia 8, 1600-223 Lisboa, Portugal",
+        "address": "Morada: R. Cmte. Enrique Maya 7C - Sala 30, 1500-192 Lisboa, Portugal",
         "response": "Responderemos às suas consultas dentro de 48 horas."
       }
     }
@@ -150,7 +150,7 @@
       "title": "Responsável pelo Tratamento",
       "content": "O responsável pelo tratamento das suas informações pessoais é:",
       "name": "Caraíba",
-      "address": "Rua Virgilio Correia 8, 1600-223 Lisboa, Portugal",
+      "address": "R. Cmte. Enrique Maya 7C - Sala 30, 1500-192 Lisboa, Portugal",
       "email": "Email: caraibalisboa@gmail.com",
       "phone": "Telefone: +351 961725650"
     },
@@ -615,7 +615,7 @@
       "content": "Se tiver alguma questão sobre estes Termos e Condições, por favor contacte-nos:",
       "email": "Email: caraibalisboa@gmail.com",
       "phone": "Telefone: +351 961725650",
-      "address": "Morada: Rua Virgilio Correia 8, 1600-223 Lisboa, Portugal"
+      "address": "Morada: R. Cmte. Enrique Maya 7C - Sala 30, 1500-192 Lisboa, Portugal"
     }
   },
   "returnPolicy": {
@@ -684,8 +684,8 @@
       "description": "Informações oficiais de contacto do operador da empresa.",
       "address": {
         "title": "Morada da Empresa",
-        "street": "Rua Virgilio Correia 8",
-        "postal": "1600-223",
+        "street": "R. Cmte. Enrique Maya 7C - Sala 30",
+        "postal": "1500-192",
         "city": "Lisboa",
         "country": "Portugal"
       },

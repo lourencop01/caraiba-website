@@ -132,7 +132,7 @@
         "description": "If you have questions about our use of cookies, please contact us:",
         "email": "Email: caraibalisboa@gmail.com",
         "phone": "Phone: +351 961725650",
-        "address": "Address: Rua Virgilio Correia 8, 1600-223 Lisboa, Portugal",
+        "address": "Address: R. Cmte. Enrique Maya 7C - Sala 30, 1500-192 Lisbon, Portugal",
         "response": "We will respond to your inquiries within 48 hours."
       }
     }
@@ -150,7 +150,7 @@
       "title": "Data Controller",
       "content": "The data controller for your personal information is:",
       "name": "Caraíba",
-      "address": "Rua Virgilio Correia 8, 1600-223 Lisboa, Portugal",
+      "address": "R. Cmte. Enrique Maya 7C - Sala 30, 1500-192 Lisbon, Portugal",
       "email": "Email: caraibalisboa@gmail.com",
       "phone": "Phone: +351 961725650"
     },
@@ -394,7 +394,7 @@
       "description": "If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us:",
       "email": "Email: caraibalisboa@gmail.com",
       "phone": "Phone: +351 961725650",
-      "address": "Address: Rua Virgilio Correia 8, 1600-223 Lisboa, Portugal",
+      "address": "Address: R. Cmte. Enrique Maya 7C - Sala 30, 1500-192 Lisbon, Portugal",
       "dpo": "Data Protection Officer: (if applicable)",
       "response": "We will respond to your inquiry within 30 days."
     },
@@ -615,7 +615,7 @@
       "content": "If you have any questions about these Terms & Conditions, please contact us:",
       "email": "Email: caraibalisboa@gmail.com",
       "phone": "Phone: +351 961725650",
-      "address": "Address: Rua Virgilio Correia 8, 1600-223 Lisboa, Portugal"
+      "address": "Address: R. Cmte. Enrique Maya 7C - Sala 30, 1500-192 Lisbon, Portugal"
     }
   },
   "returnPolicy": {
@@ -684,8 +684,8 @@
       "description": "Official contact information for the business operator.",
       "address": {
         "title": "Business Address",
-        "street": "Rua Virgilio Correia 8",
-        "postal": "1600-223",
+        "street": "R. Cmte. Enrique Maya 7C - Sala 30",
+        "postal": "1500-192",
         "city": "Lisbon",
         "country": "Portugal"
       },

@@ -30,8 +30,8 @@ export function generateMainStructuredData(locale: 'en' | 'pt', baseUrl: string 
     },
     geo: {
       '@type': 'GeoCoordinates',
-      latitude: 38.75240,
-      longitude: -9.17226,
+      latitude: 38.75481,
+      longitude: -9.20200,
     },
     contactPoint: {
       '@type': 'ContactPoint',
