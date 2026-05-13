@@ -181,6 +181,7 @@ export default function Navbar({ shopData }: NavbarProps) {
                           <li>
                             <Link
                               href={`/${locale}/shop?onSale=true`}
+                              rel="nofollow"
                               onClick={() => setIsShopDropdownOpen(false)}
                               className="flex items-center gap-1.5 text-sm text-red-400 hover:text-red-300 hover:underline py-1 transition-colors"
                             >
@@ -265,6 +266,7 @@ export default function Navbar({ shopData }: NavbarProps) {
             {hasSaleItems && (
               <Link
                 href={`/${locale}/shop?onSale=true`}
+                rel="nofollow"
                 className={`${linkBase} flex items-center gap-1 font-medium tracking-wide ${
                   isTransparent
                     ? 'text-red-300 hover:text-red-100'
@@ -427,6 +429,7 @@ export default function Navbar({ shopData }: NavbarProps) {
             {hasSaleItems && (
               <Link
                 href={`/${locale}/shop?onSale=true`}
+                rel="nofollow"
                 onClick={closeMobileMenu}
                 className={`flex items-center gap-2 px-4 py-3 font-medium tracking-wide transition-all duration-200 rounded-xl ${
                   isTransparent
