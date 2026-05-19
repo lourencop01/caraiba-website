@@ -142,7 +142,7 @@ export default async function ProductPage({ params }: PageProps) {
             )}
 
             <div className="pt-2 border-t border-border space-y-2 text-sm text-foreground-light">
-              <p>{tp('trustShipping')}</p>
+              {/* <p>{tp('trustShipping')}</p> */}
               <p>{tp('trustCheckout')}</p>
               <p>
                 <LocaleLink href="/return-policy" className="hover:text-primary-dark transition-colors underline underline-offset-2">
