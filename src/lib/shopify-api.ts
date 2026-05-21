@@ -823,66 +823,63 @@ export interface ProductTypeOption {
   label: string;
 }
 
-const PRODUCT_TYPE_QUERY = `
-  query GetProductTypesFromProducts($first: Int!) {
-    products(first: $first) {
-      edges { node { productType } }
-    }
-  }
-`;
-
 /**
- * Fetch unique product types with both the canonical (source-language) value
- * and the translated display label.
+ * Fetch unique product types with canonical values and translated display labels.
  *
- * The root `productTypes` query is NOT affected by @inContext — it always
- * returns source-language strings.  The `Product.productType` field IS
- * translatable and respects @inContext, so we fetch products in both the
- * source language (for the canonical filter value) and the current locale
- * (for the display label) in parallel, then zip them together.
+ * Uses the dedicated `productTypes` query for the canonical list — complete
+ * regardless of product sort order or catalog size.
+ *
+ * Translation: `productTypes` is not affected by @inContext, so we fetch one
+ * product per type with @inContext to resolve the translated label. Queries
+ * run in parallel and are not limited by catalog size.
  */
 export async function getProductTypes(first = 250, locale?: string): Promise<ProductTypeOption[]> {
   const language = locale ? localeToLanguageCode(locale) : undefined;
 
-  type ProductTypeData = { products: { edges: { node: { productType: string } }[] } };
-
-  // Fetch source-language types always; translated types only when locale differs
-  const [sourceData, localizedData] = await Promise.all([
-    storefrontFetch<ProductTypeData>(PRODUCT_TYPE_QUERY, { first }),
-    language
-      ? storefrontFetch<ProductTypeData>(PRODUCT_TYPE_QUERY, { first }, language)
-      : Promise.resolve(null),
-  ]);
-
-  // Build canonical list (deduplicated, ordered by first appearance)
-  const canonicalList: string[] = [];
-  const canonicalSet = new Set<string>();
-  for (const { node } of sourceData.products.edges) {
-    if (node.productType && !canonicalSet.has(node.productType)) {
-      canonicalSet.add(node.productType);
-      canonicalList.push(node.productType);
+  const typesQuery = `
+    query GetProductTypes($first: Int!) {
+      productTypes(first: $first) {
+        edges { node }
+      }
     }
-  }
+  `;
 
-  if (!localizedData) {
+  const labelQuery = `
+    query GetProductTypeLabel($query: String!) {
+      products(first: 1, query: $query) {
+        edges { node { productType } }
+      }
+    }
+  `;
+
+  type TypesData = { productTypes: { edges: { node: string }[] } };
+  type LabelData = { products: { edges: { node: { productType: string } }[] } };
+
+  const typesData = await storefrontFetch<TypesData>(typesQuery, { first });
+
+  const canonicalList = typesData.productTypes.edges
+    .map((e) => e.node)
+    .filter(Boolean);
+
+  if (!language) {
     return canonicalList.map((c) => ({ canonical: c, label: c }));
   }
 
-  // Zip source edges with localized edges to build canonical → translated map
-  const sourceEdges = sourceData.products.edges;
-  const localEdges = localizedData.products.edges;
-  const translationMap = new Map<string, string>();
-  for (let i = 0; i < Math.min(sourceEdges.length, localEdges.length); i++) {
-    const canonical = sourceEdges[i].node.productType;
-    const label = localEdges[i].node.productType;
-    if (canonical && label && !translationMap.has(canonical)) {
-      translationMap.set(canonical, label);
-    }
-  }
+  // For each canonical type, fetch one product with @inContext to get the
+  // translated label. Runs in parallel — one small query per type.
+  const labels = await Promise.all(
+    canonicalList.map((canonical) =>
+      storefrontFetch<LabelData>(
+        labelQuery,
+        { query: `product_type:"${canonical}"` },
+        language,
+      ).then((d) => d.products.edges[0]?.node.productType ?? canonical)
+    )
+  );
 
-  return canonicalList.map((canonical) => ({
+  return canonicalList.map((canonical, i) => ({
     canonical,
-    label: translationMap.get(canonical) ?? canonical,
+    label: labels[i] ?? canonical,
   }));
 }
 
